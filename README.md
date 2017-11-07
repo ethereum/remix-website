@@ -4,6 +4,8 @@ Build from [Jekyll Bootstrap Starter Template](https://github.com/thauvette/jeky
 
 Based on [Bootstrap Carousel Example](https://getbootstrap.com/docs/4.0/examples/carousel/)
 
+Photos from [Pexels](https://www.pexels.com/)
+
 # Jekyll Template
 
 This is a template for Jekyll and Bootstrap 4 using Filament Group's [LoadJS](https://github.com/filamentgroup/loadJSFilament) and
