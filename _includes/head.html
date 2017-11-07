@@ -1,0 +1,56 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% if page.title %}
+  <title>{{page.title}}</title>
+  {% else %}
+  <title>{{site.title}}</title>
+  {% endif %}
+
+  <meta charset="utf-8" / />
+
+  <meta property="og:url" content="{{site.url}}{{page.url}}" />
+
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.type %}
+    <meta content="{{ page.type }}" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.share %}
+    <meta content="{{ page.share }}" property="og:description">
+  {% else %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% endif %}
+  {% if page.image %}
+    <meta content="{{ page.image }}" property="og:image">
+  {% else %}
+    <meta content="{{ site.image }}" property="og:image">
+  {% endif %}
+
+  {% include loadCSS.html %}
+
+
+  <link rel="preload" href="/assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/main.css"></noscript>
+
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"></noscript>
+
+  <!--  Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- The below color will change the browser bar color on most mobile browsers -->
+  <meta name="theme-color" content="#ffffff">
+
+</head>

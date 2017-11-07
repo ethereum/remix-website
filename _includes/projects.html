@@ -1,0 +1,19 @@
+<div class="container">
+  {% for project in page.projects %}
+  <div class="row align-items-center">
+    <div class="col-md-7 {% cycle '', 'order-md-2' %}">
+      <h2 class="featurette-heading">
+        {{project.title}}
+        <span class="text-muted">{{project.subtitle}}</span>
+      </h2>
+      <p class="lead">
+        {{project.text}}
+      </p>
+    </div>
+    <div class="col-md-5 {% cycle '', 'order-md-1' %}">
+      <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="{{project.img}}" data-holder-rendered="true">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  {% endfor %}
+</div>

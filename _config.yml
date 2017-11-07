@@ -1,0 +1,29 @@
+# Site settings
+title: Starter Template for Jekyll
+email: youremail@yourdomain.net
+description: Built using Filament Group's Load CSS and Load JS and http://jch.penibelst.de/'s html compressor for optimising speed.
+type: website
+image: /assets/imgs/octojekyll.jpg
+host: 0.0.0.0
+
+# Server Config options
+livereload: true
+
+# SASS
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+team:
+  - name: Bob 
+    img: /assets/imgs/team/pexels-photo-91227.jpeg
+    position: CEO
+    bio: "I'm not a real person. Well, I am but I'm not Bob Smith, CEO of this random site. This picture is from Pexel."
+  - name: Becky
+    img: /assets/imgs/team/pexels-photo-324658.jpeg
+    position: CTO
+    bio: My bio is the longest. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+  - name: Super Dave
+    img: /assets/imgs/team/pexels-photo-450271.jpeg
+    position: Designer
+    bio: Look at me smile hahahaha. I like to design pretty things or some other info about me and what I do at this company or startup.
