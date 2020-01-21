@@ -1,0 +1,33 @@
+---
+address: 
+columns:
+  - title: docs <i class="fas fa-book"></i>
+    items:
+      - title: solidity
+        href: https://solidity.readthedocs.io/en/v0.6.1/
+      - title: REMIX
+        href: https://remix-ide.readthedocs.io/en/latest/
+  - title: github <i class="fab fa-github"></i>
+    items:
+      - title: REMIX
+        href: https://github.com/ethereum/remix
+      - title: remix IDE
+        href: https://github.com/ethereum/remix-ide
+      - title: remix PLUGIN
+        href: https://github.com/ethereum/remix-plugin
+      - title: remix WORKSHOPS
+        href: https://github.com/ethereum/remix-workshops
+      - title: remix DESKTOP
+        href: https://github.com/ethereum/remix-desktop/releases
+  - title: contact <i class="far fa-address-card"></i>
+    items:
+      - title: mail us
+        href: "mailto: remix@ethereum.org"
+      - title: chat on gitter
+        href: "#chat"
+  - title: legal <i class="fas fa-balance-scale"></i>
+    items:
+      - title: terms of service
+        href:
+      - title: privacy statement
+        href:

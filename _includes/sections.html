@@ -1,0 +1,74 @@
+
+
+
+  {% for section in site.data.sections.sections %}
+  <div class="container-fluid" >
+  <div class="container mb-5 section">
+  <div class="row align-items-center" style="" data-aos-offset="100" data-aos="{{section.effect}}">
+	  
+    <div class="col-md-6 col-lg-3 {% cycle '', 'order-md-2' %}" style="background-image: url('/assets/imgs/remix_logo_background.svg'); background-repeat: no-repeat;">
+      <h2 class="featurette-heading">
+        {{section.title}}<br>
+        <span class="subtitle">{{section.subtitle}}</span>
+      </h2>
+      <p class="lead">
+        {{section.text | markdownify }}
+      </p>
+      {% for button in section.buttons %}
+      
+      <a href="{{button.href}}" target="_blank" class=" button {{button.style}}">{{button.title}}</a><br/><br/>
+     	
+	  
+	  
+	  
+	  
+      {% endfor %}
+    </div>
+    <div class="col-md-6 col-lg-9 {% cycle '', 'order-md-1' %}">
+	  
+	  {% if section.video %} 
+		<video muted class="w-100" autoplay>
+		  <source src="{{section.video}}" type="video/mp4">
+		  
+		  Your browser does not support the video tag.
+		</video>
+	  {% elsif section.gallery!=nil %}	
+	  	<div class="owl-carousel owl-theme">
+	  		{% for item in section.gallery %}
+	  			<div class="item">
+	  			{% if item.type == 'img' %}
+	  				<img src="{{item.src}}"/>
+	  			{% elsif item.type =='youtube' %}
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{item.src}}" allowfullscreen></iframe>
+					</div>
+	  			{% elsif item.type =='video' %}
+	  				<video muted class="w-100" autoplay>
+	  					<source src="{{item.src}}" type="video/mp4">
+	  						Your browser does not support the video tag.
+					</video>
+	  			{% elsif item.type =='text' %}
+	  				<samp>{{item.content | markdownify}}</samp>
+	  			{% elsif item.type =='html' %}
+	  				{{item.content}}
+	  			{% elsif item.type =='card' %}
+	  				{% include card.html item=item %}
+	  			{% endif %}
+	  			</div>
+	  		{% endfor %}	
+	  	</div>
+	  {% elsif section.img %}
+      <img class="w-100" data-src="holder.js/500x500/auto" alt="500x500" src="{{section.img}}" data-holder-rendered="true">
+      {% elsif section.code %}
+      <div class="jumbotron">
+      	<pre><code>{{section.code}}</code></pre>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+ 
+  </div>
+  </div>
+  {% endfor %}
+
+

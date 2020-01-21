@@ -1,11 +1,349 @@
 ---
 ---
-@import 'carousel';
 @import 'team';
+
+
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: rgb(46,54,77) !important;
+  
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  padding: 150px 0 0 0;
+ 
+ 
+ 
+
 }
 .featurette-divider {
   margin:5rem 0;
 }
+
+h2{
+	color: white;
+}
+
+p {
+	color: white;
+}
+
+
+.homeIcon {
+    width: 42px;
+    height: 42px;
+
+}
+
+.subtitle {
+	color: #ca6c87;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5061a6;
+    border-color: #5061a6;
+   
+}
+
+.gallery_card {
+	color: white;
+}
+
+.team-image {
+		max-width: 100%;
+		height: auto;
+	}
+
+.polygon-clip-hexagon {
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+		-webkit-clip-path: url("#polygon-clip-hexagon");
+		clip-path: url("#polygon-clip-hexagon");
+	}
+	
+.clip-svg {
+		width: 0;
+		height: 0;
+	}
+	
+.blue-text {
+    color: #2196f3 !important;
+}
+
+
+.btn-remix {
+	width: 100%;
+	  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-remix:hover {
+	width: 105%;
+}
+
+.team-member{
+	background-color: rgb(50,54,83);
+	border: 3px solid rgb(46,54,77);
+	font-size: 1rem;
+}
+
+.team-member h4{
+	font-size: 1rem;
+}
+
+.section img{
+	border-radius: 3px;
+}
+
+.nav-item{
+	width: 100%;
+}
+
+.footercolumn{
+
+}
+
+.owl-nav{
+	color: white;
+}
+
+.owl-nav:hover{
+	background-color: none;
+}
+
+.button {
+  display: inline-block;
+ 
+  -webkit-font-smoothing: antialiased;
+ 
+  position: relative;
+  padding: .8em 1.4em;
+ 
+  background: #009ed8;
+  border: none;
+  color: white;
+  transition: .2s;
+  width: 100%;
+  cursor: pointer;
+}
+.button:before,
+.button:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  width: 2.8em;
+  content: "\00a0";
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  transition: .2s;
+  transform-origin: 50% 60%;
+  cursor: pointer;
+}
+.button:before {
+  background: rgba(0, 0, 0, 0.09999999999999998);
+}
+.button:hover {
+  background: #0079a5;
+  color: white;
+  text-decoration: none;
+}
+.button:active,
+.button:focus {
+  background: #002e3f;
+  outline: none;
+}
+.button {
+  min-width: 15em;
+}
+
+
+.arrow {
+  background: #FE5F55;
+}
+.arrow:hover {
+  background: #fe2f22;
+}
+.arrow:active,
+.arrow:focus {
+  background: #b90c01;
+}
+.arrow:after {
+  content: "\F054";
+}
+.arrow:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+
+
+.btn-desktop {
+  background: #FE5F55;
+}
+.btn-desktop:hover {
+  background: #fe2f22;
+}
+.btn-desktop:active,
+.btn-desktop:focus {
+  background: #b90c01;
+}
+.btn-desktop:after {
+  content: "\F108";
+}
+.btn-desktop:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+
+.btn-docs {
+  background: #FE5F55;
+}
+.btn-docs:hover {
+  background: #fe2f22;
+}
+.btn-docs:active,
+.btn-docs:focus {
+  background: #b90c01;
+}
+.btn-docs:after {
+  content: "\F02d";
+}
+.btn-docs:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+.btn-github {
+  background: #FE5F55;
+}
+.btn-github:hover {
+  background: #fe2f22;
+}
+.btn-github:active,
+.btn-github:focus {
+  background: #b90c01;
+}
+.btn-github:after {
+  content: "\F09b";
+}
+.btn-github:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+.btn-code {
+  background: #FE5F55;
+}
+.btn-code:hover {
+  background: #fe2f22;
+}
+.btn-code:active,
+.btn-code:focus {
+  background: #b90c01;
+}
+.btn-code:after {
+  content: "\F121";
+}
+.btn-code:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+
+.btn-chat {
+	
+}
+.btn-chat:hover {
+ }
+.btn-chat:active,
+.btn-chat:focus {
+ 
+}
+.btn-chat:after {
+  content: "\f075";
+}
+.btn-chat:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+  }
+}
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+
+/* Some vars */
+$background-color: hsl(50, 5, 97);
+$black: hsl(200, 40, 10);
+$white: $background-color;
+$base-font-size: 1em;
+$base-line-height: 1.5em;
+
+.quotebio {
+  position: relative;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-style: italic;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 100;
+  &:before, &:after {
+      content: '\201C';
+
+      color: lighten($black, 40%);
+   }
+   &:after {
+      content: '\201D';
+   }
+}
+
+
+
+
+
+

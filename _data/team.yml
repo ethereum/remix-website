@@ -1,0 +1,44 @@
+--- 
+title: "Our amazing team"
+description: "We are a team of 6 people working mostly remotely from Berlin (Germany), USA, India, Canada.Our work is funded by the Ethereum Foundation.We are passionate about our work and we love blockchain development and are here to serve you.  Please reach out to our gitter channel to ask us anything."
+members: 
+  - name: François Guezengar (GrandSchtroumpf)
+    bio: |
+      I moved from France to Berlin to join the Remix team… I didn’t think I would miss croissants that much…
+    position: Developer
+    img: /assets/imgs/team/francois.png
+    github: https://github.com/GrandSchtroumpf
+    
+  - name: Liana Husikyan
+    bio: 
+    position: Software Engineer at Remix, Ethereum
+    img: /assets/imgs/team/liana_avatar.png   
+    github: https://github.com/lianahus
+    linkedin: https://www.linkedin.com/in/liana-husikyan-b3a2a54
+    twitter: https://twitter.com/LianaHusikyan
+    
+  - name: Yann Levreau
+    bio: Came from the south of France and in Berlin since 5 years, enjoying the weather and the crypto scene.
+    position: Lead Developer
+    img: /assets/imgs/team/yann.png
+    twitter: https://twitter.com/Yann300
+    github: https://github.com/yann300
+  - name: Rob Stupay
+    bio: Formerly an architect of buildings now of virtual spaces
+    position: Remix Developer
+    img: /assets/imgs/team/rob_avatar.png
+    github: https://github.com/ryestew
+    twitter: https://twitter.com/ryestew
+    linkedin: https://www.linkedin.com/in/rob-stupay-2575778/
+  - name: Iuri Matias
+    bio: Decentralization is my passion. Opinions are my own.
+    position: Developer
+    img: /assets/imgs/team/iuri_avatar.png
+    twitter: https://twitter.com/iurimatias?lang=da
+    github: https://github.com/iurimatias
+    linkedin: https://ca.linkedin.com/in/iurimatias
+  - name: Aniket
+    bio: 
+    position: Blockchain Engineer
+    github: https://github.com/Aniket-Engg
+    img: /assets/imgs/team/remix_logo.png

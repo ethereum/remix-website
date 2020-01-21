@@ -5,9 +5,10 @@ layout: compress
 <html lang="en">
   {% include head.html %}
   {% include priority-css.html %}
-  <body>
+  <body data-aos="fade">
+
     {% include navbar.html %}
-    {{ content }}
+	{{content}}
     {% include loadJS.html %}
     {% include footer.html %}
   </body>

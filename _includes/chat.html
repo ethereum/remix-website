@@ -1,0 +1,17 @@
+<div class="container text-center" data-aos="fade-up" id="chat">
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold my-5">{{site.data.chat.title}}</h2>
+  <!-- Section description -->
+  <p class="grey-text w-responsive mx-auto mb-5">{{site.data.chat.description}}
+</p>	
+	
+
+<div class="row text-left">	
+{% for t in site.data.chat.channels %}
+	<div class="col">
+	<a href="{{t.href}}" target="_blank"  class="button btn-chat mb-2">{{t.title}}</a>
+	</div>
+{% endfor %}
+</div>
+</div>
+
