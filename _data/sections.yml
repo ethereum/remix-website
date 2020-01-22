@@ -3,8 +3,8 @@ sections:
    subtitle: REMIX IDE
    effect: fade-left
    text: |
-      Remix IDE is an integrated development environment, it allows developing smart contracts for Ethereum like blockchain, deploying and administering them.
-      It is well suited for beginners who want to learn Smart contract development as well as advanced users who are used to blockchain development.
+      Remix IDE allows developing, deploying and administering smart contracts for Ethereum like blockchains.
+      It can also be used as a learning platform.
    video: /assets/video/remix2.mp4
    buttons:
     - title: Start coding online
@@ -24,10 +24,7 @@ sections:
         style: btn-docs
         href: https://solidity.readthedocs.io/en/v0.6.1/index.html
    text: |
-      Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state.
-      Solidity was influenced by C++, Python and JavaScript and is designed to target the Ethereum Virtual Machine (EVM).
-      Solidity is statically typed, supports inheritance, libraries and complex user-defined types among other features.
-      With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions, and multi-signature wallets.
+      Solidity is an object-oriented, high-level language for implementing smart contracts.      
    code: |
         pragma solidity ^0.4.0;
         contract SimpleStorage {
@@ -45,52 +42,52 @@ sections:
    text: Remix libraries are low-level libraries that tool developers can use to enhance their features!
    gallery:
      - type: card
-       title: remix-analyzer
-       content: It performs static analysis on solidity smart contracts to check security vulnerabilities and bad development practices
+       title: Remix Analyzer
+       content: Performs static analysis on solidity smart contracts to check security vulnerabilities and bad development practices.
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-analyzer/README.md
          title: check out on github
      - type: card
-       title: remix-astwalker
-       content: It works with abstract syntactic structure of solidity smart contract
+       title: Remix Astwalker
+       content: Provides an easy way to read the AST of smart contract written in Solidity.
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-tests/README.md
          title: check out on github
      - type: card
-       title: remix-debug
-       content: It is used to inspect step-to-step execution of a smart contract interaction transaction with updating memory, storage and other data. It also helps to check the reason for certain transaction failure.
+       title: Remix Debug
+       content: Gives all the basic tools to add debugging feature for smart contracts. 
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-solidity/README.md
          title: check out on github
      - type: card
-       title: remix-solidity
-       content: It loads solidity compiler from the provided URL and compile the contract using the loaded compiler to return the compilation details       
+       title: Remix Solidity
+       content: It is simmply a wrapper around the Solidity compiler.
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-debug/README.md
          title: check out on github
      - type: card
-       title: remix-lib
-       content: It is a common place for libraries being used across multiple modules       
+       title: Remix Lib
+       content: It is a common place for libraries being used across multiple modules.
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-lib/README.md
          title: check out on github
      - type: card
-       title: remix-tests
-       content: It is used to unit test Solidity smart contracts     
+       title: Remix Tests
+       content: Add Solidity Unit testing to your Continuous integration or your tools.
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-tests/README.md
          title: check out on github   
      - type: card
-       title: remix-url-resolvers
-       content: It provides helpers for resolving the content from external URL ( including github, swarm, ipfs etc.).     
+       title: Remix Url Resolvers
+       content: It provides helpers for resolving the content from external URL (including github, swarm, ipfs etc...).     
        link: 
          url: https://github.com/ethereum/remix/blob/master/remix-url-resolver/README.md
          title: check out on github     
 
  - title: EXTEND             
-   subtitle: REMIX PLUGIN 
+   subtitle: Extend Remix IDE with a modular plugin framework.
    effect: fade-right
-   text: Remix plugin helps you extend the Remix IDE. The goal is to give access of all the features inside Remix and make them available for Ethereum Developers. 	
+   text: Remix plugin helps you extend the Remix IDE. The goal is to give access of all the community features inside Remix and make them available for Ethereum Developers. 	
    img: https://raw.githubusercontent.com/ethereum/remix-plugin/master/doc/videos/remix_local_plugin.gif
    buttons:
     - title: Remix Plugin on Github
@@ -112,6 +109,6 @@ sections:
         src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-49.jpeg
         alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-49.jpeg
    buttons:
-      - title: Remix workshop code
+      - title: Remix workshop
         style: btn-github
         href: https://github.com/ethereum/remix-workshops
