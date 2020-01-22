@@ -5,13 +5,13 @@ members:
   - name: François Guezengar (GrandSchtroumpf)
     bio: |
       I moved from France to Berlin to join the Remix team… I didn’t think I would miss croissants that much…
-    position: Developer
+    position: Developer - Remix plugin framework
     img: /assets/imgs/team/francois.png
     github: https://github.com/GrandSchtroumpf
     
   - name: Liana Husikyan
     bio: 
-    position: Software Engineer at Remix, Ethereum
+    position: Developer - Remix IDE / UX
     img: /assets/imgs/team/liana_avatar.png   
     github: https://github.com/lianahus
     linkedin: https://www.linkedin.com/in/liana-husikyan-b3a2a54
@@ -25,20 +25,20 @@ members:
     github: https://github.com/yann300
   - name: Rob Stupay
     bio: Formerly an architect of buildings now of virtual spaces
-    position: Remix Developer
+    position: Developer - Remix IDE / UX & Outreach communities
     img: /assets/imgs/team/rob_avatar.png
     github: https://github.com/ryestew
     twitter: https://twitter.com/ryestew
     linkedin: https://www.linkedin.com/in/rob-stupay-2575778/
   - name: Iuri Matias
     bio: Decentralization is my passion. Opinions are my own.
-    position: Developer
+    position: Developer - Remix libraries
     img: /assets/imgs/team/iuri_avatar.png
     twitter: https://twitter.com/iurimatias?lang=da
     github: https://github.com/iurimatias
     linkedin: https://ca.linkedin.com/in/iurimatias
   - name: Aniket
     bio: 
-    position: Blockchain Engineer
+    position: Developer - Remix libraries
     github: https://github.com/Aniket-Engg
     img: /assets/imgs/team/remix_logo.png
