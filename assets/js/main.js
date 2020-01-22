@@ -10,7 +10,6 @@ $(document).ready(function(){
 	  }
   );
   
-  
   // animating anchors
   $('a[href*="#"]')
   // Remove links that don't actually link to anything

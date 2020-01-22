@@ -5,7 +5,7 @@ sections:
    text: |
       Remix IDE is an integrated development environment, it allows developing smart contracts for Ethereum like blockchain, deploying and administering them.
       It is well suited for beginners who want to learn Smart contract development as well as advanced users who are used to blockchain development.
-   video: /assets/video/ide.mp4
+   video: /assets/video/remix2.mp4
    buttons:
     - title: Start coding online
       href: https://remix.ethereum.org/
