@@ -5,11 +5,13 @@ description:
 type: website
 image: /assets/imgs/octojekyll.jpg
 host: 0.0.0.0
-baseurl: "remix-website"
+baseurl: "/remix-website"
 # Server Config options
 livereload: true
-theme: minima
+
 # SASS
 sass:
   sass_dir: assets/_sass
   style: compressed
+
+
