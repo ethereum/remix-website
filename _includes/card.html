@@ -1,6 +1,9 @@
-<div class="gallery_card">
+<div class="gallery_card {{item.style}}">
 <h3>{{item.title}}</h3>
 <br>
+{% if item.src != nil %}
+<img src="{{item.src  | relative_url }}"/>
+{% endif %}
 <samp>
 {{item.content}}
 </samp>

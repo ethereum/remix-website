@@ -17,11 +17,6 @@
       {% for button in section.buttons %}
       
       <a href="{{button.href}}" target="_blank" class=" button {{button.style}}">{{button.title}}</a><br/><br/>
-     	
-	  
-	  
-	  
-	  
       {% endfor %}
     </div>
     <div class="col-md-6 col-lg-9 {% cycle '', 'order-md-1' %}">
@@ -57,6 +52,8 @@
 	  			</div>
 	  		{% endfor %}	
 	  	</div>
+
+	  	
 	  {% elsif section.img %}
       <img class="w-100" data-src="holder.js/500x500/auto" alt="500x500" src="{{section.img  | relative_url }}" data-holder-rendered="true">
       {% elsif section.code %}
@@ -66,7 +63,7 @@
       {% endif %}
     </div>
   </div>
- 
+
   </div>
   </div>
   {% endfor %}

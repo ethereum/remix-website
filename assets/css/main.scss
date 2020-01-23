@@ -9,7 +9,7 @@ body {
   background-color: rgb(46,54,77) !important;
   
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  padding: 150px 0 0 0;
+  padding: 89px 0 0 0;
  
  
  
@@ -95,6 +95,27 @@ p {
 
 .section img{
 	border-radius: 3px;
+}
+
+.plugincard{
+	background-color: #e9ecef;
+	border-radius: 3px;
+	padding: 10px;
+	color: black;
+}
+
+.gallery_card img{
+  display: block !important;
+  margin: auto;
+  max-width:230px;
+  max-height:95px;
+  width: auto !important;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.social-btn{
+	color: black; background-color: white;   text-align: center; padding: 20px; font-size: 20px; margin-left: 5px; border-radius: 10px;
 }
 
 .nav-item{
@@ -331,7 +352,7 @@ $base-line-height: 1.5em;
   font-style: italic;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 100;
+
   &:before, &:after {
       content: '\201C';
 
