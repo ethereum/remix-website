@@ -5,7 +5,8 @@ sections:
    text: |
       Remix IDE allows developing, deploying and administering smart contracts for Ethereum like blockchains.
       It can also be used as a learning platform.
-   video: /assets/video/Screencast%202020-01-22%2015_12_07.webm
+   webm: /assets/video/Screencast%202020-01-22%2015_12_07.webm
+   mp4: /assets/video/remix-2.mp4
    buttons:
     - title: Start coding online
       href: https://remix.ethereum.org/

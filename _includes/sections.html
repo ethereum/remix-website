@@ -21,10 +21,10 @@
     </div>
     <div class="col-md-6 col-lg-9 {% cycle '', 'order-md-1' %}">
 	  
-	  {% if section.video %} 
+	  {% if section.mp4 %} 
 		<video muted class="w-100" autoplay>
-		  <source src="{{section.video  | relative_url}}" type="video/mp4">
-		  
+		  <source src="{{section.webm  | relative_url}}" type="video/webm">
+		  <source src="{{section.mp4  | relative_url}}" type="video/mp4">
 		  Your browser does not support the video tag.
 		</video>
 	  {% elsif section.gallery!=nil %}	
