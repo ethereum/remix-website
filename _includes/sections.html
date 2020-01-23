@@ -6,7 +6,7 @@
   <div class="container mb-5 section">
   <div class="row align-items-center" style="" data-aos-offset="100" data-aos="{{section.effect}}">
 	  
-    <div class="col-md-6 col-lg-3 {% cycle '', 'order-md-2' %}" style="background-image: url('/assets/imgs/remix_logo_background.svg'); background-repeat: no-repeat;">
+    <div class="col-md-6 col-lg-3 {% cycle '', 'order-md-2' %}" style="background-image: url({{'/assets/imgs/remix_logo_background.svg' | relative_url}}); background-repeat: no-repeat;">
       <h2 class="featurette-heading">
         {{section.title}}<br>
         <span class="subtitle">{{section.subtitle}}</span>
