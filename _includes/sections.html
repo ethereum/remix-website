@@ -37,14 +37,14 @@
 	  		{% for item in section.gallery %}
 	  			<div class="item">
 	  			{% if item.type == 'img' %}
-	  				<img src="{{item.src}}"/>
+	  				<img src="{{item.src  | relative_url }}"/>
 	  			{% elsif item.type =='youtube' %}
 					<div class="embed-responsive embed-responsive-16by9">
 					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{item.src}}" allowfullscreen></iframe>
 					</div>
 	  			{% elsif item.type =='video' %}
 	  				<video muted class="w-100" autoplay>
-	  					<source src="{{item.src}}" type="video/mp4">
+	  					<source src="{{item.src  | relative_url }}" type="video/mp4">
 	  						Your browser does not support the video tag.
 					</video>
 	  			{% elsif item.type =='text' %}
@@ -58,7 +58,7 @@
 	  		{% endfor %}	
 	  	</div>
 	  {% elsif section.img %}
-      <img class="w-100" data-src="holder.js/500x500/auto" alt="500x500" src="{{section.img}}" data-holder-rendered="true">
+      <img class="w-100" data-src="holder.js/500x500/auto" alt="500x500" src="{{section.img  | relative_url }}" data-holder-rendered="true">
       {% elsif section.code %}
       <div class="jumbotron">
       	<pre><code>{{section.code}}</code></pre>

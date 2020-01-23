@@ -88,7 +88,7 @@ sections:
    subtitle: Extend Remix IDE with a modular plugin framework.
    effect: fade-right
    text: Remix plugin helps you extend the Remix IDE. The goal is to give access of all the community features inside Remix and make them available for Ethereum Developers. 	
-   img: https://raw.githubusercontent.com/ethereum/remix-plugin/master/doc/videos/remix_local_plugin.gif
+   img: /assets/imgs/remix_local_plugin.gif
    buttons:
     - title: Remix Plugin on Github
       style: btn-github
