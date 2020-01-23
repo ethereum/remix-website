@@ -4,7 +4,7 @@
   {% for section in site.data.sections.sections %}
   <div class="container-fluid" >
   <div class="container mb-5 section">
-  <div class="row align-items-center" style="" data-aos-offset="100" data-aos="{{section.effect}}">
+  <div class="row" style="" data-aos-offset="100" data-aos="{{section.effect}}">
 	  
     <div class="col-md-6 col-lg-3 {% cycle '', 'order-md-2' %}" style="background-image: url({{'/assets/imgs/remix_logo_background.svg' | absolute_url}}); background-repeat: no-repeat;">
       <h2 class="featurette-heading">
@@ -59,6 +59,16 @@
       {% elsif section.code %}
       <div class="jumbotron">
       	<pre><code>{{section.code}}</code></pre>
+      </div>
+      {% elsif section.list %}
+      <div class="row">
+      		{% for item in section.list %}
+      			{% if item.type =='card' %}
+	  				<div class="col-lg-4 col-md-6 col-sm-6">
+	  				{% include card-list.html item=item %}
+	  				</div>
+	  			{% endif %}
+      		{% endfor %}
       </div>
       {% endif %}
     </div>

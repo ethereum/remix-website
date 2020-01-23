@@ -1,0 +1,22 @@
+<div class="gallery_card {{item.style}} small">
+<div class="row">
+	<div class="col">
+<h4>{{item.title}}</h4>
+	</div>
+	<div class="col">
+		<a class="mt-2 btn btn-success" href="{{item.link.url}}" target="_blank">{{item.link.title}}</a>
+	</div>
+</div>
+<br>
+{% if item.src != nil %}
+<img src="{{item.src  | absolute_url }}"/>
+{% endif %}
+<samp>
+{{item.content}}
+</samp>
+<hr>
+
+</div>
+
+
+

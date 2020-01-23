@@ -41,7 +41,7 @@ sections:
    subtitle: REMIX LIBRARIES
    effect: slide-up
    text: Remix libraries are low-level libraries that tool developers can use to enhance their features!
-   gallery:
+   list:
      - type: card
        title: Remix Analyzer
        content: Performs static analysis on solidity smart contracts to check security vulnerabilities and bad development practices.
@@ -159,7 +159,7 @@ sections:
  - title: WE HELP THE COMMUNITY
    subtitle: WORKSHOPS
    effect: fade-right
-   text: Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+   text: 
    gallery:
       - type: img
         src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-10.jpeg 
