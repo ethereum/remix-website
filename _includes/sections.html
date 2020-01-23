@@ -28,7 +28,7 @@
 	  
 	  {% if section.video %} 
 		<video muted class="w-100" autoplay>
-		  <source src="{{section.video}}" type="video/mp4">
+		  <source src="{{section.video  | relative_url}}" type="video/mp4">
 		  
 		  Your browser does not support the video tag.
 		</video>
