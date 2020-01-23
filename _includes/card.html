@@ -2,7 +2,7 @@
 <h3>{{item.title}}</h3>
 <br>
 {% if item.src != nil %}
-<img src="{{item.src  | relative_url }}"/>
+<img src="{{item.src  | absolute_url }}"/>
 {% endif %}
 <samp>
 {{item.content}}
