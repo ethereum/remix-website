@@ -1,7 +1,7 @@
 # Site settings
-title: Remix
+title: Remix - Ethereum IDE & community
 email: youremail@yourdomain.net
-description: 
+description:
 type: website
 image: /assets/imgs/octojekyll.jpg
 host: 0.0.0.0
@@ -14,5 +14,3 @@ theme: minima
 sass:
   sass_dir: assets/_sass
   style: compressed
-
-

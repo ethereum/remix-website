@@ -7,12 +7,12 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: rgb(46,54,77) !important;
-  
+
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 89px 0 0 0;
- 
- 
- 
+
+
+
 
 }
 .featurette-divider {
@@ -42,11 +42,12 @@ p {
     color: #fff;
     background-color: #5061a6;
     border-color: #5061a6;
-   
+
 }
 
 .gallery_card {
 	color: white;
+  margin-bottom: 15px;
 }
 
 .team-image {
@@ -60,12 +61,12 @@ p {
 		-webkit-clip-path: url("#polygon-clip-hexagon");
 		clip-path: url("#polygon-clip-hexagon");
 	}
-	
+
 .clip-svg {
 		width: 0;
 		height: 0;
 	}
-	
+
 .blue-text {
     color: #2196f3 !important;
 }
@@ -98,20 +99,32 @@ p {
 }
 
 .plugincard{
-	background-color: #e9ecef;
-	border-radius: 3px;
-	padding: 10px;
-	color: black;
+
+}
+
+.gallery_card .img_container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.gallery_card h4{
+  color: #2096f3;
+}
+
+.gallery_card a{
+  color: #ca6c87;
 }
 
 .gallery_card img{
   display: block !important;
-  margin: auto;
-  max-width:230px;
-  max-height:95px;
+
+  max-width:250px;
+  max-height:40px;
   width: auto !important;
   height: auto;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .social-btn{
@@ -136,12 +149,12 @@ p {
 
 .button {
   display: inline-block;
- 
+
   -webkit-font-smoothing: antialiased;
- 
+
   position: relative;
   padding: .8em 1.4em;
- 
+
   background: #009ed8;
   border: none;
   color: white;
@@ -284,13 +297,13 @@ p {
 
 
 .btn-chat {
-	
+
 }
 .btn-chat:hover {
  }
 .btn-chat:active,
 .btn-chat:focus {
- 
+
 }
 .btn-chat:after {
   content: "\f075";
@@ -362,9 +375,3 @@ $base-line-height: 1.5em;
       content: '\201D';
    }
 }
-
-
-
-
-
-
