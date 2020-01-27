@@ -7,6 +7,7 @@ sections:
       It can also be used as a learning platform.
    webm: /assets/video/Screencast%202020-01-22%2015_12_07.webm
    mp4: /assets/video/remix-2.mp4
+   poster: /assets/video/videoposter2.png
    buttons:
     - title: Start coding online
       href: https://remix.ethereum.org/

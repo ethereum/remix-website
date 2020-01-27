@@ -19,7 +19,7 @@
       <div class="col-md-6 col-lg-9 {% cycle '', 'order-md-1' %}">
 
         {% if section.mp4 %}
-        <video muted class="w-100" autoplay>
+        <video muted class="w-100" autoplay poster="{{section.poster}}">
           <source src="{{section.webm  | absolute_url}}" type="video/webm">
           <source src="{{section.mp4  | absolute_url}}" type="video/mp4">
           Your browser does not support the video tag.
