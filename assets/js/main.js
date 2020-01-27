@@ -1,9 +1,7 @@
 $(document).ready(function(){
 
-
-	var animationController = new ScrollMagic.Controller();
-
-	
+	$('body').css('display', 'none');
+	$('body').fadeIn(500);
 
 	$(".owl-carousel").owlCarousel(
 	  {
