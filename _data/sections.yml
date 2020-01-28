@@ -46,7 +46,7 @@ sections:
     - title: Remix Plugin on Github
       style: btn-github
       href: https://github.com/ethereum/remix-plugin
-   list:
+   gallery:
      - type: card
        title: Vyper
        style: plugincard
