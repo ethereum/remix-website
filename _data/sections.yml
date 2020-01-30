@@ -72,7 +72,7 @@ sections:
          url: https://3box.io/
          title: Read more
      - type: card
-       title: dApp
+       title: One Click dApp
        style: plugincard
        content: Turn your smart contract into a customizable, easy-to-use dApp.
        src: /assets/imgs/plugins/dapp.png
