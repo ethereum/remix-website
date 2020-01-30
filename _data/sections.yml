@@ -172,7 +172,18 @@ sections:
       - type: img
         src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-49.jpeg
         alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-49.jpeg
-   buttons:
-      - title: Remix workshop
-        style: btn-github
-        href: https://github.com/ethereum/remix-workshops
+      - type: img
+        src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-23.jpeg
+        alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-23.jpeg
+      - type: img
+        src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-33.jpeg
+        alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-33.jpeg
+      - type: img
+        src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-27.jpeg
+        alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-27.jpeg
+      - type: img
+        src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-19.jpeg
+        alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-19.jpeg  
+      - type: img
+        src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-34.jpeg
+        alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-34.jpeg
