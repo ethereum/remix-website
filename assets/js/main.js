@@ -1,7 +1,9 @@
 $(document).ready(function(){
-	
-  AOS.init();	
-  $(".owl-carousel").owlCarousel(
+
+	$('body').css('display', 'none');
+	$('body').fadeIn(500);
+
+	$(".owl-carousel").owlCarousel(
 	  {
 		  "items":1,
 		  "autoplay":true,
@@ -9,7 +11,7 @@ $(document).ready(function(){
 		  "loop":true
 	  }
   );
-  
+
   // animating anchors
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
@@ -18,8 +20,8 @@ $(document).ready(function(){
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -46,6 +48,6 @@ $(document).ready(function(){
       }
     }
   });
-  
-  
+
+
 });

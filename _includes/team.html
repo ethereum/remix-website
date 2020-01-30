@@ -1,15 +1,15 @@
-<div class="container text-center" data-aos="fade-up">
+<div class="container text-center">
   <!-- Section heading -->
   <h2 class="h1-responsive font-weight-bold my-5">{{site.data.team.title}}</h2>
   <!-- Section description -->
   <p class="grey-text w-responsive mx-auto mb-5">{{site.data.team.description}}
-</p>	
-	
+</p>
+
   <div class="row">
     {% for t in site.data.team.members %}
-    <div class="col-lg-4 team-member" data-aos="fade">
-	    
-	    
+    <div class="col-lg-4 team-member">
+
+
 	    <svg class="clip-svg">
 		  <defs>
 		    <clipPath id="polygon-clip-hexagon" clipPathUnits="objectBoundingBox">
@@ -17,15 +17,15 @@
 		    </clipPath>
 		  </defs>
 		</svg>
-		
-		
+
+
 		<img class="" src="{{t.img  | absolute_url }}" alt="Generic placeholder image" width="140" height="140">
-	    
-	    
-	 
+
+
+
       <h4 style="color: white;">{{t.name}}</h4>
       <h4 class="subtitle">{{t.position}}</h4>
-     
+
 
       <ul class="list-unstyled mb-0">
         <!-- Facebook -->

@@ -1,23 +1,23 @@
 ---
-address: 
+address:
 columns:
   - title: docs <i class="fas fa-book"></i>
     items:
-      - title: solidity
+      - title: Solidity
         href: https://solidity.readthedocs.io/en/v0.6.1/
-      - title: REMIX
+      - title: Remix
         href: https://remix-ide.readthedocs.io/en/latest/
   - title: github <i class="fab fa-github"></i>
     items:
-      - title: REMIX
+      - title: Remix
         href: https://github.com/ethereum/remix
-      - title: remix IDE
+      - title: Remix IDE
         href: https://github.com/ethereum/remix-ide
-      - title: remix PLUGIN
+      - title: Remix PLUGIN
         href: https://github.com/ethereum/remix-plugin
-      - title: remix WORKSHOPS
+      - title: Remix WORKSHOPS
         href: https://github.com/ethereum/remix-workshops
-      - title: remix DESKTOP
+      - title: Remix DESKTOP
         href: https://github.com/ethereum/remix-desktop/releases
   - title: contact <i class="far fa-address-card"></i>
     items:

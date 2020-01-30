@@ -7,14 +7,27 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: rgb(46,54,77) !important;
-  
+
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 89px 0 0 0;
- 
- 
- 
+
+  display: none;
+
 
 }
+
+.wait-for-icons {
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+.fontawesome-i2svg-active .wait-for-icons {
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+
 .featurette-divider {
   margin:5rem 0;
 }
@@ -42,11 +55,12 @@ p {
     color: #fff;
     background-color: #5061a6;
     border-color: #5061a6;
-   
+
 }
 
 .gallery_card {
 	color: white;
+  margin-bottom: 15px;
 }
 
 .team-image {
@@ -60,12 +74,12 @@ p {
 		-webkit-clip-path: url("#polygon-clip-hexagon");
 		clip-path: url("#polygon-clip-hexagon");
 	}
-	
+
 .clip-svg {
 		width: 0;
 		height: 0;
 	}
-	
+
 .blue-text {
     color: #2196f3 !important;
 }
@@ -98,24 +112,41 @@ p {
 }
 
 .plugincard{
-	background-color: #e9ecef;
-	border-radius: 3px;
-	padding: 10px;
-	color: black;
+
+}
+
+.gallery_card .img_container{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.gallery_card h4{
+  color: #2096f3;
+}
+
+.gallery_card a{
+  color: #ca6c87;
 }
 
 .gallery_card img{
   display: block !important;
-  margin: auto;
-  max-width:230px;
-  max-height:95px;
+
+  max-width:250px;
+  max-height:40px;
   width: auto !important;
   height: auto;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .social-btn{
 	color: black; background-color: white;   text-align: center; padding: 8px; font-size: 20px; margin-left: 5px; border-radius: 3px;
+}
+
+.nav-item .social-btn{
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .nav-item{
@@ -136,12 +167,12 @@ p {
 
 .button {
   display: inline-block;
- 
+
   -webkit-font-smoothing: antialiased;
- 
+
   position: relative;
   padding: .8em 1.4em;
- 
+
   background: #009ed8;
   border: none;
   color: white;
@@ -284,13 +315,13 @@ p {
 
 
 .btn-chat {
-	
+
 }
 .btn-chat:hover {
  }
 .btn-chat:active,
 .btn-chat:focus {
- 
+
 }
 .btn-chat:after {
   content: "\f075";
@@ -365,6 +396,31 @@ $base-line-height: 1.5em;
 
 
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

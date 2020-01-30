@@ -1,22 +1,21 @@
---- 
+---
 title: "Our amazing team"
 description: "We are a team of 6 people working mostly remotely from Berlin (Germany), USA, India, Canada.Our work is funded by the Ethereum Foundation.We are passionate about our work and we love blockchain development and are here to serve you.  Please reach out to our gitter channel to ask us anything."
-members: 
+members:
   - name: François Guezengar (GrandSchtroumpf)
     bio: |
       I moved from France to Berlin to join the Remix team… I didn’t think I would miss croissants that much…
     position: Developer - Remix plugin framework
     img: /assets/imgs/team/francois.png
     github: https://github.com/GrandSchtroumpf
-    
   - name: Liana Husikyan
-    bio: 
+    bio:
     position: Developer - Remix IDE / UX
-    img: /assets/imgs/team/liana_avatar.png   
+    img: /assets/imgs/team/liana_avatar.png
     github: https://github.com/lianahus
     linkedin: https://www.linkedin.com/in/liana-husikyan-b3a2a54
     twitter: https://twitter.com/LianaHusikyan
-    
+
   - name: Yann Levreau
     bio: Came from the south of France and in Berlin since 5 years, enjoying the weather and the crypto scene.
     position: Lead Developer
@@ -38,7 +37,7 @@ members:
     github: https://github.com/iurimatias
     linkedin: https://ca.linkedin.com/in/iurimatias
   - name: Aniket
-    bio: 
+    bio:
     position: Developer - Remix libraries
     github: https://github.com/Aniket-Engg
     img: /assets/imgs/team/remix_logo.png
