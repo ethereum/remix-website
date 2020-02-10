@@ -6,7 +6,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: rgb(46,54,77) !important;
+  background-color: rgb(46, 54, 77) !important;
 
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 89px 0 0 0;
@@ -18,151 +18,175 @@ body {
 
 .wait-for-icons {
   opacity: 0;
-  filter: alpha(opacity=0); /* For IE8 and earlier */
+  filter: alpha(opacity=0);
+  /* For IE8 and earlier */
 }
 
 .fontawesome-i2svg-active .wait-for-icons {
   opacity: 1;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
 }
 
 
 
 .featurette-divider {
-  margin:5rem 0;
+  margin: 5rem 0;
 }
 
-h2{
-	color: white;
+h2 {
+  color: white;
 }
 
 p {
-	color: white;
+  color: white;
 }
 
 
 .homeIcon {
-    width: 42px;
-    height: 42px;
+  width: 42px;
+  height: 42px;
 
 }
 
 .subtitle {
-	color: #ca6c87;
+  color: #ca6c87;
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5061a6;
-    border-color: #5061a6;
+  color: #fff;
+  background-color: #5061a6;
+  border-color: #5061a6;
 
 }
 
 .gallery_card {
-	color: white;
+  color: white;
   margin-bottom: 15px;
 }
 
 .team-image {
-		max-width: 100%;
-		height: auto;
-	}
+  max-width: 100%;
+  height: auto;
+}
 
 .polygon-clip-hexagon {
-		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-		-webkit-clip-path: url("#polygon-clip-hexagon");
-		clip-path: url("#polygon-clip-hexagon");
-	}
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-clip-path: url("#polygon-clip-hexagon");
+  clip-path: url("#polygon-clip-hexagon");
+}
 
 .clip-svg {
-		width: 0;
-		height: 0;
-	}
+  width: 0;
+  height: 0;
+}
 
 .blue-text {
-    color: #2196f3 !important;
+  color: #2196f3 !important;
 }
 
 
 .btn-remix {
-	width: 100%;
-	  -moz-transition: all 0.3s ease-out;
+  width: 100%;
+  -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
 .btn-remix:hover {
-	width: 105%;
+  width: 105%;
 }
 
-.team-member{
-	background-color: rgb(50,54,83);
-	border: 3px solid rgb(46,54,77);
-	font-size: 1rem;
+.team-member {
+  background-color: rgb(50, 54, 83);
+  border: 3px solid rgb(46, 54, 77);
+  font-size: 1rem;
 }
 
-.team-member h4{
-	font-size: 1rem;
+.team-member h4 {
+  font-size: 1rem;
 }
 
-.section img{
-	border-radius: 3px;
+.section img {
+  border-radius: 3px;
 }
 
-.plugincard{
+.plugincard {}
 
-}
-
-.gallery_card .img_container{
+.gallery_card .img_container {
   display: flex;
   justify-content: flex-start;
 }
 
 
-.gallery_card h4{
+.gallery_card h4 {
   color: #2096f3;
 }
 
-.gallery_card a{
+.gallery_card a {
   color: #ca6c87;
 }
 
-.gallery_card img{
+.gallery_card img {
   display: block !important;
 
-  max-width:250px;
-  max-height:40px;
+  max-width: 250px;
+  max-height: 40px;
   width: auto !important;
   height: auto;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.social-btn{
-	color: black; background-color: white;   text-align: center; padding: 8px; font-size: 20px; margin-left: 5px; border-radius: 3px;
+.social-btn {
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
+  margin-left: 5px;
+  border-radius: 3px;
 }
 
-.nav-item .social-btn{
+.nav-item .social-btn {
   padding-bottom: 15px;
   padding-top: 15px;
 }
 
-.nav-item{
-	width: 100%;
+.nav-item {
+  width: 100%;
 }
 
-.footercolumn{
+.footercolumn {}
 
+.owl-nav {
+  color: white;
 }
 
-.owl-nav{
-	color: white;
+.owl-nav:hover {
+  background-color: none;
 }
 
-.owl-nav:hover{
-	background-color: none;
+.navbutton {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  background: #009ed8;
+  border: none;
+  color: white;
+  transition: .2s;
+  width: 100%;
+  cursor: pointer;
+  min-width: 13rem;
+}
+
+.navbutton:hover {
+  background: #0079a5;
+  color: white;
+  text-decoration: none;
 }
 
 .button {
@@ -180,6 +204,7 @@ p {
   width: 100%;
   cursor: pointer;
 }
+
 .button:before,
 .button:after {
   position: absolute;
@@ -197,19 +222,23 @@ p {
   transform-origin: 50% 60%;
   cursor: pointer;
 }
+
 .button:before {
   background: rgba(0, 0, 0, 0.09999999999999998);
 }
+
 .button:hover {
   background: #0079a5;
   color: white;
   text-decoration: none;
 }
+
 .button:active,
 .button:focus {
   background: #002e3f;
   outline: none;
 }
+
 .button {
   min-width: 15em;
 }
@@ -218,16 +247,20 @@ p {
 .arrow {
   background: #FE5F55;
 }
+
 .arrow:hover {
   background: #fe2f22;
 }
+
 .arrow:active,
 .arrow:focus {
   background: #b90c01;
 }
+
 .arrow:after {
   content: "\F054";
 }
+
 .arrow:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
@@ -239,16 +272,20 @@ p {
 .btn-desktop {
   background: #FE5F55;
 }
+
 .btn-desktop:hover {
   background: #fe2f22;
 }
+
 .btn-desktop:active,
 .btn-desktop:focus {
   background: #b90c01;
 }
+
 .btn-desktop:after {
   content: "\F108";
 }
+
 .btn-desktop:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
@@ -259,17 +296,45 @@ p {
 .btn-docs {
   background: #FE5F55;
 }
+
 .btn-docs:hover {
   background: #fe2f22;
 }
+
 .btn-docs:active,
 .btn-docs:focus {
   background: #b90c01;
 }
+
 .btn-docs:after {
   content: "\F02d";
 }
+
 .btn-docs:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  -moz-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+
+
+.btn-email {
+  background: #FE5F55;
+}
+
+.btn-email:hover {
+  background: #fe2f22;
+}
+
+.btn-email:active,
+.btn-email:focus {
+  background: #b90c01;
+}
+
+.btn-email:after {
+  content: "\f0e0";
+}
+
+.btn-email:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
   animation: bounceright .3s alternate ease infinite;
@@ -278,16 +343,20 @@ p {
 .btn-github {
   background: #FE5F55;
 }
+
 .btn-github:hover {
   background: #fe2f22;
 }
+
 .btn-github:active,
 .btn-github:focus {
   background: #b90c01;
 }
+
 .btn-github:after {
   content: "\F09b";
 }
+
 .btn-github:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
@@ -297,16 +366,20 @@ p {
 .btn-code {
   background: #FE5F55;
 }
+
 .btn-code:hover {
   background: #fe2f22;
 }
+
 .btn-code:active,
 .btn-code:focus {
   background: #b90c01;
 }
+
 .btn-code:after {
   content: "\F121";
 }
+
 .btn-code:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
@@ -314,18 +387,17 @@ p {
 }
 
 
-.btn-chat {
+.btn-chat {}
 
-}
-.btn-chat:hover {
- }
+.btn-chat:hover {}
+
 .btn-chat:active,
-.btn-chat:focus {
+.btn-chat:focus {}
 
-}
 .btn-chat:after {
   content: "\f075";
 }
+
 .btn-chat:hover:after {
   -webkit-animation: bounceright .3s alternate ease infinite;
   -moz-animation: bounceright .3s alternate ease infinite;
@@ -338,31 +410,38 @@ p {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
   }
+
   to {
     -webkit-transform: translateX(3px);
     -moz-transform: translateX(3px);
   }
 }
+
 @-webkit-keyframes wiggle {
   from {
     -webkit-transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(30deg);
   }
 }
+
 @keyframes bounceright {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(3px);
   }
 }
+
 @keyframes wiggle {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(30deg);
   }
@@ -384,43 +463,70 @@ $base-line-height: 1.5em;
   font-size: $base-font-size;
   line-height: $base-line-height;
 
-  &:before, &:after {
-      content: '\201C';
+  &:before,
+  &:after {
+    content: '\201C';
 
-      color: lighten($black, 40%);
-   }
-   &:after {
-      content: '\201D';
-   }
+    color: lighten($black, 40%);
+  }
+
+  &:after {
+    content: '\201D';
+  }
 }
 
 
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

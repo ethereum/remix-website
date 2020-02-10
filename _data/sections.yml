@@ -161,7 +161,9 @@ sections:
  - title: WE HELP THE COMMUNITY <i class="fas fa-hands-helping"></i>
    subtitle: WORKSHOPS
    effect: fade-right
-   text: The Remix project team is giving workshops and is ready to answer any question you might have. Reach out to us by e-mail or chat with us on one of our gitter channels.
+   anchor: workshops
+   text: |
+      The Remix project team is giving workshops both about Remix and more general introductions to blockchains and their uses. We tailor our presentations to the technical knowledge of your group and we try to give entertaining talks. Reach out to us by e-mail or chat with us on one of our gitter channels.
    gallery:
       - type: img
         src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-10.jpeg
@@ -187,3 +189,7 @@ sections:
       - type: img
         src: /assets/imgs/workshops/YannLevreau_LianaHusikyan_FrancoisGuezengar-34.jpeg
         alt: YannLevreau_LianaHusikyan_FrancoisGuezengar-34.jpeg
+   buttons:
+    - title: Contact us
+      href: mailto:remix@ethereum.org
+      style: btn-email
