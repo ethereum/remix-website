@@ -1,6 +1,6 @@
 ---
 title: "Our amazing team"
-description: "We are a team of 6 people working mostly remotely from Berlin (Germany), USA, India, Canada.Our work is funded by the Ethereum Foundation.We are passionate about our work and we love blockchain development and are here to serve you.  Please reach out to our gitter channel to ask us anything."
+description: "We are a team of 7 people working mostly remotely from Berlin (Germany), USA, India, Canada, Nigeria.Our work is funded by the Ethereum Foundation. We are passionate about our work and we love blockchain development and are here to serve you.  Please reach out to our gitter channel to ask us anything."
 members:
   - name: François Guezengar (GrandSchtroumpf)
     bio: |
@@ -18,7 +18,7 @@ members:
 
   - name: Yann Levreau
     bio: Came from the south of France and in Berlin since 5 years, enjoying the weather and the crypto scene.
-    position: Lead Developer
+    position: Team Lead
     img: /assets/imgs/team/yann.png
     twitter: https://twitter.com/Yann300
     github: https://github.com/yann300
@@ -41,3 +41,11 @@ members:
     position: Developer - Remix libraries
     github: https://github.com/Aniket-Engg
     img: /assets/imgs/team/remix_logo.png
+  - name: David Disu
+    bio:
+    position: Developer - Testing / Remix IDE
+    github: https://github.com/ioedeveloper
+    twitter: https://twitter.com/ioedeveloper
+    linkedin: https://www.linkedin.com/in/ioedeveloper/
+    img: /assets/imgs/team/remix_logo.png
+    
