@@ -118,43 +118,43 @@ sections:
        title: Remix Analyzer
        content: Performs static analysis on solidity smart contracts to check security vulnerabilities and bad development practices.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-analyzer/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-analyzer/README.md
          title: Check out on github
      - type: card
        title: Remix Astwalker
        content: Provides an easy way to read the AST of smart contract written in Solidity.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-tests/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-astwalker/README.md
          title: Check out on github
      - type: card
        title: Remix Debug
        content: Gives all the basic tools to add debugging feature for smart contracts.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-solidity/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-debug/README.md
          title: Check out on github
      - type: card
        title: Remix Solidity
        content: It is simmply a wrapper around the Solidity compiler.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-debug/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-solidity/README.md
          title: Check out on github
      - type: card
        title: Remix Lib
        content: It is a common place for libraries being used across multiple modules.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-lib/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-lib/README.md
          title: Check out on github
      - type: card
        title: Remix Tests
        content: Add Solidity Unit testing to your Continuous integration or your tools.
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-tests/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-tests/README.md
          title: Check out on github
      - type: card
        title: Remix Url Resolvers
        content: It provides helpers for resolving the content from external URL (including github, swarm, ipfs etc...).
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-url-resolver/README.md
+         url: https://github.com/ethereum/remix-project/tree/master/libs/remix-url-resolver/README.md
          title: Check out on github
 
 
