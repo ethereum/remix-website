@@ -85,7 +85,7 @@ sections:
        content: Enabling the shift of traditional services such as finance, gambling, and insurance into decentralization.
        src: /assets/imgs/plugins/provable.png
        link:
-         url: https://github.com/ethereum/remix/blob/master/remix-tests/README.md
+         url: https://provable.xyz/
          title: Check out on github
      - type: card
        title: Etherscan
