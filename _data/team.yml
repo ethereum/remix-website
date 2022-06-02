@@ -2,15 +2,15 @@
 title: "Our amazing team"
 description: "We are a team of 7 people working mostly remotely from Berlin (Germany), USA, India, Canada, Nigeria. Our work is funded by the Ethereum Foundation. We are passionate about our work and we love blockchain development and are here to serve you.  Please reach out to our gitter channel to ask us anything."
 members:
-  - name: François Guezengar (GrandSchtroumpf)
-    bio: |
-      I moved from France to Berlin to join the Remix team… I didn’t think I would miss croissants that much…
-    position: Developer - Remix plugin framework
-    img: /assets/imgs/team/francois.png
-    github: https://github.com/GrandSchtroumpf
+  - name: Andy Vermouth
+    bio:
+    position: Communication, Social media specialist, UX Research
+    img: /assets/imgs/team/remix_logo.png
+    github: 
+
   - name: Liana Husikyan
     bio:
-    position: Developer - Remix IDE / UX
+    position: Developer - Remix IDE / UX Research
     img: /assets/imgs/team/liana_avatar.png
     github: https://github.com/lianahus
     linkedin: https://www.linkedin.com/in/liana-husikyan-b3a2a54
@@ -22,6 +22,7 @@ members:
     img: /assets/imgs/team/yann.png
     twitter: https://twitter.com/Yann300
     github: https://github.com/yann300
+
   - name: Rob Stupay
     bio: Formerly an architect of buildings now of virtual spaces
     position: Developer - Remix IDE / UX & Outreach communities
@@ -29,18 +30,21 @@ members:
     github: https://github.com/ryestew
     twitter: https://twitter.com/ryestew
     linkedin: https://www.linkedin.com/in/rob-stupay-2575778/
-  - name: Iuri Matias
-    bio: Decentralization is my passion. Opinions are my own.
-    position: Developer - Remix libraries
-    img: /assets/imgs/team/iuri_avatar.png
-    twitter: https://twitter.com/iurimatias?lang=da
-    github: https://github.com/iurimatias
-    linkedin: https://ca.linkedin.com/in/iurimatias
+
+  - name: Filip Mertens
+    bio:
+    position: Developer - Remix plugin
+    img: /assets/imgs/team/remix_logo.png
+    twitter:
+    github: https://github.com/bunsenstraat/
+    linkedin:
+
   - name: Aniket
     bio:
     position: Developer - Remix libraries
     github: https://github.com/Aniket-Engg
     img: /assets/imgs/team/remix_logo.png
+    
   - name: David Disu
     bio: Internet Of Everything Advocate! Making the world a better place one commit at a time.
     position: Developer - Testing / Remix IDE
