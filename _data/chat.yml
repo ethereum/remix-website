@@ -5,7 +5,7 @@ channels:
    - title: General REMIX
      href: https://gitter.im/ethereum/remix
    - title: REMIX Development
-     href: https://gitter.im/ethereum/remix
+     href: https://gitter.im/ethereum/remix-dev
    - title: PLUGIN Development
      href: https://gitter.im/ethereum/remix-dev-plugin
    - title: Workshops
