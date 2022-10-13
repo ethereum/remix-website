@@ -20,4 +20,4 @@ jobs:
         run: npm install
 
       - name: Test if the build runs successfully
-        run: npm build
+        run: npm run build
