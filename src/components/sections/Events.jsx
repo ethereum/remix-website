@@ -86,14 +86,14 @@ const Events = () => {
                         <Carousel>
                             {
                                 eventsData.map((event) => (
-                                    <SwiperSlide>
-                                    <EventCard
-                                        date={event.date}
-                                        image={event.image}
-                                        description={event.description}
-                                        name={event.name}
-                                        location={event.location}
-                                    />
+                                    <SwiperSlide key={event.id}>
+                                        <EventCard
+                                            date={event.date}
+                                            image={event.image}
+                                            description={event.description}
+                                            name={event.name}
+                                            location={event.location}
+                                        />
                                     </SwiperSlide>
 
                                 ))

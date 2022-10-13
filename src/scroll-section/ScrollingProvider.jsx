@@ -1,6 +1,6 @@
 import React, {
 
-    createRef,
+    createRef, useCallback,
     useEffect,
     useMemo,
     useState,
@@ -24,16 +24,7 @@ export const ScrollingProvider = ({
                                       children,
                                   }) => {
     const [selected, setSelected] = useState('');
-
-    useEffect(() => {
-        document.addEventListener('scroll', debounceScroll, true);
-        handleScroll();
-        return () => {
-            document.removeEventListener('scroll', debounceScroll, true);
-        };
-    }, []);
-
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
         const selectedSection = Object.keys(REFS).reduce(
             (acc, id) => {
                 const sectionRef = REFS[id] && REFS[id].current;
@@ -61,9 +52,18 @@ export const ScrollingProvider = ({
         );
 
         if (selected !== selectedSection.id) setSelected(selectedSection.id);
-    };
+    },[selected]);
 
     const debounceScroll = debounce(handleScroll, debounceDelay);
+
+    useEffect(() => {
+        document.addEventListener('scroll', debounceScroll, true);
+        handleScroll();
+        return () => {
+            document.removeEventListener('scroll', debounceScroll, true);
+        };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [debounceScroll, handleScroll]);
 
     const registerRef = ({ id, meta }) => {
         const ref = createRef();
@@ -72,7 +72,7 @@ export const ScrollingProvider = ({
         return ref;
     };
 
-    const scrollTo = (section) => {
+    const scrollTo = useCallback((section) => {
         const sectionRef = REFS[section] && REFS[section].current;
 
         if (!sectionRef) return console.warn('Section ID not recognized!'); // eslint-disable-line
@@ -82,7 +82,8 @@ export const ScrollingProvider = ({
             top: sectionRef.offsetTop + offset,
             behavior: scrollBehavior,
         });
-    };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[]);
 
     const value = useMemo(
         () => ({
@@ -92,7 +93,8 @@ export const ScrollingProvider = ({
             meta: META,
             selected,
         }),
-        [selected, REFS],
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [selected],
     );
 
     return <Provider value={value}>{children}</Provider>;
