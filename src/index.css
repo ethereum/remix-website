@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        scroll-behavior: smooth;
+    }
+
+    h1 {
+        @apply font-thin;
+        @apply text-black;
+        @apply text-7.5xl;
+    }
+    h2 {
+        @apply font-bold;
+        @apply text-black;
+    }
+
+    button {
+        @apply hover:opacity-90
+    }
+}

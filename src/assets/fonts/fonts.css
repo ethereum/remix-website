@@ -1,0 +1,37 @@
+/* SF Pro Display */
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('SFProDisplay-Regular.woff2') format('woff2'),
+    url('SFProDisplay-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Semibold';
+    src: url('SFProDisplay-Semibold.woff2') format('woff2'),
+    url('SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Thin';
+    src: url('SFProDisplay-Thin.woff2') format('woff2'),
+    url('SFProDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Lato */
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('Lato-Bold.woff2') format('woff2'),
+    url('Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

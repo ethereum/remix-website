@@ -1,0 +1,7 @@
+
+[*]
+charset = utf-8
+end_of_line = lf
+
+[{*.ts, *.tsx, *js, *jsx}]
+ij_continuation_indent_size = 2
