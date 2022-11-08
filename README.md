@@ -3,6 +3,50 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## File Structure 
+- assets
+- components
+  - layout
+    - Footer
+    - Navbar
+  - sections
+    - About
+    - Events
+    - Libraries
+    - Plugins
+    - RemixIde
+    - Rewards
+    - Team
+  - ui
+    - Carousel
+    - EventCard
+    - TeamMemberCard
+- scroll-section
+  - `ScrollingProvider`: responsible to link Section and SectionLink and know which Section is selected.
+  - `Section`: renders a <section /> tag that receives an ID and register itself in ScrollingProvider.
+  - `useScrollSection`: React Hook given the id of the section returns if the section is selected and a callback to scroll to it.
+  - `useScrollSection`: returns an array of all the sections with id, selected and scrollTo.
+
+  
+If you want to update the data in the Teams section visit `@/components/sections/Team` you will find there teamMembers array with the following structure:
+```
+name: 
+poisition:
+image:
+twitterLink:
+githubLink:
+linkedInLink:
+```
+
+If you want to update the data in the Events section visit `@/components/sections/Events` you will find there eventsData array with the following structure:
+```
+name:
+date:
+image:
+location: 
+description:
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
