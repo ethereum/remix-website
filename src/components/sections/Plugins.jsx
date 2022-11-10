@@ -87,7 +87,7 @@ const Plugins = () => {
                     </div>
                     {showCorePlugins &&
                         <div>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 <a href="https://remix-ide.readthedocs.io/en/latest/compile.html" target="_blank"
                                    rel="noreferrer">
                                     <div
