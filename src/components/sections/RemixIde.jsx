@@ -29,7 +29,7 @@ const RemixIde = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-4 pt-10 gap-y-6 md:gap-x-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 gap-y-6 md:gap-x-6">
                         <a href="https://remix.ethereum.org/" target="_blank" rel="noreferrer">
                             <div
                                 className="bg-white rounded-lg border-borderColor border py-6 px-4 h-80 hover:border-blue relative group">
