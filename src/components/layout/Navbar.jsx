@@ -83,7 +83,7 @@ const Navbar = () => {
                                                 <a href="https://remix-ide.readthedocs.io/en/latest/index.html"
                                                    target="_blank" rel="noreferrer"
                                                    className="text-gray text-base hover:text-blue hover:cursor-pointer">
-                                                    Documents
+                                                    Documentation
                                                 </a>
                                                 <a href="https://remix.ethereum.org/?#activate=LearnEth"
                                                    target="_blank" rel="noreferrer"
