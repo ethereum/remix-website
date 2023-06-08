@@ -48,7 +48,7 @@ const Footer = () => {
                         <a className="mr-9 inline-block" href="mailito:remix@ethereum.org">
                             <img src={mailIcon} alt="mail"/>
                         </a>
-                        <a className="mr-9 inline-block" href="https://github.com/ethereum/remix" target="_blank" rel="noreferrer">
+                        <a className="mr-9 inline-block" href="https://github.com/ethereum/remix-project" target="_blank" rel="noreferrer">
                             <img src={githubIconGray} alt="github"/>
                         </a>
                         <a className="mr-9 inline-block" href="https://twitter.com/EthereumRemix" target="_blank" rel="noreferrer">
