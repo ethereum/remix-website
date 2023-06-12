@@ -17,7 +17,7 @@ const About = () => {
                 font-sfProRegular
                 text-gray
                 text-lg xl:px-72 lg:px-6 px-6 mb-16">
-                    The Remix Project is a rich toolset which can be used for the entire
+                    The Remix Project is a rich toolset that can be used for the entire
                     journey of contract development by users of any knowledge level,
                     and as a learning lab for teaching and experimenting with Ethereum.
                 </p>
