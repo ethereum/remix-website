@@ -19,10 +19,10 @@ const Rewards = () => {
                                 Remix Project rewards contributors, beta testers, and UX research participants with NFTs
                                 deployed on Optimism.
                                 Remix Reward holders are able to mint a second “Remixer” user NFT badge to give to any
-                                other user of their choice (friendlier UX coming soon).
+                                other user of their choice.
                             </p>
                             <p className="font-sfProRegular text-gray text-lg">
-                                This feature is a way to allow Remix contributors to help
+                                This feature allows Remix contributors to help
                                 grow our user base into a larger and more genuine open source community of practice.
                             </p>
                             <a href="https://rewards.remix.ethereum.eth.limo/" target="_blank" rel="noreferrer">
