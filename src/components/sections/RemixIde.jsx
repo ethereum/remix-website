@@ -21,10 +21,10 @@ const RemixIde = () => {
                                 font-sfProRegular
                                 text-gray
                                 text-lg">
-                                Remix IDE, is a no-setup tool with a GUI for developing smart contracts.
+                                Remix IDE is a no-setup tool with a GUI for developing smart contracts.
                                 Used by experts and beginners alike, Remix will get you going in double time.
                                 Remix plays well with other tools, and allows for a simple deployment process
-                                to the chain of your choice. Remix is famous for our visual debugger.
+                                to the chain of your choice. Remix is famous for its visual debugger.
                                 Remix is the place everyone comes to learn Ethereum.
                             </p>
                         </div>
@@ -53,7 +53,7 @@ const RemixIde = () => {
                                 <p className="text-sm text-gray font-sfProSemiBold pb-4">Electron App</p>
                                 <p className="text-sm text-gray font-sfProRegular pb-4">
                                     For users who prefer the performance or security of their own hard drive,
-                                    Remix has a desktop app. Your files are saved directly in your computer's filesystem.
+                                    Remix has a desktop app. Your files are saved directly to your computer's filesystem.
                                 </p>
                                 <div className="flex absolute bottom-6 content-center">
                                     <p className="text-sm text-blue font-sfProRegular mr-3.5">Get our Desktop App</p>
