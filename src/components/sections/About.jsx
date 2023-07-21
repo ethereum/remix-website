@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from 'react-intl';
 import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
 import remixEditor from '../../assets/images/remix-editor.png';
@@ -11,15 +12,13 @@ const About = () => {
     return (
         <Section id={sectionId.about} >
             <div className="container mx-auto pb-20 pt-36 md:py-50">
-                <h1 className="text-center font-extralight pb-2 md:text-8xl">REMIX PROJECT</h1>
-                <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6">JUMP INTO WEB3</h2>
+                <h1 className="text-center font-extralight pb-2 md:text-8xl"><FormattedMessage id='about.remixProject' /></h1>
+                <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id='about.jumpIntoWeb3' /></h2>
                 <p className="text-center
                 font-sfProRegular
                 text-gray
                 text-lg xl:px-72 lg:px-6 px-6 mb-16">
-                    The Remix Project is a rich toolset that can be used for the entire
-                    journey of contract development by users of any knowledge level,
-                    and as a learning lab for teaching and experimenting with Ethereum.
+                    <FormattedMessage id='about.text' />
                 </p>
                 <img className="m-auto sm:hidden" src={remixEditor} srcSet={`${remixEditor2x} 2x`} alt="remix-ide"/>
                 <div className="hidden sm:block relative m-auto sm:h-[30rem] rounded-[1.25rem] max-w-4xl h-full border-[0.375rem] border-magenta">

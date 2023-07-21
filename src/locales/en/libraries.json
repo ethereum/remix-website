@@ -1,0 +1,15 @@
+{
+  "libraries.libraries": "LIBRARIES",
+  "libraries.tools": "TOOLS FOR DEVELOPERS",
+  "libraries.text1": "Remix Libraries are low-level libraries that tool developers can use to enhance their features.",
+  "libraries.text2": "Performs static analysis on Solidity smart contracts to check security vulnerabilities and bad development practices.",
+  "libraries.text3": "Provides several controls that allow stepping over a trace and viewing the current state of a selected step.",
+  "libraries.text4": "An easy way to read the AST of a smart contract written in Solidity.",
+  "libraries.text5": "A common library used across multiple Remix modules",
+  "libraries.text6": "Loads a Solidity compiler from a provided URL, compiles the contract, and returns the compilation details.",
+  "libraries.text7": "Helpers for resolving the content from an external URL, including GitHub, Swarm, IPFS, etc.",
+  "libraries.text8": "Solidity unit testing: both as a plugin and as a CLI.",
+  "libraries.text9": "A Web3 wrapper for different kinds of providers.",
+  "libraries.text10": "Enables the creation of workspaces using various templates in Remix IDE.",
+  "libraries.text11": "A daemon that allows access to a local filesystem from Remix IDE."
+}

@@ -1,0 +1,18 @@
+{
+  "ide.startHere": "START HERE!",
+  "ide.text1": "Remix IDE is a no-setup tool with a GUI for developing smart contracts. Used by experts and beginners alike, Remix will get you going in double time. Remix plays well with other tools, and allows for a simple deployment process to the chain of your choice. Remix is famous for its visual debugger. Remix is the place everyone comes to learn Ethereum.",
+  "ide.onlineIDE": "Remix Online IDE",
+  "ide.webBased": "Web-based DevEnvironment",
+  "ide.text2": "Remix Online IDE is a powerful toolset for developing, deploying, debugging, and testing Ethereum and EVM-compatible smart contracts. It requires no setup and has a flexible, intuitive user interface.",
+  "ide.startCoding": "Start coding online",
+  "ide.desktopIDE": "Remix Desktop IDE",
+  "ide.electronApp": "Electron App",
+  "ide.text3": "For users who prefer the performance or security of their own hard drive, Remix has a desktop app. Your files are saved directly to your computer's filesystem.",
+  "ide.getDesktopApp": "Get our Desktop App",
+  "ide.vscodeExtensions": "VSCode Extension",
+  "ide.text4": "We’ve brought Remix to VSCode, offering access to Remix tools in an environment many users already know.",
+  "ide.installVSCodeExtension": "Install VSCode Extension",
+  "ide.ourCliTool": "Our CLI Tool",
+  "ide.text5": "Remixd connects Remix Online IDE to a folder on your hard drive, offering all the advantages of file storage on your computer’s filesystem.",
+  "ide.openCliTool": "Open CLI Tool"
+}
