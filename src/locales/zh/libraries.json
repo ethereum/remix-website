@@ -1,0 +1,15 @@
+{
+  "libraries.libraries": "工具库",
+  "libraries.tools": "开发者工具",
+  "libraries.text1": "Remix 工具库是低级库，工具开发人员可以用它来增强工具的功能。",
+  "libraries.text2": "对 Solidity 智能合约进行静态分析，检查安全漏洞和不良开发实践。",
+  "libraries.text3": "提供多个控制按钮，可对轨迹进行步进操作，并查看所选步骤的当前状态。",
+  "libraries.text4": "读取用 Solidity 编写的智能合约 AST 的简便方法。",
+  "libraries.text5": "在多个 Remix 模块中使用的通用库",
+  "libraries.text6": "从提供的 URL 加载 Solidity 编译器，编译合约并返回编译详情。",
+  "libraries.text7": "用于解析外部 URL 内容的帮助程序，包括 GitHub、Swarm、IPFS 等。",
+  "libraries.text8": "Solidity 单元测试：既可作为插件，也可作为 CLI。",
+  "libraries.text9": "一个 Web3 封装器，用于封装不同类型的 providers。",
+  "libraries.text10": "使用 Remix IDE 中的各种模板创建工作区。",
+  "libraries.text11": "允许从 Remix IDE 访问本地文件系统的守护程序。"
+}

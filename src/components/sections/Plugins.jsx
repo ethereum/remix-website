@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { FormattedMessage } from "react-intl";
 import pluginsMobileBck from "../../assets/images/plugins-mobile-bck.svg";
 import documentIcon from "../../assets/images/documentation-icon.svg";
 import githubIconBlue from "../../assets/images/github-icon-blue.svg";
@@ -39,23 +40,19 @@ const Plugins = () => {
                 <div className="sm:container sm:m-auto pb-20 pt-10 md:py-50 mx-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24">
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl">PLUGINS</h1>
-                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6">EVERYTHING IS A PLUGIN</h2>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="plugins.plugins" /></h1>
+                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="plugins.everything" /></h2>
                             <p className="
                                 font-sfProRegular
                                 text-gray
                                 text-lg pb-6">
-                                In Remix, everything is a plugin. Core plugins are preloaded for essential operations.
-                                Additional plugins offer an expanded palette of tools.
+                                <FormattedMessage id="plugins.text1" />
                             </p>
                             <p className="
                                 font-sfProRegular
                                 text-gray
                                 text-lg pb-6">
-                                The Remix team builds all core plugins and some additional plugins, all of which are
-                                designated by the green checkmark.
-                                We also support teams who build plugins to allow their projects to be used inside of
-                                Remix.
+                                <FormattedMessage id="plugins.text2" />
                             </p>
                         </div>
                     </div>
@@ -70,7 +67,7 @@ const Plugins = () => {
                         font-sfProSemiBold
                         rounded-[18.5px]` : `text-gray text-sm font-sfProSemiBold mr-4`}
                                 onClick={handleShowCorePlugins}>
-                            Core Plugins
+                            <FormattedMessage id="plugins.core" />
                         </button>
                         <button className={
                             !showCorePlugins ? `border
@@ -82,7 +79,7 @@ const Plugins = () => {
                         font-sfProSemiBold
                         rounded-[18.5px]` : `text-gray text-sm font-sfProSemiBold`}
                                 onClick={handelShowAdditionalPlugins}>
-                            Additional Plugins
+                            <FormattedMessage id="plugins.additional" />
                         </button>
                     </div>
                     {showCorePlugins &&
@@ -104,11 +101,10 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Solidity Compiler</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.solidityCompiler" /></h5>
 
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Compiles Solidity and YUL contracts. Accesses compilation details.
-                                            Publishes compiled contract and metadata to IPFS or Swarm.
+                                            <FormattedMessage id="plugins.text3" />
                                         </p>
                                     </div>
                                 </a>
@@ -128,12 +124,9 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Deploy & Run</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.deployRun" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Deploys contracts to the in-browser chain (Remix VM), local nodes, or public
-                                            networks.
-                                            Accesses and interacts with deployed contracts. Records and plays back
-                                            transactions.
+                                            <FormattedMessage id="plugins.text4" />
                                         </p>
                                     </div>
                                 </a>
@@ -153,10 +146,9 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">File Explorer</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.fileExplorer" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Organizes files in Workspaces and folders, clones Git repos,
-                                            uploads files, creates GISTs, flattens files and more.
+                                            <FormattedMessage id="plugins.text5" />
                                         </p>
                                     </div>
                                 </a>
@@ -176,11 +168,9 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Debugger</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.debugger" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            A visual debugger that includes breakpoints and a stepper.
-                                            Checks high and low level parameters, and fetches and debugs transactions of
-                                            verified contracts.
+                                            <FormattedMessage id="plugins.text6" />
                                         </p>
                                     </div>
                                 </a>
@@ -200,10 +190,9 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Solidity Analyzers</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.solidityAnalyzers" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Examines and debugs code without actually executing it. Integrates with
-                                            Slither.
+                                            <FormattedMessage id="plugins.text7" />
                                         </p>
                                     </div>
                                 </a>
@@ -223,9 +212,9 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Solidity Unit Testing</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.solidityUnitTesting" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Runs unit tests written in Solidity.
+                                            <FormattedMessage id="plugins.text8" />
                                         </p>
                                     </div>
                                 </a>
@@ -247,8 +236,7 @@ const Plugins = () => {
                                         </div>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Remixd</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            An npm package run locally to connect a folder on your filesystem to the
-                                            Remix website.
+                                            <FormattedMessage id="plugins.text9" />
                                         </p>
                                     </div>
                                 </a>
@@ -258,9 +246,8 @@ const Plugins = () => {
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-black font-latoBold mt-4 md:mt-24 block hover:underline"
-                                    >View All</a>
-                                    <p className="font-sfProRegular text-gray text-sm">Explore all our core plugins on
-                                        GitHub</p>
+                                    ><FormattedMessage id="plugins.viewAll" /></a>
+                                    <p className="font-sfProRegular text-gray text-sm"><FormattedMessage id="plugins.text10" /></p>
                                 </div>
                             </div>
                         </div>
@@ -280,12 +267,12 @@ const Plugins = () => {
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
                                                     z-10 w-32 text-center
-                                                    bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
+                                                    bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2"><FormattedMessage id="plugins.maintainedBy" /></span>
                                             </div>
                                         </div>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Sourcify</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Verifies and fetches verified contracts.
+                                            <FormattedMessage id="plugins.text11" />
                                         </p>
                                     </div>
                                 </a>
@@ -303,11 +290,11 @@ const Plugins = () => {
                                 py-0.5 px-3
                                 rounded-[18.5px]
                                 border-solid
-                                border-green">Verified</p>
+                                border-green"><FormattedMessage id="plugins.verified" /></p>
                                         </div>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Etherscan</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Verifies contracts on Etherscan.
+                                            <FormattedMessage id="plugins.text12" />
                                         </p>
                                     </div>
                                 </a>
@@ -329,7 +316,7 @@ const Plugins = () => {
                                         </div>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Tenderly</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Verifies contracts on Tenderly. Imports Tenderly projects into Remix.
+                                            <FormattedMessage id="plugins.text13" />
                                         </p>
                                     </div>
                                 </a>
@@ -340,7 +327,7 @@ const Plugins = () => {
                                         <img src={bugIcon} alt="bug" className="mb-3"/>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Flattener</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Flattens compiled contracts.
+                                            <FormattedMessage id="plugins.text14" />
                                         </p>
                                     </div>
                                 </a>
@@ -349,10 +336,9 @@ const Plugins = () => {
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative group">
                                         <img src={chartIcon} alt="chart" className="mb-3"/>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Gas Profiler,</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4"><FormattedMessage id="plugins.gasProfiler" /></h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Displays the gas costs for every transaction executed.
-                                            Displays total execution costs and per line costs.
+                                            <FormattedMessage id="plugins.text15" />
                                         </p>
                                     </div>
                                 </a>
@@ -363,7 +349,7 @@ const Plugins = () => {
                                         <img src={tickIcon} alt="arrows" className="mb-3"/>
                                         <h5 className="font-latoBold text-black text-xl pb-4">LearnEth</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Tutorials about Solidity and Remix features, with quizzes to check progress.
+                                            <FormattedMessage id="plugins.text16" />
                                         </p>
                                     </div>
                                 </a>
@@ -373,7 +359,7 @@ const Plugins = () => {
                                         <img src={faceIcon} alt="arrows" className="mb-3"/>
                                         <h5 className="font-latoBold text-black text-xl pb-4">ZoKrates</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            A toolbox for zkSNARKs on Ethereum.
+                                            <FormattedMessage id="plugins.text17" />
                                         </p>
                                     </div>
                                 </a>
@@ -384,7 +370,7 @@ const Plugins = () => {
                                         <img src={skyIcon} alt="arrows" className="mb-3"/>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Starknet</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Compiles contracts written in Cairo, and deploys to Starknet chains.
+                                            <FormattedMessage id="plugins.text18" />
                                         </p>
                                     </div>
                                 </a>
@@ -395,7 +381,7 @@ const Plugins = () => {
                                         <img src={contractIcon} alt="arrows" className="mb-3"/>
                                         <h5 className="font-latoBold text-black text-xl pb-4">Contract Deployer</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
-                                            Gives contracts the same address when deploying to different chains.
+                                            <FormattedMessage id="plugins.text19" />
                                         </p>
                                     </div>
                                 </a>
@@ -405,9 +391,9 @@ const Plugins = () => {
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-black font-latoBold mt-4 md:mt-24 block hover:underline"
-                                    >View All</a>
+                                    ><FormattedMessage id="plugins.viewAll" /></a>
                                     <p className="font-sfProRegular text-gray text-sm">
-                                        Explore documentation for all our additional plugins.
+                                        <FormattedMessage id="plugins.text20" />
                                     </p>
                                 </div>
                             </div>
@@ -417,29 +403,36 @@ const Plugins = () => {
                     }
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 my-8">
                         <div>
-                            <h3 className="pb-4 text-middle text-black font-latoBold">Remix Plugin Engine</h3>
-                            <p className="text-base text-gray font-sfProRegular pb-4">The Remix Plugin Engine
-                                manages the communication between plugins. Plugin developers should start
-                                <a href="https://github.com/ethereum/remix-plugin/" target="_blank" rel="noreferrer"
-                                   className="text-blue hover:underline"
-                                > here</a>.
-                                Remix plugins use bootstrap and should abide by our UI Standards.
+                            <h3 className="pb-4 text-middle text-black font-latoBold"><FormattedMessage id="plugins.engine" /></h3>
+                            <p className="text-base text-gray font-sfProRegular pb-4">
+                                <FormattedMessage
+                                    id="plugins.text21"
+                                    values={{
+                                        a: (innerText) => (<a
+                                            href="https://github.com/ethereum/remix-plugin/"
+                                            target="_blank" rel="noreferrer"
+                                            className="text-blue hover:underline">
+                                        {innerText}</a>)
+                                    }}
+                                />
                             </p>
                             <p className="text-base text-gray font-sfProRegular pb-9">
-                                Any project that wants to use our plugins can implement the Remix Plugin Engine. See
-                                our example project
-                                <a href="https://github.com/ethereum/remix-plugin/tree/master/examples/example"
-                                   target="_blank" rel="noreferrer"
-                                   className="text-blue hover:underline"
-                                > here</a>.
-                                Currently the Remix Plugin Engine is used in the
-                                <a href="https://remix.ethereum.org" target="_blank" rel="noreferrer"
-                                   className="text-blue hover:underline"
-                                > Remix IDE</a> and the
-                                <a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix"
-                                   target="_blank" rel="noreferrer"
-                                   className="text-blue hover:underline"
-                                > Remix VSCode</a> extension.
+                                <FormattedMessage
+                                    id="plugins.text22"
+                                    values={{
+                                        a1: (innerText) => (<a href="https://github.com/ethereum/remix-plugin/tree/master/examples/example"
+                                            target="_blank" rel="noreferrer"
+                                            className="text-blue hover:underline"
+                                        >{innerText}</a>),
+                                        a2: (innerText) => (<a href="https://remix.ethereum.org" target="_blank" rel="noreferrer"
+                                            className="text-blue hover:underline"
+                                        >{innerText}</a>),
+                                        a3: (innerText) => (<a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix"
+                                            target="_blank" rel="noreferrer"
+                                            className="text-blue hover:underline"
+                                        >{innerText}</a>)
+                                    }}
+                                />
                             </p>
 
                             <div className="grid grid-cols-3 justify-items-start items-end">
@@ -447,7 +440,7 @@ const Plugins = () => {
                                     <a href="https://remix-plugin-docs.readthedocs.io/en/latest/" rel="noreferrer"
                                        target="_blank">
                                         <img className="m-auto" src={documentIcon} alt="documentation"/>
-                                        <p className="text-blue text-sm font-sfProSemiBold pt-2 hover:underline">Documentation</p>
+                                        <p className="text-blue text-sm font-sfProSemiBold pt-2 hover:underline"><FormattedMessage id="plugins.documentation" /></p>
                                     </a>
                                 </div>
                                 <div className="flex flex-col items-center">

@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import rewardsBckMobile from "../../assets/images/rewards-mobile-bck.svg";
 import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
@@ -13,17 +14,13 @@ const Rewards = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div/>
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl">REMIX REWARDS</h1>
-                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6">NFTs FOR OUR USERS</h2>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="rewards.rewardsUpperCase" /></h1>
+                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="rewards.nftsForUsers" /></h2>
                             <p className="font-sfProRegular text-gray text-lg pb-6">
-                                Remix Project rewards contributors, beta testers, and UX research participants with NFTs
-                                deployed on Optimism.
-                                Remix Reward holders are able to mint a second “Remixer” NFT badge to any
-                                other user of their choice.
+                                <FormattedMessage id="rewards.text1" />
                             </p>
                             <p className="font-sfProRegular text-gray text-lg">
-                                This feature allows Remix contributors to help
-                                grow our user base into a larger and more genuine open source community of practice.
+                                <FormattedMessage id="rewards.text2" />
                             </p>
                             <a href="https://rewards.remix.ethereum.eth.limo/" target="_blank" rel="noreferrer">
                                 <button className="text-white
@@ -39,7 +36,7 @@ const Rewards = () => {
                             font-sfProRegular
                             mt-6
                             ">
-                                    Remix Rewards
+                                    <FormattedMessage id="rewards.rewards" />
                                 </button>
                             </a>
                         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, useIntl } from 'react-intl';
 import Carousel from "../ui/Carousel";
 import devconnect2Image from "../../assets/images/devconnect2.png";
 import smartconImage from "../../assets/images/smartcon23.png";
@@ -23,6 +24,8 @@ import {sectionId} from "../../constants";
 import {SwiperSlide} from "swiper/react";
 
 const Events = () => {
+    const intl = useIntl()
+
     const eventsData = [
         {
             id: 0,
@@ -186,17 +189,13 @@ const Events = () => {
         bg-no-repeat
         bg-remix-desktop-background-position">
                 <div className="container mx-auto pb-20 pt-36 md:pt-50">
-                    <h1 className="text-center font-sfProThin pb-2 md:text-8xl">EVENTS</h1>
-                    <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6">MIXING IT UP WITH THE COMMUNITY</h2>
+                    <h1 className="text-center font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="events.events" /></h1>
+                    <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="events.mixingItUp" /></h2>
                     <p className="text-center
                 font-sfProRegular
                 text-gray
                 text-lg xl:px-72 lg:px-6 px-6">
-                        The Remix Project team gives workshops about Remix as well as general
-                        introductions to the Ethereum ecosystem and its associated use cases.
-                        We can tailor our workshops to the technical knowledge and skill
-                        level of your particular group, and we try to give entertaining talks.
-                        Reach out to us by email, or on our Discord or Twitter.
+                        <FormattedMessage id="events.text" />
                     </p>
                     <div className="container mx-auto pb-20 pt-2">
                         <Carousel>
@@ -204,11 +203,11 @@ const Events = () => {
                                 eventsData.map((event) => (
                                     <SwiperSlide key={event.id}>
                                         <EventCard
-                                            date={event.date}
+                                            date={intl.formatMessage({ id: `events.${event.id}.date`, defaultMessage: event.date })}
                                             image={event.image}
-                                            description={event.description}
-                                            name={event.name}
-                                            location={event.location}
+                                            description={intl.formatMessage({ id: `events.${event.id}.description`, defaultMessage: event.description })}
+                                            name={intl.formatMessage({ id: `events.${event.id}.name`, defaultMessage: event.name })}
+                                            location={intl.formatMessage({ id: `events.${event.id}.location`, defaultMessage: event.location })}
                                             URL={event.URL}
                                         />
                                     </SwiperSlide>

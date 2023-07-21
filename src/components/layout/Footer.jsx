@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from 'react-intl';
 import logo from "../../assets/images/remix-logo.svg";
 import mailIcon from "../../assets/images/mail-icon.svg";
 import githubIconGray from "../../assets/images/github-icon-gray.svg";
@@ -16,22 +17,22 @@ const Footer = () => {
                         <img className="mb-11 md:mb-0" src={logo} alt="logo"/>
                     </div>
                     <div className="mb-11 md:mb-0">
-                       <h6 className="text-gray font-sfProRegular text-xs pb-4">PRODUCT</h6>
+                       <h6 className="text-gray font-sfProRegular text-xs pb-4"><FormattedMessage id='footer.product' /></h6>
                         <div className="inline-flex flex-col gap-3">
 
-                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://remix.ethereum.org" target="_blank" rel="noreferrer">Remix Online IDE</a>
-                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://github.com/ethereum/remix-desktop/releases" target="_blank" rel="noreferrer">Remix Desktop IDE</a>
+                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://remix.ethereum.org" target="_blank" rel="noreferrer"><FormattedMessage id='footer.onlineIDE' /></a>
+                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://github.com/ethereum/remix-desktop/releases" target="_blank" rel="noreferrer"><FormattedMessage id='footer.desktopIDE' /></a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">Ethereum Remix</a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs/remixd" target="_blank" rel="noreferrer">RemixD</a>
                         </div>
 
                     </div>
                     <div className="col-start-3 col-end-6 md:col-start-auto md:col-end-auto">
-                        <h6 className="text-gray font-sfProRegular text-xs pb-4">DOCUMENTATION</h6>
+                        <h6 className="text-gray font-sfProRegular text-xs pb-4"><FormattedMessage id='footer.documentation' /></h6>
                         <div className="inline-flex flex-col gap-3">
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://docs.soliditylang.org/en/v0.6.1/" target="_blank" rel="noreferrer">Solidity</a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://remix-ide.readthedocs.io/en/latest/" target="_blank" rel="noreferrer">Remix</a>
-                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://remix-plugin-docs.readthedocs.io/en/latest/plugin/README.html#plugin" target="_blank" rel="noreferrer">Plugins</a>
+                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://remix-plugin-docs.readthedocs.io/en/latest/plugin/README.html#plugin" target="_blank" rel="noreferrer"><FormattedMessage id='footer.plugins' /></a>
                         </div>
 
                     </div>
@@ -40,8 +41,8 @@ const Footer = () => {
                         <div className="inline-flex flex-col gap-3">
                             <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix" target="_blank" rel="noreferrer">Remix</a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-ide" target="_blank" rel="noreferrer">Remix IDE</a>
-                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-plugin/tree/master/examples/example/plugin" target="_blank" rel="noreferrer">Plugins</a>
-                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs#readme" target="_blank" rel="noreferrer">Libraries</a>
+                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-plugin/tree/master/examples/example/plugin" target="_blank" rel="noreferrer"><FormattedMessage id='footer.plugins' /></a>
+                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs#readme" target="_blank" rel="noreferrer"><FormattedMessage id='footer.libraries' /></a>
                         </div>
 
                     </div>

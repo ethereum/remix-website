@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage, useIntl } from "react-intl";
 import teamMobileBck from "../../assets/images/team-mobile-bck.svg";
 import teamAniket from "../../assets/images/aniket.png";
 import teamDavid from "../../assets/images/david_disu.png";
@@ -13,11 +14,12 @@ import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
 
 const Team = () => {
+    const intl = useIntl()
     const teamMembers = [
         {
             image: teamAndrew,
             name: 'Andrew Vermouth',
-            position: 'Communications, Media / UX Research',
+            position: intl.formatMessage({ id: "team.members.0.position" }),
             twitterLink: "https://twitter.com/vermouth22",
             githubLink: null,
             linkedInLink: "https://www.linkedin.com/in/andrewvermouth/",
@@ -25,7 +27,7 @@ const Team = () => {
         {
             image: teamAniket,
             name: 'Aniket',
-            position: 'Developer - Remix libraries',
+            position: intl.formatMessage({ id: "team.members.1.position" }),
             twitterLink: null,
             githubLink: "https://github.com/Aniket-Engg",
             linkedInLink: null,
@@ -33,7 +35,7 @@ const Team = () => {
         {
             image: teamDavid,
             name: 'David Disu',
-            position: 'Developer - Testing / Remix IDE',
+            position: intl.formatMessage({ id: "team.members.2.position" }),
             twitterLink: "https://twitter.com/ioedeveloper",
             githubLink: "https://github.com/ioedeveloper",
             linkedInLink: "https://www.linkedin.com/in/ioedeveloper/",
@@ -41,7 +43,7 @@ const Team = () => {
         {
             image: teamFilip,
             name: 'Filip Mertens',
-            position: 'Developer - Remix Plugin',
+            position: intl.formatMessage({ id: "team.members.3.position" }),
             twitterLink: null,
             githubLink: "https://github.com/bunsenstraat/",
             linkedInLink: null,
@@ -49,7 +51,7 @@ const Team = () => {
         {
             image: teamJoseph,
             name: 'Joseph Izang',
-            position: 'Developer - React',
+            position: intl.formatMessage({ id: "team.members.4.position" }),
             twitterLink: null,
             githubLink: "https://github.com/joeizang",
             linkedInLink: "https://www.linkedin.com/in/joseph-izang-156b9449/",
@@ -57,7 +59,7 @@ const Team = () => {
         {
             image: teamLiana,
             name: 'Liana Husikyan',
-            position: 'Developer - Remix IDE / UX Research',
+            position: intl.formatMessage({ id: "team.members.5.position" }),
             twitterLink: "https://twitter.com/LianaHusikyan",
             githubLink: "https://github.com/lianahus",
             linkedInLink: "https://www.linkedin.com/in/liana-husikyan-b3a2a54/",
@@ -65,7 +67,7 @@ const Team = () => {
         {
             image: teamRob,
             name: 'Rob Stupay',
-            position: 'Developer - Remix IDE / UX and Community Manager',
+            position: intl.formatMessage({ id: "team.members.6.position" }),
             twitterLink: "https://twitter.com/ryestew",
             githubLink: "https://github.com/ryestew",
             linkedInLink: "https://www.linkedin.com/in/rob-stupay-2575778/",
@@ -73,7 +75,7 @@ const Team = () => {
         {
             image: teamYann,
             name: 'Yann Levreau',
-            position: 'Team Lead',
+            position: intl.formatMessage({ id: "team.members.7.position" }),
             twitterLink: "https://twitter.com/Yann300",
             githubLink: "https://github.com/yann300",
             linkedInLink: null,
@@ -90,16 +92,12 @@ const Team = () => {
                 <div className="sm:container sm:m-auto pb-20 pt-10 md:py-50 mx-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24">
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl">REMIX TEAM</h1>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="team.remixTeam" /></h1>
                             <p className="
                                 font-sfProRegular
                                 text-gray
                                 text-lg pb-6">
-                                The Remix Project team is headquartered in Berlin, Germany with team members
-                                also working remotely from Armenia, India, the Netherlands, Nigeria, and USA.
-                                Our work is funded by the Ethereum Foundation. We are passionate about the
-                                Ethereum ecosystem and our work in the wider world of Web3. We are here to serve you.
-                                Please reach out on our Discord or Twitter to ask us anything.
+                                <FormattedMessage id="team.text" />
                             </p>
                         </div>
                     </div>
