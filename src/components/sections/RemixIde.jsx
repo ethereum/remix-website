@@ -61,7 +61,7 @@ const RemixIde = () => {
                                 </div>
                             </div>
                         </a>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">
+                        <a href="https://remix-project.org" rel="noreferrer">
                             <div
                                 className="bg-white rounded-lg border-borderColor border py-6 px-4 h-80 hover:border-blue relative group">
                                 <h4 className="text-xl pb-1 text-blue font-latoBold">Ethereum Remix</h4>
@@ -71,8 +71,6 @@ const RemixIde = () => {
                                     tools in an environment many users already know.
                                 </p>
                                 <div className="flex absolute bottom-6 content-center">
-                                    <p className="text-sm text-blue font-sfProRegular mr-3.5">Install VSCode
-                                        Extension</p>
                                     <img className="invisible group-hover:visible" src={rightArrowBlue} alt="arrow"/>
                                 </div>
                             </div>
