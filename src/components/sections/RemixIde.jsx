@@ -61,7 +61,7 @@ const RemixIde = () => {
                                 </div>
                             </div>
                         </a>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">
+                        <a href="https://remix-project.org/>
                             <div
                                 className="bg-white rounded-lg border-borderColor border py-6 px-4 h-80 hover:border-blue relative group">
                                 <h4 className="text-xl pb-1 text-blue font-latoBold">Ethereum Remix</h4>
