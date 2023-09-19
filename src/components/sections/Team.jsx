@@ -99,7 +99,7 @@ const Team = () => {
                                 also working remotely from Armenia, India, the Netherlands, Nigeria, and USA.
                                 Our work is funded by the Ethereum Foundation. We are passionate about the
                                 Ethereum ecosystem and our work in the wider world of Web3. We are here to serve you.
-                                Please reach out on our Gitter channel or Twitter to ask us anything.
+                                Please reach out on our Discord or Twitter to ask us anything.
                             </p>
                         </div>
                     </div>
