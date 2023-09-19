@@ -1,21 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.67c51e52.css",
-    "main.js": "/static/js/main.29340912.js",
+    "main.js": "/static/js/main.3f01d554.js",
     "static/media/remix.mp4": "/static/media/remix.b51568099f2153b20bf2.mp4",
+    "static/media/smartcon23.png": "/static/media/smartcon23.eb36310752f58198ce0c.png",
     "static/media/filip_mertens.png": "/static/media/filip_mertens.9922e86e8ef46bd9cb78.png",
     "static/media/yann_levreau_better.png": "/static/media/yann_levreau_better.aba54ad5e8d74a446ab1.png",
     "static/media/liana_husikyan.png": "/static/media/liana_husikyan.315f2af804a4e731e37b.png",
     "static/media/rob_stupay.png": "/static/media/rob_stupay.496179822f82e917326e.png",
+    "static/media/ethindia22.png": "/static/media/ethindia22.53e4b2e6d901a30e4161.png",
     "static/media/andrew_vermouth.png": "/static/media/andrew_vermouth.34c94853c508a3c20944.png",
     "static/media/joseph_izang.png": "/static/media/joseph_izang.7e4ab44d04d18d5ecd0e.png",
     "static/media/david_disu.png": "/static/media/david_disu.4995cc94dcb962f5ef65.png",
     "static/media/aniket.png": "/static/media/aniket.1f5884699e506d384ba9.png",
+    "static/media/devconnect2.png": "/static/media/devconnect2.8ee247cdc50dfb122976.png",
+    "static/media/ethdenver23.png": "/static/media/ethdenver23.3c2cf3f55e8ef686d149.png",
+    "static/media/ethcon_korea.png": "/static/media/ethcon_korea.b7d4812c60a981ca8699.png",
+    "static/media/ethaccra.png": "/static/media/ethaccra.a2596f1e37b521467099.png",
     "static/media/remix-editor2x.png": "/static/media/remix-editor2x.a84a81074b3dae1f7fc1.png",
     "static/media/devconnect-Remix.png": "/static/media/devconnect-Remix.680d7e3532d1d99385dc.png",
+    "static/media/web3_lagos.png": "/static/media/web3_lagos.55ce7053d7775d0f8791.png",
     "static/media/chart-icon.svg": "/static/media/chart-icon.c0acaf6e7fb905dff23030cd3d5d95e6.svg",
     "static/media/ethdenver_03.jpg": "/static/media/ethdenver_03.31b503ccb369c6fa1b76.jpg",
     "static/media/bugs-icon.svg": "/static/media/bugs-icon.641281937a109b903dfdd41143293435.svg",
+    "static/media/dsrv.png": "/static/media/dsrv.c973da07a5d3105dffb7.png",
     "static/media/documents-icon.svg": "/static/media/documents-icon.ee0fd22118883be1d4c4436a4d98bca8.svg",
     "static/media/KL-meetup.png": "/static/media/KL-meetup.c811a17e8704fd96ecc7.png",
     "static/media/plugins-mobile-bck.svg": "/static/media/plugins-mobile-bck.0c86493b63dd84dbd65bb2d7331eef72.svg",
@@ -25,6 +33,7 @@
     "static/media/remix-ide-mobile.svg": "/static/media/remix-ide-mobile.1c7e5b45e55d17968d778cae5dd1949d.svg",
     "static/media/remix-ide-desktop.svg": "/static/media/remix-ide-desktop.e05becdf350bf698fdc7.svg",
     "static/media/remix-editor.png": "/static/media/remix-editor.10daec2c54f11014c260.png",
+    "static/media/ethcc6.png": "/static/media/ethcc6.f937926397162ec35342.png",
     "static/media/libraries-mobile-bck.svg": "/static/media/libraries-mobile-bck.98efddc267647d0988403c83368773e6.svg",
     "static/media/libraries-desktop-bck.svg": "/static/media/libraries-desktop-bck.2062abbc13367104ad66.svg",
     "static/media/devcon.png": "/static/media/devcon.8c92f9d09f57635470be.png",
@@ -59,10 +68,10 @@
     "static/media/up-arrow.svg": "/static/media/up-arrow.5650356096fceda745a444f34b923144.svg",
     "static/media/down-arrow.svg": "/static/media/down-arrow.985826b37b6cda704dd2076d374e6c99.svg",
     "main.67c51e52.css.map": "/static/css/main.67c51e52.css.map",
-    "main.29340912.js.map": "/static/js/main.29340912.js.map"
+    "main.3f01d554.js.map": "/static/js/main.3f01d554.js.map"
   },
   "entrypoints": [
     "static/css/main.67c51e52.css",
-    "static/js/main.29340912.js"
+    "static/js/main.3f01d554.js"
   ]
 }
