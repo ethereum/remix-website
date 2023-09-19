@@ -100,7 +100,7 @@ const Events = () => {
             date: 'October 2022',
             image: devconImage,
             location: 'Bogota, Colombia',
-            description: 'What's New in Remix and Remix Rewards Launch',
+            description: 'What\'s New in Remix and Remix Rewards Launch',
         },
         {
             id: 10,
