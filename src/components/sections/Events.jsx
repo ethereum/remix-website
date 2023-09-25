@@ -23,20 +23,22 @@ import {SwiperSlide} from "swiper/react";
 const Events = () => {
     const eventsData = [
         {
-              id: 0,
+            id: 0,
             name: 'Devconnect',
             date: 'November 2023',
             image: devconnect2Image,
             location: 'Istanbul, Türkiye',
             description: 'Solidity Summit, Tooling & Interoperability, UX, and Remix Challenge',
+            URL: 'https://devconnect.org'
         },
         {
-              id: 1,
+            id: 1,
             name: 'SmartCon by Chainlink',
             date: 'October 2023',
             image: smartconImage,
             location: 'Barcelona, Spain',
             description: 'ZKZap! Remix on Cross-Chain Circuits',
+            URL: 'https://smartcon.chain.link'
         },
         {
             id: 2,
@@ -174,6 +176,7 @@ const Events = () => {
                                             description={event.description}
                                             name={event.name}
                                             location={event.location}
+                                            URL={event.URL}
                                         />
                                     </SwiperSlide>
 
