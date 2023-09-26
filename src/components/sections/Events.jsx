@@ -47,6 +47,7 @@ const Events = () => {
             image: ethAccraImage,
             location: 'Accra, Ghana',
             description: 'Zero To DApp Day',
+            UML: 'https://www.ethaccra.xyz'
         },
         {
             id: 3,
@@ -55,6 +56,7 @@ const Events = () => {
             image: web3LagosImage,
             location: 'Lagos, Nigeria',
             description: 'Remix for Hackathons',
+            UML: 'https://event.web3bridge.com'
         },
         {
             id: 4,
@@ -63,6 +65,7 @@ const Events = () => {
             image: dsrvImage,
             location: 'Seoul, South Korea',
             description: 'WELLDONE with Remix and Remix Challenge',
+            UML: 'https://buildershouse.dsrvlabs.com/e782515b-8c04-42d9-b5ec-a174f0abb7b5'
         },
         {
             id: 5,
@@ -71,6 +74,7 @@ const Events = () => {
             image: ethconKoreaImage,
             location: 'Seoul, South Korea',
             description: 'Remix Features Every Dev Should Know',
+            UML: 'https://2023.ethcon.kr'
         },
         {
             id: 6,
@@ -79,6 +83,7 @@ const Events = () => {
             image: ethcc6Image,
             location: 'Paris, France',
             description: 'Remix Features Every Dev Should Know',
+            UML: 'https://www.ethcc.io'
         },
         {
             id: 7,
@@ -87,6 +92,7 @@ const Events = () => {
             image: ethDenver2Image,
             location: 'Denver, USA',
             description: 'Remix for Hackathons',
+            UML: 'https://www.ethdenver.com'
         },
         {
             id: 8,
@@ -95,6 +101,7 @@ const Events = () => {
             image: ethIndiaImage,
             location: 'Bengaluru, India',
             description: 'Remix for Hackathons and Remix Challenge',
+            UML: 'https://ethindia.co'
         },
         {            
             id: 9,
@@ -103,6 +110,7 @@ const Events = () => {
             image: devconImage,
             location: 'Bogota, Colombia',
             description: 'What\'s New in Remix and Remix Rewards Launch',
+            UML: 'https://devcon.org/en'
         },
         {
             id: 10,
@@ -111,6 +119,7 @@ const Events = () => {
             image: ethSafariImage,
             location: 'Nairobi, Kenya',
             description: 'Remix Essentials',
+            UML: 'https://ethsafari.xyz'
         },
         {
             id: 11,
@@ -119,6 +128,7 @@ const Events = () => {
             image: klImage,
             location: 'Kuala Lumpur and Online',
             description: 'A Stroll through Remix',
+            UML: 'https://www.meetup.com/ethmalaysia'
         },
         {
             id: 12,
@@ -127,6 +137,7 @@ const Events = () => {
             image: solidityImage,
             location: 'Amsterdam, Netherlands',
             description: 'Remix Hybrid Tools',
+            UML: 'https://devconnect.org/amsterdam'
         },
         {
             id: 13,
@@ -135,6 +146,7 @@ const Events = () => {
             image: remixImage,
             location: 'Amsterdam, Netherlands',
             description: 'GameDay Remix, a Remix-based Scavenger Hunt',
+            UML: 'https://devconnect.org/amsterdam'
         },
         {
             id: 14,
@@ -143,6 +155,7 @@ const Events = () => {
             image: denverImage,
             location: 'Denver, USA',
             description: 'Remix for Hackathons',
+            UML: 'https://www.ethdenver.com'
         }
     ];
 
