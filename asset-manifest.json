@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.67c51e52.css",
-    "main.js": "/static/js/main.07b54cb1.js",
+    "main.js": "/static/js/main.38e38df7.js",
     "static/media/remix.mp4": "/static/media/remix.b51568099f2153b20bf2.mp4",
     "static/media/smartcon23.png": "/static/media/smartcon23.eb36310752f58198ce0c.png",
     "static/media/filip_mertens.png": "/static/media/filip_mertens.9922e86e8ef46bd9cb78.png",
@@ -68,10 +68,10 @@
     "static/media/up-arrow.svg": "/static/media/up-arrow.5650356096fceda745a444f34b923144.svg",
     "static/media/down-arrow.svg": "/static/media/down-arrow.985826b37b6cda704dd2076d374e6c99.svg",
     "main.67c51e52.css.map": "/static/css/main.67c51e52.css.map",
-    "main.07b54cb1.js.map": "/static/js/main.07b54cb1.js.map"
+    "main.38e38df7.js.map": "/static/js/main.38e38df7.js.map"
   },
   "entrypoints": [
     "static/css/main.67c51e52.css",
-    "static/js/main.07b54cb1.js"
+    "static/js/main.38e38df7.js"
   ]
 }
