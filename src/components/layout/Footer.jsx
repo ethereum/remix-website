@@ -5,6 +5,7 @@ import githubIconGray from "../../assets/images/github-icon-gray.svg";
 import mediumIcon from "../../assets/images/medium-icon.svg";
 import twitterIcon from "../../assets/images/twitter-icon.svg";
 import linkedinIcon from "../../assets/images/linkedin-icon.svg";
+import discordicon from "../../assets/images/discord-icon.svg";
 
 const Footer = () => {
     return (
@@ -59,6 +60,9 @@ const Footer = () => {
                         </a>
                         <a className="inline-block" href="https://www.linkedin.com/company/ethereum-remix/" target="_blank" rel="noreferrer">
                             <img src={linkedinIcon} alt="linkedin"/>
+                        </a>
+                        <a className="inline-block" href="https://discord.com/invite/mh9hFCKkEq" target="_blank" rel="noreferrer">
+                            <img src={discordicon} alt="discord"/>
                         </a>
                     </div>
                 </div>
