@@ -200,7 +200,7 @@ const Plugins = () => {
                                                     bg-gray break-normal text-white text-xxs font-sfProSemiBold after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2">Maintained by Remix</span>
                                             </div>
                                         </div>
-                                        <h5 className="font-latoBold text-black text-xl pb-4">Static Analysis</h5>
+                                        <h5 className="font-latoBold text-black text-xl pb-4">Solidity Analyzers</h5>
                                         <p className="font-sfProRegular text-gray text-sm">
                                             Examines and debugs code without actually executing it. Integrates with
                                             Slither.
