@@ -6,7 +6,12 @@ const EventCard = ({name, date, location, description, image, URL }) => {
     <div className="rounded-lg p-3 h-[25.38rem] min-w-[17.28rem]">
       <div className="flex rounded-lg mb-2 h-[17.64rem]">
         <a href={URL} target="__blank">
-          <img src={image} alt="event" className="w-full rounded-lg mb-2"/>
+          <img
+            src={image}
+            alt="event"
+            className="w-full rounded-lg mb-2"
+            style={{height: "100%", height: "-moz-available", height: "fill-available"}}
+          />
         </a>
       </div>
       <a href={URL} className="h5 font-latoBold text-black text-xl mb-1" target="__blank">
