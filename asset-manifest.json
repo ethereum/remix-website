@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.67c51e52.css",
-    "main.js": "/static/js/main.e50fa739.js",
+    "main.js": "/static/js/main.7b4e2627.js",
     "static/media/remix.mp4": "/static/media/remix.b51568099f2153b20bf2.mp4",
     "static/media/smartcon23.png": "/static/media/smartcon23.eb36310752f58198ce0c.png",
     "static/media/filip_mertens.png": "/static/media/filip_mertens.9922e86e8ef46bd9cb78.png",
@@ -50,7 +50,7 @@
     "static/media/starknet.svg": "/static/media/starknet.80d80f09caaab46a03ed375ef39ff4f6.svg",
     "static/media/github-icon-blue.svg": "/static/media/github-icon-blue.20091859eefef402a37cda0fe731f3a5.svg",
     "static/media/ticks-icon.svg": "/static/media/ticks-icon.21e637952ee662ab757ff31e0e8d75e9.svg",
-    "static/media/discord-icon.svg": "/static/media/discord-icon.26ebe3aa61e0f35e52f9713668294725.svg",
+    "static/media/discord-icon.svg": "/static/media/discord-icon.9e65d1dd165579804caebb8f6175cc52.svg",
     "static/media/team-twitter-logo.svg": "/static/media/team-twitter-logo.443f72e7b3c5913895966cd25f1fabbc.svg",
     "static/media/twitter-icon.svg": "/static/media/twitter-icon.fc3c61f2b6a90d3495d7cd32ba3387a0.svg",
     "static/media/github-icon-gray.svg": "/static/media/github-icon-gray.0dc3036a97ad27c41c04260792fdbd9c.svg",
@@ -69,10 +69,10 @@
     "static/media/up-arrow.svg": "/static/media/up-arrow.5650356096fceda745a444f34b923144.svg",
     "static/media/down-arrow.svg": "/static/media/down-arrow.985826b37b6cda704dd2076d374e6c99.svg",
     "main.67c51e52.css.map": "/static/css/main.67c51e52.css.map",
-    "main.e50fa739.js.map": "/static/js/main.e50fa739.js.map"
+    "main.7b4e2627.js.map": "/static/js/main.7b4e2627.js.map"
   },
   "entrypoints": [
     "static/css/main.67c51e52.css",
-    "static/js/main.e50fa739.js"
+    "static/js/main.7b4e2627.js"
   ]
 }
