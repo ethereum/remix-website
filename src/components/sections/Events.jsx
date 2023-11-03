@@ -102,7 +102,7 @@ const Events = () => {
             date: 'May 2023',
             image: edcon23Image,
             location: 'Podgorica, Montenegro',
-            description: 'Unlocking NFTs with Remix: A Hands-on Workshop for Beginners',
+            description: 'Unlocking NFTs with Remix: A Hands-on Workshop',
             UML: 'https://www.edcon.io/'
         },
         {
