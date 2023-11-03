@@ -7,6 +7,8 @@ import web3LagosImage from "../../assets/images/web3_lagos.png";
 import dsrvImage from "../../assets/images/dsrv.png";
 import ethconKoreaImage from "../../assets/images/ethcon_korea.png";
 import ethcc6Image from "../../assets/images/ethcc6.png";
+import blockSplit4Image from "../../assets/images/blocksplit23.png";
+import edCon23Image from "../../assets/images/edcon23.png";
 import ethDenver2Image from "../../assets/images/ethdenver23.png";
 import ethIndiaImage from "../../assets/images/ethindia22.png";
 import devconImage from "../../assets/images/devcon.png";
@@ -28,7 +30,7 @@ const Events = () => {
             date: 'November 2023',
             image: devconnect2Image,
             location: 'Istanbul, Türkiye',
-            description: 'Solidity Summit, Tooling & Interoperability, UX, and Remix Challenge',
+            description: 'Hookah & Hack - The Future of Web3 Tooling and Remix Challenge',
             URL: 'https://devconnect.org'
         },
         {
@@ -37,7 +39,7 @@ const Events = () => {
             date: 'October 2023',
             image: smartconImage,
             location: 'Barcelona, Spain',
-            description: 'ZKZap! Remix on Cross-Chain Circuits',
+            description: 'Crosschain ZK Circuits with Remix',
             URL: 'https://smartcon.chain.link'
         },
         {
@@ -87,6 +89,24 @@ const Events = () => {
         },
         {
             id: 7,
+            name: 'BlockSplit 4',
+            date: 'May 2023',
+            image: blockSplit4Image,
+            location: 'Split, Croatia',
+            description: 'Remix Features Every Dev Should Know',
+            UML: 'https://blocksplit.net/'
+        },
+        {
+            id: 8,
+            name: 'EDCON 2023',
+            date: 'May 2023',
+            image: edcon23Image,
+            location: 'Podgorica, Montenegro',
+            description: 'Unlocking NFTs with Remix: A Hands-on Workshop for Beginners',
+            UML: 'https://www.edcon.io/'
+        },
+        {
+            id: 9,
             name: 'ETHDenver',
             date: 'March 2023',
             image: ethDenver2Image,
@@ -95,7 +115,7 @@ const Events = () => {
             UML: 'https://www.ethdenver.com'
         },
         {
-            id: 8,
+            id: 10,
             name: 'ETHIndia',
             date: 'December 2022',
             image: ethIndiaImage,
@@ -104,7 +124,7 @@ const Events = () => {
             UML: 'https://ethindia.co'
         },
         {            
-            id: 9,
+            id: 11,
             name: 'Devcon 6',
             date: 'October 2022',
             image: devconImage,
@@ -113,7 +133,7 @@ const Events = () => {
             UML: 'https://devcon.org/en'
         },
         {
-            id: 10,
+            id: 12,
             name: 'ETHSafari',
             date: 'September 2022',
             image: ethSafariImage,
@@ -122,7 +142,7 @@ const Events = () => {
             UML: 'https://ethsafari.xyz'
         },
         {
-            id: 11,
+            id: 13,
             name: 'Kuala Lumpur Ethereum Meetup',
             date: 'May 2022',
             image: klImage,
@@ -131,7 +151,7 @@ const Events = () => {
             UML: 'https://www.meetup.com/ethmalaysia'
         },
         {
-            id: 12,
+            id: 14,
             name: 'Devconnnect / Solidity Summit',
             date: 'April 2022',
             image: solidityImage,
@@ -140,7 +160,7 @@ const Events = () => {
             UML: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 13,
+            id: 15,
             name: 'Devconnnect',
             date: 'April 2022',
             image: remixImage,
@@ -149,7 +169,7 @@ const Events = () => {
             UML: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 14,
+            id: 16,
             name: 'ETHDenver',
             date: 'February 2022',
             image: denverImage,
