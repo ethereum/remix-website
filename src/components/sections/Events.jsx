@@ -25,7 +25,7 @@ import {SwiperSlide} from "swiper/react";
 const Events = () => {
     const eventsData = [
         {
-            id: 0,
+            id: 16,
             name: 'Devconnect',
             date: 'November 2023',
             image: devconnect2Image,
@@ -34,7 +34,7 @@ const Events = () => {
             URL: 'https://devconnect.org'
         },
         {
-            id: 1,
+            id: 15,
             name: 'SmartCon by Chainlink',
             date: 'October 2023',
             image: smartconImage,
@@ -43,7 +43,7 @@ const Events = () => {
             URL: 'https://smartcon.chain.link'
         },
         {
-            id: 2,
+            id: 14,
             name: 'ETHAccra',
             date: 'September 2023',
             image: ethAccraImage,
@@ -52,7 +52,7 @@ const Events = () => {
             UML: 'https://www.ethaccra.xyz'
         },
         {
-            id: 3,
+            id: 13,
             name: 'Web3 Lagos Conference',
             date: 'September 2023',
             image: web3LagosImage,
@@ -61,7 +61,7 @@ const Events = () => {
             UML: 'https://event.web3bridge.com'
         },
         {
-            id: 4,
+            id: 12,
             name: 'DSRV Builder House',
             date: 'September 2023',
             image: dsrvImage,
@@ -70,7 +70,7 @@ const Events = () => {
             UML: 'https://buildershouse.dsrvlabs.com/e782515b-8c04-42d9-b5ec-a174f0abb7b5'
         },
         {
-            id: 5,
+            id: 11,
             name: 'Ethcon Korea',
             date: 'September 2023',
             image: ethconKoreaImage,
@@ -79,7 +79,7 @@ const Events = () => {
             UML: 'https://2023.ethcon.kr'
         },
         {
-            id: 6,
+            id: 10,
             name: 'EthCC 6',
             date: 'July 2023',
             image: ethcc6Image,
@@ -88,7 +88,7 @@ const Events = () => {
             UML: 'https://www.ethcc.io'
         },
         {
-            id: 7,
+            id: 9,
             name: 'BlockSplit 4',
             date: 'May 2023',
             image: blockSplit4Image,
@@ -106,7 +106,7 @@ const Events = () => {
             UML: 'https://www.edcon.io/'
         },
         {
-            id: 9,
+            id: 7,
             name: 'ETHDenver',
             date: 'March 2023',
             image: ethDenver2Image,
@@ -115,7 +115,7 @@ const Events = () => {
             UML: 'https://www.ethdenver.com'
         },
         {
-            id: 10,
+            id: 6,
             name: 'ETHIndia',
             date: 'December 2022',
             image: ethIndiaImage,
@@ -124,7 +124,7 @@ const Events = () => {
             UML: 'https://ethindia.co'
         },
         {            
-            id: 11,
+            id: 5,
             name: 'Devcon 6',
             date: 'October 2022',
             image: devconImage,
@@ -133,7 +133,7 @@ const Events = () => {
             UML: 'https://devcon.org/en'
         },
         {
-            id: 12,
+            id: 4,
             name: 'ETHSafari',
             date: 'September 2022',
             image: ethSafariImage,
@@ -142,7 +142,7 @@ const Events = () => {
             UML: 'https://ethsafari.xyz'
         },
         {
-            id: 13,
+            id: 3,
             name: 'Kuala Lumpur Ethereum Meetup',
             date: 'May 2022',
             image: klImage,
@@ -151,7 +151,7 @@ const Events = () => {
             UML: 'https://www.meetup.com/ethmalaysia'
         },
         {
-            id: 14,
+            id: 2,
             name: 'Devconnnect / Solidity Summit',
             date: 'April 2022',
             image: solidityImage,
@@ -160,7 +160,7 @@ const Events = () => {
             UML: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 15,
+            id: 1,
             name: 'Devconnnect',
             date: 'April 2022',
             image: remixImage,
@@ -169,7 +169,7 @@ const Events = () => {
             UML: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 16,
+            id: 0,
             name: 'ETHDenver',
             date: 'February 2022',
             image: denverImage,
