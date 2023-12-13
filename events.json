@@ -1,0 +1,156 @@
+{
+  "events": [
+  {
+    "id": 0,
+    "name": "Devconnect",
+    "date": "November 2023",
+    "image": "../../assets/images/devconnect2.png",
+    "location": "Istanbul, Türkiye",
+    "description": "Hookah & Hack - The Future of Web3 Tooling and Remix Challenge",
+    "URL": "https://devconnect.org"
+},
+{
+    "id": 1,
+    "name": "SmartCon by Chainlink",
+    "date": "October 2023",
+    "image": "../../assets/images/smartcon23.png",
+    "location": "Barcelona, Spain",
+    "description": "Crosschain ZK Circuits with Remix",
+    "URL": "https://smartcon.chain.link"
+},
+{
+    "id": 2,
+    "name": "ETHAccra",
+    "date": "September 2023",
+    "image": "../../assets/images/ethaccra.png",
+    "location": "Accra, Ghana",
+    "description": "Zero To DApp Day",
+    "UML": "https://www.ethaccra.xyz"
+},
+{
+    "id": 3,
+    "name": "Web3 Lagos Conference",
+    "date": "September 2023",
+    "image": "../../assets/images/web3_lagos.png",
+    "location": "Lagos, Nigeria",
+    "description": "Remix for Hackathons",
+    "UML": "https://event.web3bridge.com"
+},
+{
+    "id": 4,
+    "name": "DSRV Builder House",
+    "date": "September 2023",
+    "image": "../../assets/images/dsrv.png",
+    "location": "Seoul, South Korea",
+    "description": "WELLDONE with Remix and Remix Challenge",
+    "UML": "https://buildershouse.dsrvlabs.com/e782515b-8c04-42d9-b5ec-a174f0abb7b5"
+},
+{
+    "id": 5,
+    "name": "Ethcon Korea",
+    "date": "September 2023",
+    "image": "../../assets/images/ethcon_korea.png",
+    "location": "Seoul, South Korea",
+    "description": "Remix Features Every Dev Should Know",
+    "UML": "https://2023.ethcon.kr"
+},
+{
+    "id": 6,
+    "name": "EthCC 6",
+    "date": "July 2023",
+    "image": "../../assets/images/ethcc6.png",
+    "location": "Paris, France",
+    "description": "Remix Features Every Dev Should Know",
+    "UML": "https://www.ethcc.io"
+},
+{
+    "id": 7,
+    "name": "BlockSplit 4",
+    "date": "May 2023",
+    "image": "../../assets/images/blocksplit23.png",
+    "location": "Split, Croatia",
+    "description": "Remix Features Every Dev Should Know",
+    "UML": "https://blocksplit.net/"
+},
+{
+    "id": 8,
+    "name": "EDCON 2023",
+    "date": "May 2023",
+    "image": "../../assets/images/edcon23.png",
+    "location": "Podgorica, Montenegro",
+    "description": "Unlocking NFTs with Remix: A Hands-on Workshop",
+    "UML": "https://www.edcon.io/"
+},
+{
+    "id": 9,
+    "name": "ETHDenver",
+    "date": "March 2023",
+    "image": "../../assets/images/ethdenver23.png",
+    "location": "Denver, USA",
+    "description": "Remix for Hackathons",
+    "UML": "https://www.ethdenver.com"
+},
+{
+    "id": 10,
+    "name": "ETHIndia",
+    "date": "December 2022",
+    "image": "../../assets/images/ethindia22.png",
+    "location": "Bengaluru, India",
+    "description": "Remix for Hackathons and Remix Challenge",
+    "UML": "https://ethindia.co"
+},
+{            
+    "id": 11,
+    "name": "Devcon 6",
+    "date": "October 2022",
+    "image": "../../assets/images/devcon.png",
+    "location": "Bogota, Colombia",
+    "description": "What\"s New in Remix and Remix Rewards Launch",
+    "UML": "https://devcon.org/en"
+},
+{
+    "id": 12,
+    "name": "ETHSafari",
+    "date": "September 2022",
+    "image": "../../assets/images/ethSafari.png",
+    "location": "Nairobi, Kenya",
+    "description": "Remix Essentials",
+    "UML": "https://ethsafari.xyz"
+},
+{
+    "id": 13,
+    "name": "Kuala Lumpur Ethereum Meetup",
+    "date": "May 2022",
+    "image": "../../assets/images/KL-meetup.png",
+    "location": "Kuala Lumpur and Online",
+    "description": "A Stroll through Remix",
+    "UML": "https://www.meetup.com/ethmalaysia"
+},
+{
+    "id": 14,
+    "name": "Devconnnect / Solidity Summit",
+    "date": "April 2022",
+    "image": "../../assets/images/devconnect_solidity_summit.jpg",
+    "location": "Amsterdam, Netherlands",
+    "description": "Remix Hybrid Tools",
+    "UML": "https://devconnect.org/amsterdam"
+},
+{
+    "id": 15,
+    "name": "Devconnnect",
+    "date": "April 2022",
+    "image": "../../assets/images/devconnect-Remix.png",
+    "location": "Amsterdam, Netherlands",
+    "description": "GameDay Remix, a Remix-based Scavenger Hunt",
+    "UML": "https://devconnect.org/amsterdam"
+},
+{
+    "id": 16,
+    "name": "ETHDenver",
+    "date": "February 2022",
+    "image": "../../assets/images/ethdenver_03.jpg",
+    "location": "Denver, USA",
+    "description": "Remix for Hackathons",
+    "UML": "https://www.ethdenver.com"
+}]
+}
