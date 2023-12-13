@@ -11,6 +11,7 @@ import blockSplit4Image from "../../assets/images/blocksplit23.png";
 import edcon23Image from "../../assets/images/edcon23.png";
 import ethDenver2Image from "../../assets/images/ethdenver23.png";
 import ethIndiaImage from "../../assets/images/ethindia22.png";
+import ethIndiaImage2 from "../../assets/images/ethindia23.png";
 import devconImage from "../../assets/images/devcon.png";
 import ethSafariImage from "../../assets/images/ethSafari.png";
 import klImage from "../../assets/images/KL-meetup.png";
@@ -25,6 +26,14 @@ import {SwiperSlide} from "swiper/react";
 const Events = () => {
     const eventsData = [
         {
+            id: 17,
+            name: 'ETHIndia',
+            date: 'December 2023',
+            image: ethIndiaImage2,
+            location: 'Bengaluru, India',
+            description: 'Scripting with Remix',
+            UML: 'https://ethindia.co'
+        },{
             id: 16,
             name: 'Devconnect',
             date: 'November 2023',
