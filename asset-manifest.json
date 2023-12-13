@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.67c51e52.css",
-    "main.js": "/static/js/main.ceb52b22.js",
+    "main.js": "/static/js/main.e589ffbe.js",
     "static/media/remix.mp4": "/static/media/remix.b51568099f2153b20bf2.mp4",
+    "static/media/blocksplit23.png": "/static/media/blocksplit23.482c05c53cf75ad8b2c3.png",
     "static/media/smartcon23.png": "/static/media/smartcon23.eb36310752f58198ce0c.png",
     "static/media/filip_mertens.png": "/static/media/filip_mertens.9922e86e8ef46bd9cb78.png",
     "static/media/yann_levreau_better.png": "/static/media/yann_levreau_better.aba54ad5e8d74a446ab1.png",
@@ -20,6 +21,7 @@
     "static/media/remix-editor2x.png": "/static/media/remix-editor2x.a84a81074b3dae1f7fc1.png",
     "static/media/devconnect-Remix.png": "/static/media/devconnect-Remix.680d7e3532d1d99385dc.png",
     "static/media/web3_lagos.png": "/static/media/web3_lagos.55ce7053d7775d0f8791.png",
+    "static/media/edcon23.png": "/static/media/edcon23.69b16f2b7946fbab3e4b.png",
     "static/media/chart-icon.svg": "/static/media/chart-icon.c0acaf6e7fb905dff23030cd3d5d95e6.svg",
     "static/media/ethdenver_03.jpg": "/static/media/ethdenver_03.31b503ccb369c6fa1b76.jpg",
     "static/media/bugs-icon.svg": "/static/media/bugs-icon.641281937a109b903dfdd41143293435.svg",
@@ -69,10 +71,10 @@
     "static/media/up-arrow.svg": "/static/media/up-arrow.5650356096fceda745a444f34b923144.svg",
     "static/media/down-arrow.svg": "/static/media/down-arrow.985826b37b6cda704dd2076d374e6c99.svg",
     "main.67c51e52.css.map": "/static/css/main.67c51e52.css.map",
-    "main.ceb52b22.js.map": "/static/js/main.ceb52b22.js.map"
+    "main.e589ffbe.js.map": "/static/js/main.e589ffbe.js.map"
   },
   "entrypoints": [
     "static/css/main.67c51e52.css",
-    "static/js/main.ceb52b22.js"
+    "static/js/main.e589ffbe.js"
   ]
 }
