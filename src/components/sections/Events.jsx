@@ -8,7 +8,7 @@ import dsrvImage from "../../assets/images/dsrv.png";
 import ethconKoreaImage from "../../assets/images/ethcon_korea.png";
 import ethcc6Image from "../../assets/images/ethcc6.png";
 import blockSplit4Image from "../../assets/images/blocksplit23.png";
-import edCon23Image from "../../assets/images/edcon23.png";
+import edcon23Image from "../../assets/images/edcon23.png";
 import ethDenver2Image from "../../assets/images/ethdenver23.png";
 import ethIndiaImage from "../../assets/images/ethindia22.png";
 import devconImage from "../../assets/images/devcon.png";
