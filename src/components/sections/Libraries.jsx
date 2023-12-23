@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import librariesBckMobile from "../../assets/images/libraries-mobile-bck.svg";
 import githubIconBlue from "../../assets/images/github-icon-blue.svg";
 import {Section} from "../../scroll-section";
@@ -17,18 +18,15 @@ const Libraries = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div/>
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl">LIBRARIES</h1>
-                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6">TOOLS FOR DEVELOPERS</h2>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="libraries.libraries" /></h1>
+                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="libraries.tools" /></h2>
                             <p className="font-sfProRegular text-gray text-lg mb-6">
-                                Remix Libraries are low-level libraries that tool developers can use to enhance their
-                                features.
+                                <FormattedMessage id="libraries.text1" />
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 mb-6">
                                 <div className="mb-6 md:mb-0">
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Analyzer</h5>
-                                    <p className="text-sm text-gray font-sfProRegular pb-2">Performs static analysis on
-                                        Solidity smart contracts to check security vulnerabilities and bad development
-                                        practices.</p>
+                                    <p className="text-sm text-gray font-sfProRegular pb-2"><FormattedMessage id="libraries.text2" /></p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
                                         <a className="text-sm font-sfProRegular text-blue hover:underline"
@@ -38,9 +36,7 @@ const Libraries = () => {
                                 </div>
                                 <div>
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Debug</h5>
-                                    <p className="text-sm text-gray font-sfProRegular pb-2">Provides several controls
-                                        that allow stepping over a trace and viewing the current state of a selected
-                                        step.</p>
+                                    <p className="text-sm text-gray font-sfProRegular pb-2"><FormattedMessage id="libraries.text3" /></p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
                                         <a className="text-sm font-sfProRegular text-blue hover:underline"
@@ -53,7 +49,7 @@ const Libraries = () => {
                                 <div className="mb-6 md:mb-0">
                                     <h5 className="text-xl text-black font-latoBold pb-2">Astwalker</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        An easy way to read the AST of a smart contract written in Solidity.</p>
+                                        <FormattedMessage id="libraries.text4" /></p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
                                         <a className="text-sm font-sfProRegular text-blue hover:underline"
@@ -64,7 +60,7 @@ const Libraries = () => {
                                 <div>
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Lib</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        A common library used across multiple Remix modules
+                                        <FormattedMessage id="libraries.text5" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -78,8 +74,7 @@ const Libraries = () => {
                                 <div className="mb-6 md:mb-0">
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Solidity</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        Loads a Solidity compiler from a provided URL, compiles
-                                        the contract, and returns the compilation details.
+                                        <FormattedMessage id="libraries.text6" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -91,7 +86,7 @@ const Libraries = () => {
                                 <div>
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix URL Resolvers</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        Helpers for resolving the content from an external URL, including GitHub, Swarm, IPFS, etc.
+                                        <FormattedMessage id="libraries.text7" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -105,7 +100,7 @@ const Libraries = () => {
                                 <div className="mb-6 md:mb-0">
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Tests</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        Solidity unit testing: both as a plugin and as a CLI.
+                                        <FormattedMessage id="libraries.text8" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -117,7 +112,7 @@ const Libraries = () => {
                                 <div>
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix Simulator</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        A Web3 wrapper for different kinds of providers.
+                                        <FormattedMessage id="libraries.text9" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -131,7 +126,7 @@ const Libraries = () => {
                                 <div className="mb-6 md:mb-0">
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remix WS Templates</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        Enables the creation of workspaces using various templates in Remix IDE.
+                                        <FormattedMessage id="libraries.text10" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
@@ -143,7 +138,7 @@ const Libraries = () => {
                                 <div>
                                     <h5 className="text-xl text-black font-latoBold pb-2">Remixd</h5>
                                     <p className="text-sm text-gray font-sfProRegular pb-2">
-                                        A daemon that allows access to a local filesystem from Remix IDE.
+                                        <FormattedMessage id="libraries.text11" />
                                     </p>
                                     <div className="flex items-center">
                                         <img className="mr-2" src={githubIconBlue} alt="github"/>
