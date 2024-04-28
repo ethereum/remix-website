@@ -17,6 +17,7 @@ module.exports = {
       'sfProSemiBold': ['SFProDisplay-Semibold', 'sans-serif'],
       'sfProThin': ['SFProDisplay-Thin', 'sans-serif'],
       'latoBold': ['Lato-Bold', 'sans-serif'],
+      'helvetica': ['Helvetica', 'sans-serif'],
     },
 
     extend: {
