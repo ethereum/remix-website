@@ -1,6 +1,6 @@
 export const sectionId = {
     about: "about",
-    ide: "ide",
+    start: "start",
     plugins: "plugins",
     libraries: "libraries",
     events: "events",
