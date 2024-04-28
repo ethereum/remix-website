@@ -15,6 +15,7 @@ import faceIcon from "../../assets/images/zokrates.svg"
 import bracketIcon from "../../assets/images/sourcify.svg"
 import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
+import { REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
 
 const Plugins = () => {
     const [showCorePlugins, setShowCorePlugins] = useState(true);
@@ -88,7 +89,7 @@ const Plugins = () => {
                     {showCorePlugins &&
                         <div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href="https://remix-ide.readthedocs.io/en/latest/compile.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/compile.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -112,7 +113,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/run.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/run.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -137,7 +138,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/file_explorer.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/file_explorer.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -160,7 +161,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/debugger.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/debugger.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -184,7 +185,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/static_analysis.html"
+                                <a href={REMIX_DOCS_URL + "/en/latest/static_analysis.html"}
                                    target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -207,7 +208,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/unittesting.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/unittesting.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -229,7 +230,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-ide.readthedocs.io/en/latest/remixd.html" target="_blank"
+                                <a href={REMIX_DOCS_URL + "/en/latest/remixd.html"} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-white border border-borderColor border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-black relative">
@@ -254,7 +255,7 @@ const Plugins = () => {
                                 </a>
 
                                 <div className="p-4">
-                                    <a href="https://remix-ide.readthedocs.io/en/latest/plugin_list.html#core-plugins"
+                                    <a href={REMIX_DOCS_URL + "/en/latest/plugin_list.html#core-plugins"}
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-black font-latoBold mt-4 md:mt-24 block hover:underline"
@@ -401,7 +402,7 @@ const Plugins = () => {
                                 </a>
 
                                 <div className="p-4">
-                                    <a href="https://remix-ide.readthedocs.io/en/latest/plugin_list.html#additional-plugins"
+                                    <a href={REMIX_DOCS_URL + "/en/latest/plugin_list.html#additional-plugins"}
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-black font-latoBold mt-4 md:mt-24 block hover:underline"
@@ -433,7 +434,7 @@ const Plugins = () => {
                                    className="text-blue hover:underline"
                                 > here</a>.
                                 Currently the Remix Plugin Engine is used in the
-                                <a href="https://remix.ethereum.org" target="_blank" rel="noreferrer"
+                                <a href={REMIX_IDE_URL} target="_blank" rel="noreferrer"
                                    className="text-blue hover:underline"
                                 > Remix IDE</a> and the
                                 <a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix"

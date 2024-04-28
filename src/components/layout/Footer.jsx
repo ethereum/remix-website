@@ -6,6 +6,7 @@ import mediumIcon from "../../assets/images/medium-icon.svg";
 import twitterIcon from "../../assets/images/twitter-icon.svg";
 import linkedinIcon from "../../assets/images/linkedin-icon.svg";
 import discordicon from "../../assets/images/discord-icon.svg";
+import { REMIX_IDE_URL } from "../../constants";
 
 const Footer = () => {
     return (
@@ -19,7 +20,7 @@ const Footer = () => {
                        <h6 className="text-gray font-sfProRegular text-xs pb-4">PRODUCT</h6>
                         <div className="inline-flex flex-col gap-3">
 
-                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://remix.ethereum.org" target="_blank" rel="noreferrer">Remix Online IDE</a>
+                        <a className="font-sfProRegular text-black text-sm block hover:underline" href={REMIX_IDE_URL} target="_blank" rel="noreferrer">Remix Online IDE</a>
                         <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://github.com/ethereum/remix-desktop/releases" target="_blank" rel="noreferrer">Remix Desktop IDE</a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">Ethereum Remix</a>
                         <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs/remixd" target="_blank" rel="noreferrer">RemixD</a>

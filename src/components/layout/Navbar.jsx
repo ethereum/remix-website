@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import logo from "../../assets/images/remix-logo.svg";
 import downArrow from "../../assets/images/down-arrow.svg";
 import upArrow from "../../assets/images/up-arrow.svg";
+import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
 
 const Navbar = () => {
     const ref = useRef();
@@ -81,7 +82,7 @@ const Navbar = () => {
 
                                 <a
                                     className=" relative inline-flex items-center hover:text-blue"
-                                    href="https://remix-ide.readthedocs.io/"
+                                    href={REMIX_DOCS_URL}
                                 >
                                     <div className={`
                                         text-gray
@@ -93,7 +94,7 @@ const Navbar = () => {
 
                                 <a
                                     className="relative inline-flex hover:cursor-pointer items-center"
-                                    href="https://remix.ethereum.org"
+                                    href={REMIX_IDE_URL}
                                 >
                                     <div className={`text-gray px-1 pt-1 text-base leading-6 font-normal`}>
                                         IDE
@@ -107,7 +108,7 @@ const Navbar = () => {
                                         </div>
                                         {isLearnOpen &&
                                             <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 pl-4 py-6 flex flex-col gap-4 bg-white`}>
-                                                <a href="https://remix.ethereum.org/?#activate=LearnEth"
+                                                <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                     target="_blank" rel="noreferrer"
                                                     className="text-gray text-base hover:text-blue hover:cursor-pointer">
                                                     Guided IDE Tutorial
@@ -170,7 +171,7 @@ const Navbar = () => {
 
                             <a
                                 className="relative inline-flex hover:cursor-pointer items-center"
-                                href="https://remix.ethereum.org"
+                                href={REMIX_IDE_URL}
                             >
                                 <div className={`text-gray px-1 pt-1 text-base leading-6 font-normal`}>
                                     IDE
@@ -183,7 +184,7 @@ const Navbar = () => {
                                     </div>
                                     {isLearnOpen &&
                                         <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 end-8 start-unset pl-4 py-6 flex flex-col gap-4 bg-white`}>
-                                            <a href="https://remix.ethereum.org/?#activate=LearnEth"
+                                            <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                 target="_blank" rel="noreferrer"
                                                 className="text-gray text-base hover:text-blue hover:cursor-pointer">
                                                 Guided IDE Tutorial
