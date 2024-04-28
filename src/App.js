@@ -11,9 +11,10 @@ import {ScrollingProvider} from "./scroll-section";
 
 function App() {
     return (
-        <>
+        <div className="mx-auto">
             <ScrollingProvider>
                 <Navbar/>
+                <SubNavbar />
                 <About/>
                 <RemixIde/>
                 <Plugins/>
@@ -23,7 +24,7 @@ function App() {
                 <Team/>
                 <Footer/>
             </ScrollingProvider>
-        </>
+        </div>
     );
 }
 

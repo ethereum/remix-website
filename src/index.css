@@ -21,3 +21,12 @@
         @apply hover:opacity-90
     }
 }
+
+.blur-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 95%;
+    background: white;
+    z-index: -1;  
+}
