@@ -7,6 +7,7 @@ import Footer from "./components/layout/Footer";
 import Events from "./components/sections/Events";
 import Team from "./components/sections/Team";
 import Navbar from "./components/layout/Navbar";
+import SubNavbar from "./components/layout/SubNavbar";
 import {ScrollingProvider} from "./scroll-section";
 
 function App() {
