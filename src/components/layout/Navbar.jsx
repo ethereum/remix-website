@@ -74,56 +74,64 @@ const Navbar = () => {
                                     href="/#"
                                 >
                                     <div
-                                        className="text-blue px-2 text-sm leading-6 font-normal">
+                                        className="text-blue px-2 text-base leading-6 font-normal">
                                         Remix Project
                                     </div>
-                                    <div className={`block bottom-0 absolute w-full h-0.5 bg-blue`} />
+                                    <div className={`block bottom-0 absolute w-full h-[1px] bg-blue`} />
                                 </a>
 
                                 <a
-                                    className=" relative inline-flex items-center hover:text-blue"
+                                    className="group relative inline-flex items-center hover:text-blue"
                                     href={REMIX_DOCS_URL}
                                 >
-                                    <div className="text-gray px-2 text-sm leading-6 font-normal"
+                                    <div className="text-black px-2 text-base leading-6 font-normal"
                                     >
                                         Documentation
                                     </div>
+                                    <div className={`block bottom-0 absolute w-full group-hover:h-0.5 bg-blue`} />
                                 </a>
 
                                 <a
-                                    className="relative inline-flex hover:cursor-pointer items-center"
+                                    className="group relative inline-flex hover:cursor-pointer items-center"
                                     href={REMIX_IDE_URL}
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
-                                    <div className="text-gray px-2 text-sm leading-6 font-normal">
+                                    <div className="text-black px-2 text-base leading-6 font-normal">
                                         IDE
                                     </div>
+                                    <div className={`block bottom-0 absolute w-full group-hover:h-0.5 bg-blue`} />
                                 </a>
 
-                                <div className="inline-flex items-center" ref={ref}>
-                                    <div className="relative px-2 text-sm leading-6 font-normal text-gray hover:cursor-pointer">
+                                <div className="group relative inline-flex items-center" ref={ref}>
+                                    <div className="relative px-2 text-base leading-6 font-normal text-black hover:cursor-pointer">
                                         <button className="inline-flex items-center w-full gap-1.5" onClick={toggleLearnSection}>
                                             Learn <img src={isLearnOpen ? upArrow : downArrow} alt="" />
                                         </button>
+
                                         {isLearnOpen &&
                                             <div className={`absolute top-8 right-0 border border-[#D9D9D9] rounded z-10 w-max px-4 py-6 flex flex-col gap-4 bg-white`}>
                                                 <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-gray text-sm hover:text-blue hover:cursor-pointer">
+                                                    className="text-black text-base hover:text-blue hover:cursor-pointer">
                                                     Guided IDE Tutorial
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-gray text-sm  hover:text-blue hover:cursor-pointer">
+                                                    className="text-black text-base  hover:text-blue hover:cursor-pointer">
                                                     Videos
                                                 </a>
                                                 <a href="https://medium.com/remix-ide"
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-gray text-sm hover:text-blue hover:cursor-pointer">
+                                                    className="text-black text-base hover:text-blue hover:cursor-pointer">
                                                     Articles
                                                 </a>
                                             </div>
                                         }
-                                    </div>                                </div>
+                                    </div>
+
+                                    <div className={`block bottom-0 absolute w-full group-hover:h-0.5 bg-blue`} />
+                                </div>
                             </div>
                         </div>
                         {/* HAMBURGER/CLOSE BUTTON */}
@@ -151,7 +159,7 @@ const Navbar = () => {
                                     className={`"text-blue" px-1 pt-1 text-base leading-6 font-normal`}>
                                     Remix Project
                                 </div>
-                                <div className={`block bottom-0 absolute w-full h-0.5 bg-blue`} />
+                                <div className={`block bottom-0 absolute w-full h-[1px] bg-blue`} />
                             </a>
 
                             <a
@@ -159,7 +167,7 @@ const Navbar = () => {
                                 href="https://remix-ide.readthedocs.io/"
                             >
                                 <div className={`
-                                    text-gray
+                                    text-black
                                     px-1 pt-1 text-base leading-6 font-normal `}
                                 >
                                     Documentation
@@ -170,12 +178,12 @@ const Navbar = () => {
                                 className="relative inline-flex hover:cursor-pointer items-center"
                                 href={REMIX_IDE_URL}
                             >
-                                <div className={`text-gray px-1 pt-1 text-base leading-6 font-normal`}>
+                                <div className={`text-black px-1 pt-1 text-base leading-6 font-normal`}>
                                     IDE
                                 </div>
                             </a>
                             <div className="inline-flex items-center" ref={ref}>
-                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-gray hover:cursor-pointer">
+                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-black hover:cursor-pointer">
                                     <div className="inline-flex w-full gap-1.5" onClick={toggleLearnSection}>
                                         Learn <img src={isLearnOpen ? upArrow : downArrow} alt="" />
                                     </div>
@@ -183,17 +191,17 @@ const Navbar = () => {
                                         <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 end-8 start-unset pl-4 py-6 flex flex-col gap-4 bg-white`}>
                                             <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                 target="_blank" rel="noreferrer"
-                                                className="text-gray text-base hover:text-blue hover:cursor-pointer">
+                                                className="text-black text-base hover:text-blue hover:cursor-pointer">
                                                 Guided IDE Tutorial
                                             </a>
                                             <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
                                                 target="_blank" rel="noreferrer"
-                                                className="text-gray text-base  hover:text-blue hover:cursor-pointer">
+                                                className="text-black text-base  hover:text-blue hover:cursor-pointer">
                                                 Videos
                                             </a>
                                             <a href="https://medium.com/remix-ide"
                                                 target="_blank" rel="noreferrer"
-                                                className="text-gray text-base hover:text-blue hover:cursor-pointer">
+                                                className="text-black text-base hover:text-blue hover:cursor-pointer">
                                                 Articles
                                             </a>
                                         </div>
