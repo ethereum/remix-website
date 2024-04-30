@@ -45,6 +45,7 @@ module.exports = {
         'rewards-desktop-bck' : "url('../src/assets/images/rewards-desktop-bck.svg')",
         'team-desktop' : "url(\"../src/assets/images/team-desktop-bck.svg\"), linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
         'team-mobile' : "linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
+        'sub-nav': "linear-gradient(0deg, rgba(45, 97, 210, 0.15) 6.58%, rgba(133, 162, 226, 0.15) 111.84%)",
 
       },
       backgroundPosition: {

@@ -32,67 +32,56 @@ const SubNavbar = () => {
 
     return (
         <div className={`hidden sm:block font-helvetica px-8 sticky w-full top-[5.5rem] z-10`}>
-            <div className="mx-auto py-0 px-3 w-fit justify-center rounded-2xl border-[1px] border-magenta bg-white overflow-hidden shadow-menu">
-                <div className="hidden sm:flex sm:flex-row sm:gap-8	">
-                    <div
-                        onClick={startSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center"
+            <div className="mx-auto p-0.25 w-fit justify-center rounded-lg border-2 border-blue bg-white bg-sub-nav overflow-hidden">
+                <div className="hidden sm:flex flex-row gap-1 p-0.5">
+                    <button onClick={startSection.onClick}
+                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
                     >
+                        <div className={`${startSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${startSection.selected ? "text-blue" : "text-gray"} px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${startSection.selected ? "text-blue" : "text-black"} px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Start
                         </div>
-                        <div className={`${startSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 bg-blue`}></div>
-                    </div>
-                    <div onClick={pluginsSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center"
+                    </button>
+                    <button onClick={pluginsSection.onClick}
+                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
                     >
+                        <div className={`${pluginsSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${pluginsSection.selected ? "text-blue " : "text-gray"} px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${pluginsSection.selected ? "text-blue" : "text-black"} px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Plugins
                         </div>
-                        <div
-                            className={`${pluginsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 rounded-top bg-blue`}></div>
-                    </div>
-                    <div
-                        onClick={librariesSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center"
+                    </button>
+                    <button onClick={librariesSection.onClick}
+                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
                     >
+                        <div className={`${librariesSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${librariesSection.selected ? "text-blue " : "text-gray"} px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${librariesSection.selected ? "text-blue" : "text-black"} px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Libraries
                         </div>
+                    </button>
+                    <button onClick={eventsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                        <div className={`${eventsSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${librariesSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 bg-blue`}></div>
-                    </div>
-                    <div onClick={eventsSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center">
-                        <div
-                            className={`${eventsSection.selected ? "text-blue " : "text-gray"} px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${eventsSection.selected ? "text-blue" : "text-black"} px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Events
                         </div>
+                    </button>
+                    <button onClick={rewardsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                        <div className={`${rewardsSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${eventsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 bg-blue`}></div>
-                    </div>
-                    <div onClick={rewardsSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center">
-                        <div
-                            className={`${rewardsSection.selected ? "text-blue " : "text-gray"} inline-flex hover:cursor-pointer items-center px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${rewardsSection.selected ? "text-blue" : "text-black"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Rewards
                         </div>
+                    </button>
+                    <button onClick={teamSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                        <div className={`${teamSection.selected ? "block" : "hidden"} inset-0 absolute bg-white rounded-md`} />
                         <div
-                            className={`${rewardsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 bg-blue`}></div>
-                    </div>
-                    <div
-                        onClick={teamSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center">
-                        <div
-                            className={`${teamSection.selected ? "text-blue " : "text-gray"} inline-flex hover:cursor-pointer items-center px-1 py-1 text-base leading-6 font-normal`}>
+                            className={`${teamSection.selected ? "text-blue" : "text-black"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
                             Team
                         </div>
-                        <div
-                            className={`${teamSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-0.5 bg-blue`}></div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
