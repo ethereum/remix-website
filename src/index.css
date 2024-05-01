@@ -50,7 +50,6 @@
     --color-primary: #007AA6 !important;
     --color-primary-transparent: #007AA680;
     --color-hover: #007AA6E5;
-    --color-gradient: linear-gradient(90deg, var(--color-code-background) 0%, var(--color-code-background) 100%) !important;
   }
 
   * {

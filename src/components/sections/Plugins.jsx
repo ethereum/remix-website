@@ -1,23 +1,30 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+
 import pluginsMobileBck from "../../assets/images/plugins-mobile-bck.svg";
+
 import { ReactComponent as DocumentIcon } from "../../assets/images/documentation-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/images/github-icon.svg";
-import twoArrowsIcon from "../../assets/images/arrows-icon.svg";
-import etherScanIcon from "../../assets/images/etherscan-icon.svg";
-import twoDocumentsIcon from "../../assets/images/documents-icon.svg";
-import bugIcon from "../../assets/images/bugs-icon.svg";
-import chartIcon from "../../assets/images/chart-icon.svg";
-import tickIcon from "../../assets/images/ticks-icon.svg";
-import verifiedIcon from "../../assets/images/verified-icon.svg";
-import contractIcon from "../../assets/images/contract-deployer.svg";
-import skyIcon from "../../assets/images/starknet.svg"
-import faceIcon from "../../assets/images/zokrates.svg"
-import bracketIcon from "../../assets/images/sourcify.svg"
-import {Section} from "../../scroll-section";
-import {sectionId} from "../../constants";
-import { REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
+import { ReactComponent as SolidityLogo } from "../../assets/images/solidity-logo.svg";
+import { ReactComponent as EtherScanIcon } from "../../assets/images/etherscan-icon.svg";
+import { ReactComponent as TwoDocumentsIcon } from "../../assets/images/documents-icon.svg";
+import { ReactComponent as BugIcon } from "../../assets/images/bugs-icon.svg";
+import { ReactComponent as ChartIcon } from "../../assets/images/chart-icon.svg";
+import { ReactComponent as TickIcon } from "../../assets/images/ticks-icon.svg";
+import { ReactComponent as VerifiedIcon } from "../../assets/images/verified-icon.svg";
+
+// TODO: Convert this to be color-mode responsive:
+import { ReactComponent as ContractIcon } from "../../assets/images/contract-deployer.svg";
+import { ReactComponent as SkyIcon } from "../../assets/images/starknet.svg"
+import { ReactComponent as FaceIcon } from "../../assets/images/zokrates.svg"
+import { ReactComponent as BracketIcon } from "../../assets/images/sourcify.svg"
+
+import { Section } from "../../scroll-section";
+import { REMIX_DOCS_URL, REMIX_IDE_URL, sectionId } from "../../constants";
+import { useColorMode } from "../../hooks/useColorMode";
 
 const Plugins = () => {
+    const { colorMode } = useColorMode();
+
     const [showCorePlugins, setShowCorePlugins] = useState(true);
     const [showAdditionalPlugins, setShowAdditionalPlugins] = useState(false);
 
@@ -94,10 +101,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={twoArrowsIcon} alt="arrows" className="mb-3"/>
+                                            <SolidityLogo className="mb-3 text-body" alt="Solidity"/>
                                             <div
                                                 className="relative group inline-block underline duration-300">
-                                                <img  src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -118,10 +125,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={etherScanIcon} alt="arrows" className="mb-3"/>
+                                            <EtherScanIcon alt="arrows" className="mb-3 text-body" />
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -143,10 +150,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={twoDocumentsIcon} alt="arrows" className="mb-3"/>
+                                            <TwoDocumentsIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -166,10 +173,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={bugIcon} alt="arrows" className="mb-3"/>
+                                            <BugIcon alt="bug" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -190,10 +197,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={chartIcon} alt="arrows" className="mb-3"/>
+                                            <ChartIcon alt="chart" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -213,10 +220,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={tickIcon} alt="arrows" className="mb-3"/>
+                                            <TickIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -235,10 +242,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={tickIcon} alt="arrows" className="mb-3"/>
+                                            <TickIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -273,10 +280,10 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={bracketIcon} alt="arrows" className="mb-3"/>
+                                            <BracketIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
                                                 className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
-                                                <img src={verifiedIcon} alt="✓"/>
+                                                <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
                                                     group-hover:block -right-12 -top-2 -translate-y-full h-5 py-1 px-3 rounded-[18.5px]
@@ -295,7 +302,7 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={etherScanIcon} alt="etherscan" className="mb-3"/>
+                                            <EtherScanIcon alt="etherscan" className="mb-3 text-body"/>
                                             <p className="bg-success
                                 text-background
                                 text-xxs
@@ -317,8 +324,8 @@ const Plugins = () => {
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
-                                            <img src={twoDocumentsIcon} alt="arrows" className="mb-3"/>
-                                            <p className="bg-codeBackground
+                                            <TwoDocumentsIcon alt="arrows" className="mb-3 text-body"/>
+                                            <p className="bg-bodyLight
                                 text-background
                                 text-xxs
                                 font-sfProSemiBold
@@ -326,7 +333,7 @@ const Plugins = () => {
                                 py-0.5 px-3
                                 rounded-[18.5px]
                                 border-solid
-                                border-codeBackground">Beta</p>
+                                border-bodyLight">Beta</p>
                                         </div>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Tenderly</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
@@ -338,7 +345,7 @@ const Plugins = () => {
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={bugIcon} alt="bug" className="mb-3"/>
+                                        <BugIcon alt="bug" className="mb-3 text-body"/>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Flattener</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             Flattens compiled contracts.
@@ -349,7 +356,7 @@ const Plugins = () => {
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={chartIcon} alt="chart" className="mb-3"/>
+                                        <ChartIcon alt="chart" className="mb-3 text-body"/>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Gas Profiler,</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             Displays the gas costs for every transaction executed.
@@ -361,7 +368,7 @@ const Plugins = () => {
                                    target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={tickIcon} alt="arrows" className="mb-3"/>
+                                        <TickIcon alt="arrows" className="mb-3 text-body"/>
                                         <h5 className="font-latoBold text-body text-xl pb-4">LearnEth</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             Tutorials about Solidity and Remix features, with quizzes to check progress.
@@ -371,7 +378,9 @@ const Plugins = () => {
                                 <a href="https://zokrates.github.io/" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={faceIcon} alt="arrows" className="mb-3"/>
+                                        <div style={{ filter: colorMode === "light" ? "none" : "invert(1)" }}>
+                                            <FaceIcon alt="arrows" className="mb-3 text-body"/>
+                                        </div>
                                         <h5 className="font-latoBold text-body text-xl pb-4">ZoKrates</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             A toolbox for zkSNARKs on Ethereum.
@@ -382,7 +391,7 @@ const Plugins = () => {
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={skyIcon} alt="arrows" className="mb-3"/>
+                                        <SkyIcon alt="arrows" className="mb-3 text-body"/>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Starknet</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             Compiles contracts written in Cairo, and deploys to Starknet chains.
@@ -393,7 +402,7 @@ const Plugins = () => {
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
-                                        <img src={contractIcon} alt="arrows" className="mb-3"/>
+                                        <ContractIcon alt="arrows" className="mb-3 text-body"/>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Contract Deployer</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
                                             Gives contracts the same address when deploying to different chains.
