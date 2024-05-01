@@ -57,7 +57,7 @@ const Navbar = () => {
                 backdrop-blur[3px]
                 blur-backdrop
             `}>
-            <div className={`${isMenuOpen ? "h-full" : ""} sticky w-full top-0 z-10 bg-white  mx-auto max-w-7xl`}>
+            <div className={`${isMenuOpen ? "h-full" : ""} sticky w-full top-0 z-10 mx-auto max-w-7xl`}>
                 <div className={`flex ${isMenuOpen ? "flex-col" : ""} w-full mx-auto max-w-7xl items-center justify-between px-8 h-[var(--space-nav-height)]`}>
                     {/* NAVIGATION BAR DESKTOP/MOBILE */}
                     <div className="flex w-full h-[4.25rem] items-center gap-4">
