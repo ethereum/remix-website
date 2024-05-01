@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/images/remix-logo.svg";
-import mailIcon from "../../assets/images/mail-icon.svg";
+import { ReactComponent as Logo } from "../../assets/images/remix-logo.svg";
+import { ReactComponent as MailIcon } from "../../assets/images/mail-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/images/github-icon.svg";
-import mediumIcon from "../../assets/images/medium-icon.svg";
-import twitterIcon from "../../assets/images/twitter-icon.svg";
-import linkedinIcon from "../../assets/images/linkedin-icon.svg";
-import discordicon from "../../assets/images/discord-icon.svg";
+import { ReactComponent as MediumIcon } from "../../assets/images/medium-icon.svg";
+import { ReactComponent as TwitterIcon } from "../../assets/images/twitter-icon.svg";
+import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin-icon.svg";
+import { ReactComponent as DiscordIcon } from "../../assets/images/discord-icon.svg";
 import { REMIX_IDE_URL } from "../../constants";
 
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="sm:container sm:m-auto pb-10 pt-20 mx-6">
                 <div className="grid grid-cols-footer">
                     <div className="col-start-1 col-end-6 md:col-start-auto md:col-end-auto">
-                        <img className="mb-11 md:mb-0" src={logo} alt="logo"/>
+                        <Logo className="mb-11 md:mb-0 text-primary" alt="logo"/>
                     </div>
                     <div className="mb-11 md:mb-0">
                        <h6 className="text-bodyLight font-sfProRegular text-xs pb-4">PRODUCT</h6>
@@ -48,22 +48,22 @@ const Footer = () => {
                     </div>
                     <div className="justify-self-end col-start-3 col-end-6 md:col-start-auto md:col-end-auto">
                         <a className="mr-9 inline-block" href="mailito:remix@ethereum.org">
-                            <img src={mailIcon} alt="mail"/>
+                            <MailIcon className="w-6 h-6 text-bodyLight" alt="mail"/>
                         </a>
                         <a className="mr-9 inline-block" href="https://github.com/ethereum/remix-project" target="_blank" rel="noreferrer">
-                            <GithubIcon class="text-bodyLight" alt="github"/>
+                            <GithubIcon className="h-6 h-6 text-bodyLight" alt="github"/>
                         </a>
                         <a className="mr-9 inline-block" href="https://twitter.com/EthereumRemix" target="_blank" rel="noreferrer">
-                            <img src={twitterIcon} alt="twitter"/>
+                            <TwitterIcon className="w-6 h-6 text-bodyLight" alt="twitter"/>
                         </a>
                         <a className="mr-9 inline-block" href="https://medium.com/remix-ide" target="_blank" rel="noreferrer">
-                            <img src={mediumIcon} alt="medium"/>
+                            <MediumIcon className="w-6 h-6 text-bodyLight" alt="medium"/>
                         </a>
                         <a className="mr-9 inline-block" href="https://www.linkedin.com/company/ethereum-remix/" target="_blank" rel="noreferrer">
-                            <img src={linkedinIcon} alt="linkedin"/>
+                            <LinkedinIcon className="w-6 h-6 text-bodyLight" alt="linkedin"/>
                         </a>
                         <a className="inline-block" href="https://discord.com/invite/mh9hFCKkEq" target="_blank" rel="noreferrer">
-                            <img src={discordicon} alt="discord"/>
+                            <DiscordIcon className="w-6 h-6 text-bodyLight" alt="discord"/>
                         </a>
                     </div>
                 </div>

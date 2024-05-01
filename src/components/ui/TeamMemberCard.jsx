@@ -1,7 +1,7 @@
 import React from "react";
-import githubLogo from "../../assets/images/team-github-logo.svg";
-import twitterLogo from "../../assets/images/team-twitter-logo.svg";
-import linkedinLogo from "../../assets/images/team-linkedin-logo.svg";
+import { ReactComponent as GitHubLogo } from "../../assets/images/github-icon.svg";
+import { ReactComponent as TwitterLogo } from "../../assets/images/team-twitter-logo.svg";
+import { ReactComponent as LinkedinLogo } from "../../assets/images/team-linkedin-logo.svg";
 
 const TeamMemberCard = ({image, name, position, twitterLink, githubLink, linkedInLink}) => {
     return (
@@ -20,7 +20,7 @@ const TeamMemberCard = ({image, name, position, twitterLink, githubLink, linkedI
                     githubLink &&
                     <a href={githubLink} target="_blank"
                        rel="noreferrer">
-                        <img src={githubLogo} alt="github"/>
+                        <GitHubLogo className="text-primary w-5 h-5" alt="github"/>
                     </a>
 
                 }
@@ -28,14 +28,14 @@ const TeamMemberCard = ({image, name, position, twitterLink, githubLink, linkedI
                     twitterLink &&
                     <a href={twitterLink} target="_blank"
                        rel="noreferrer">
-                        <img src={twitterLogo} alt="twitter"/>
+                        <TwitterLogo className="text-primary w-5 h-5" alt="twitter"/>
                     </a>
                 }
                 {
                     linkedInLink &&
                     <a  href={linkedInLink} target="_blank"
                        rel="noreferrer">
-                        <img src={linkedinLogo} alt="linkedin"/>
+                        <LinkedinLogo className="text-primary w-5 h-5" alt="linkedin"/>
                     </a>
                 }
 

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import pluginsMobileBck from "../../assets/images/plugins-mobile-bck.svg";
-import documentIcon from "../../assets/images/documentation-icon.svg";
+import { ReactComponent as DocumentIcon } from "../../assets/images/documentation-icon.svg";
 import { ReactComponent as GithubIcon } from "../../assets/images/github-icon.svg";
 import twoArrowsIcon from "../../assets/images/arrows-icon.svg";
 import etherScanIcon from "../../assets/images/etherscan-icon.svg";
@@ -296,7 +296,7 @@ const Plugins = () => {
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
                                             <img src={etherScanIcon} alt="etherscan" className="mb-3"/>
-                                            <p className="bg-green
+                                            <p className="bg-success
                                 text-background
                                 text-xxs
                                 font-sfProSemiBold
@@ -304,7 +304,7 @@ const Plugins = () => {
                                 py-0.5 px-3
                                 rounded-[18.5px]
                                 border-solid
-                                border-green">Verified</p>
+                                border-success">Verified</p>
                                         </div>
                                         <h5 className="font-latoBold text-body text-xl pb-4">Etherscan</h5>
                                         <p className="font-sfProRegular text-bodyLight text-sm">
@@ -447,7 +447,7 @@ const Plugins = () => {
                                 <div className="flex flex-col items-center">
                                     <a href="https://remix-plugin-docs.readthedocs.io/en/latest/" rel="noreferrer"
                                        target="_blank">
-                                        <img className="m-auto" src={documentIcon} alt="documentation"/>
+                                        <DocumentIcon className="m-auto text-primary" alt="documentation"/>
                                         <p className="text-primary text-sm font-sfProSemiBold pt-2 hover:underline">Documentation</p>
                                     </a>
                                 </div>

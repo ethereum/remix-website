@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { ReactComponent as Logo } from '../../assets/images/remix-logo.svg';
 import { ReactComponent as Hamburger } from '../../assets/images/hamburger.svg';
 import { ReactComponent as Close } from '../../assets/images/close.svg';
-import downArrow from "../../assets/images/down-arrow.svg";
-import upArrow from "../../assets/images/up-arrow.svg";
+import { ReactComponent as DownArrow } from "../../assets/images/down-arrow.svg";
+import { ReactComponent as UpArrow } from "../../assets/images/up-arrow.svg";
 import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
 import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
 import ThemeDropdown from "../ui/ThemeDropdown"
@@ -106,7 +106,7 @@ const Navbar = () => {
                                 <div className="group relative inline-flex items-center" ref={ref}>
                                     <div className="relative px-2 text-base leading-6 font-normal text-body hover:cursor-pointer">
                                         <button className="inline-flex items-center w-full gap-1.5" onClick={toggleLearnSection}>
-                                            Learn <img src={isLearnOpen ? upArrow : downArrow} alt="" />
+                                            Learn {isLearnOpen ? <UpArrow /> : <DownArrow />}
                                         </button>
 
                                         {isLearnOpen &&
@@ -141,7 +141,7 @@ const Navbar = () => {
                         {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
                             <div className="md:hidden flex items-center">
-                                <button onClick={toggleMenu} className="outline-none ">
+                                <button onClick={toggleMenu} className="outline-none text-body">
                                     {isMenuOpen ? <Close /> : <Hamburger />}
                                 </button>
 
@@ -186,7 +186,7 @@ const Navbar = () => {
                             <div className="inline-flex items-center" ref={ref}>
                                 <div className="relative px-1 pt-1 text-base leading-6 font-normal text-body hover:cursor-pointer">
                                     <div className="inline-flex w-full gap-1.5" onClick={toggleLearnSection}>
-                                        Learn <img src={isLearnOpen ? upArrow : downArrow} alt="" />
+                                    Learn {isLearnOpen ? <UpArrow /> : <DownArrow />}
                                     </div>
                                     {isLearnOpen &&
                                         <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 end-8 start-unset pl-4 py-6 flex flex-col gap-4 bg-background`}>

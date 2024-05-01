@@ -7,7 +7,7 @@ module.exports = {
       // black: "#333333", // -> body
       // gray: "#666666", // -> bodyLight
       // blue: "#2F6DF2", // -> primary
-      green: "#019607", // TODO: Add color theme variants
+      // green: "#019607", // TODO: Add color theme variants
       // lightGray: "#8D95A8", // -> codeBackground
       // borderColor: "#EAEAEA", // -> bodyLight
       // magenta: "#D2D2F9", // -> primaryTransparent
@@ -19,6 +19,7 @@ module.exports = {
       primary: 'var(--color-primary)',
       primaryTransparent: 'var(--color-primary-transparent)',
       hover: 'var(--color-hover)',
+      success: 'var(--color-success)',
     },
     fontFamily: {
       'sfProRegular': ['SFProDisplay-Regular', 'sans-serif'],
