@@ -3,14 +3,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      white: "#FFFFFF",
-      black: "#333333",
-      gray: "#666666",
-      blue: "#2F6DF2",
-      green: "#019607",
-      lightGray: "#8D95A8",
-      borderColor: "#EAEAEA",
-      magenta: "#D2D2F9",
+      // white: "#FFFFFF", // -> background
+      // black: "#333333", // -> body
+      // gray: "#666666", // -> bodyLight
+      // blue: "#2F6DF2", // -> primary
+      green: "#019607", // TODO: Add color theme variants
+      // lightGray: "#8D95A8", // -> codeBackground
+      // borderColor: "#EAEAEA", // -> bodyLight
+      // magenta: "#D2D2F9", // -> primaryTransparent
 
       background: 'var(--color-background)',
       body: 'var(--color-body)',
@@ -19,7 +19,6 @@ module.exports = {
       primary: 'var(--color-primary)',
       primaryTransparent: 'var(--color-primary-transparent)',
       hover: 'var(--color-hover)',
-      colorGradient: 'var(--color-gradient)',
     },
     fontFamily: {
       'sfProRegular': ['SFProDisplay-Regular', 'sans-serif'],
@@ -55,7 +54,7 @@ module.exports = {
         'team-desktop' : "url(\"../src/assets/images/team-desktop-bck.svg\"), linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
         'team-mobile' : "linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
         'sub-nav': "linear-gradient(0deg, rgba(45, 97, 210, 0.15) 6.58%, rgba(133, 162, 226, 0.15) 111.84%)",
-
+        'color-gradient': 'var(--color-gradient)',
       },
       backgroundPosition: {
         'remix-desktop-background-position': '80% 8%',

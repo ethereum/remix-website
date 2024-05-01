@@ -15,23 +15,23 @@ const Rewards = () => {
                         <div>
                             <h1 className="font-sfProThin pb-2 md:text-8xl">REMIX REWARDS</h1>
                             <h2 className="text-4xl md:text-5xl font-latoBold pb-6">NFTs FOR OUR USERS</h2>
-                            <p className="font-sfProRegular text-gray text-lg pb-6">
+                            <p className="font-sfProRegular text-bodyLight text-lg pb-6">
                                 Remix Project rewards contributors, beta testers, and UX research participants with NFTs
                                 deployed on Optimism.
                                 Remix Reward holders are able to mint a second “Remixer” NFT badge to any
                                 other user of their choice.
                             </p>
-                            <p className="font-sfProRegular text-gray text-lg">
+                            <p className="font-sfProRegular text-bodyLight text-lg">
                                 This feature allows Remix contributors to help
                                 grow our user base into a larger and more genuine open source community of practice.
                             </p>
                             <a href="https://rewards.remix.ethereum.eth.limo/" target="_blank" rel="noreferrer">
-                                <button className="text-white
+                                <button className="text-background
                             h-10 w-138
                             rounded-lg
-                            border border-blue
+                            border border-primary
                             border-solid
-                            bg-blue
+                            bg-primary
                             flex
                             items-center
                             justify-center

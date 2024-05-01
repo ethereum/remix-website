@@ -190,7 +190,7 @@ const Events = () => {
                     <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6">MIXING IT UP WITH THE COMMUNITY</h2>
                     <p className="text-center
                 font-sfProRegular
-                text-gray
+                text-bodyLight
                 text-lg xl:px-72 lg:px-6 px-6">
                         The Remix Project team gives workshops about Remix as well as general
                         introductions to the Ethereum ecosystem and its associated use cases.

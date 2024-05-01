@@ -93,7 +93,7 @@ const Team = () => {
                             <h1 className="font-sfProThin pb-2 md:text-8xl">REMIX TEAM</h1>
                             <p className="
                                 font-sfProRegular
-                                text-gray
+                                text-bodyLight
                                 text-lg pb-6">
                                 The Remix Project team is headquartered in Berlin, Germany with team members
                                 also working remotely from Armenia, India, the Netherlands, Nigeria, and USA.

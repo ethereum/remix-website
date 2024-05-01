@@ -21,7 +21,7 @@
     --color-b: #2B55B726;
     --color-c: #B198FF26;
     --color-d: #FF86E326;
-    --color-gradient: linear-gradient(180deg,
+    --color-gradient: linear-gradient(90deg,
         var(--color-a) 0%,
         var(--color-b) 37%,
         var(--color-c) 75%,
@@ -48,23 +48,26 @@
     --color-primary: #007AA6 !important;
     --color-primary-transparent: #007AA680;
     --color-hover: #007AA6E5;
-
-    --color-gradient: linear-gradient(180deg, var(--color-code-background) 0%, var(--color-code-background) 100%) !important;
+    --color-gradient: linear-gradient(90deg, var(--color-code-background) 0%, var(--color-code-background) 100%) !important;
   }
 
   * {
     scroll-behavior: smooth;
   }
 
+  body {
+    background: var(--color-background);
+  }
+  
   h1 {
     @apply font-thin;
-    @apply text-black;
+    @apply text-body;
     @apply text-7.5xl;
   }
 
   h2 {
     @apply font-bold;
-    @apply text-black;
+    @apply text-body;
   }
 
   button {
@@ -76,7 +79,7 @@
     position: absolute;
     inset: 0;
     opacity: 95%;
-    background: white;
+    background: var(--color-background);
     z-index: -1;
   }
 }
