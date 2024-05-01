@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import logo from "../../assets/images/remix-logo.svg";
 import downArrow from "../../assets/images/down-arrow.svg";
 import upArrow from "../../assets/images/up-arrow.svg";
+import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
 import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
 
 const Navbar = () => {
@@ -110,21 +111,21 @@ const Navbar = () => {
                                         </button>
 
                                         {isLearnOpen &&
-                                            <div className={`absolute top-8 right-0 border border-[#D9D9D9] rounded z-10 w-max px-4 py-6 flex flex-col gap-4 bg-white`}>
+                                            <div className={`absolute top-8 right-0 border border-blue rounded-md z-10 w-max p-6 flex flex-col gap-1.5 bg-white tracking-tight leading-6`}>
                                                 <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-black text-base hover:text-blue hover:cursor-pointer">
-                                                    Guided IDE Tutorial
+                                                    className="flex items-center gap-1 text-black leading-5 text-base hover:text-blue hover:cursor-pointer py-1.5">
+                                                    Guided IDE Tutorial <NEArrow />
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-black text-base  hover:text-blue hover:cursor-pointer">
-                                                    Videos
+                                                    className="flex items-center gap-1 text-black leading-5 text-base hover:text-blue hover:cursor-pointer py-1.5">
+                                                    Videos <NEArrow />
                                                 </a>
                                                 <a href="https://medium.com/remix-ide"
                                                     target="_blank" rel="noreferrer"
-                                                    className="text-black text-base hover:text-blue hover:cursor-pointer">
-                                                    Articles
+                                                    className="flex items-center gap-1 text-black leading-5 text-base hover:text-blue hover:cursor-pointer py-1.5">
+                                                    Articles <NEArrow />
                                                 </a>
                                             </div>
                                         }

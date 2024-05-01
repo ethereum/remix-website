@@ -59,6 +59,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         'footer': '1.3fr repeat(3, 0.6fr) 1fr'
+      },
+      letterSpacing: {
+        tight: '-0.017em',
       }
     },
   },
