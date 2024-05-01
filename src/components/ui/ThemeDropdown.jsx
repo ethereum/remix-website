@@ -1,15 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-import { ReactComponent as SunIcon } from '../../assets/images/sun.svg';
-import { ReactComponent as MoonIcon } from '../../assets/images/moon.svg';
-import { ReactComponent as ClassicIcon } from '../../assets/images/classic.svg';
 import { useColorMode } from "../../hooks/useColorMode";
 import { COLOR_MODES } from "../../constants";
 
 const ThemeDropdown = () => {
-  const { setColorMode } = useColorMode();
+  const { currentIcon: ThemeIcon, setColorMode } = useColorMode();
 
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   const dropdownRef = useRef(null);
@@ -38,12 +36,12 @@ const ThemeDropdown = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <div>
         <button type="button" className={`rounded-full p-2 ${isOpen ? 'text-primary' : 'text-body'}`} onClick={toggleDropdown}>
-          <SunIcon className='h-6' />
+          <ThemeIcon className='h-6 w-6' />
         </button>
       </div>
 
       {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-max rounded-lg bg-background border-[1px] border-primary">
+        <div className="origin-top-right absolute right-0 mt-2 w-max rounded-lg bg-background border-[1px] border-primary z-10">
           <div className="grid gap-1 px-2 py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {COLOR_MODES.map(({ name, value, icon: Icon }) => (
               <button
