@@ -10,7 +10,16 @@ module.exports = {
       green: "#019607",
       lightGray: "#8D95A8",
       borderColor: "#EAEAEA",
-      magenta: "#D2D2F9"
+      magenta: "#D2D2F9",
+
+      background: 'var(--color-background)',
+      body: 'var(--color-body)',
+      bodyLight: 'var(--color-body-light)',
+      codeBackground: 'var(--color-code-background)',
+      primary: 'var(--color-primary)',
+      primaryTransparent: 'var(--color-primary-transparent)',
+      hover: 'var(--color-hover)',
+      colorGradient: 'var(--color-gradient)',
     },
     fontFamily: {
       'sfProRegular': ['SFProDisplay-Regular', 'sans-serif'],
