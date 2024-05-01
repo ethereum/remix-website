@@ -4,6 +4,7 @@ import downArrow from "../../assets/images/down-arrow.svg";
 import upArrow from "../../assets/images/up-arrow.svg";
 import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
 import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
+import ThemeDropdown from "../ui/ThemeDropdown"
 
 const Navbar = () => {
     const ref = useRef();
@@ -59,7 +60,7 @@ const Navbar = () => {
             <div className={`${isMenuOpen ? "h-full" : ""} sticky w-full top-0 z-10 bg-white  mx-auto max-w-7xl`}>
                 <div className={`flex ${isMenuOpen ? "flex-col" : ""} w-full mx-auto max-w-7xl items-center justify-between px-8 h-[var(--space-nav-height)]`}>
                     {/* NAVIGATION BAR DESKTOP/MOBILE */}
-                    <div className="flex w-full h-[4.25rem]">
+                    <div className="flex w-full h-[4.25rem] items-center gap-4">
                         {/* DESKTOP MENU ITEMS */}
                         <div className="flex w-full justify-between h-[4.25rem]">
                             <div className="flex flex-shrink-0 items-center">
@@ -135,7 +136,11 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* HAMBURGER/CLOSE BUTTON */}
+
+                        {/* THEME DROPDOWN (desktop + mobile) */}
+                        <ThemeDropdown />
+
+                        {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
                             <div className="md:hidden flex items-center">
                                 <button onClick={toggleMenu} className="outline-none ">
@@ -183,6 +188,7 @@ const Navbar = () => {
                                     IDE
                                 </div>
                             </a>
+
                             <div className="inline-flex items-center" ref={ref}>
                                 <div className="relative px-1 pt-1 text-base leading-6 font-normal text-black hover:cursor-pointer">
                                     <div className="inline-flex w-full gap-1.5" onClick={toggleLearnSection}>

@@ -58,7 +58,8 @@ module.exports = {
         'team-background-position': '70% 5%',
       },
       gridTemplateColumns: {
-        'footer': '1.3fr repeat(3, 0.6fr) 1fr'
+        'footer': '1.3fr repeat(3, 0.6fr) 1fr',
+        '1fr-auto': '1fr auto',
       },
       letterSpacing: {
         tight: '-0.017em',
