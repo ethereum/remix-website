@@ -41,12 +41,12 @@ const ThemeDropdown = () => {
       </div>
 
       {isOpen && (
-        <div className="origin-top-right absolute right-0 mt-2 w-max rounded-lg bg-background border-[1px] border-primary z-10">
+        <div className="origin-top-right absolute right-0 top-12 w-max rounded-lg bg-background border-[1px] border-primary z-10">
           <div className="grid gap-1 px-2 py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {COLOR_MODES.map(({ name, value, icon: Icon }) => (
               <button
                 key={value}
-                className="grid grid-cols-2 grid-cols-1fr-auto gap-2 h-[34px] items-center w-full px-4 py-2 text-sm text-left text-body hover:text-primary"
+                className="grid grid-cols-2 grid-cols-1fr-auto gap-2 h-[34px] items-center w-full px-4 py-2 text-left text-body hover:text-primary"
                 onClick={() => {
                   setColorMode(value);
                   setIsOpen(false)
