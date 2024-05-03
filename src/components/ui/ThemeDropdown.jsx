@@ -4,7 +4,7 @@ import { useColorMode } from "../../hooks/useColorMode";
 import { COLOR_MODES } from "../../constants";
 
 const ThemeDropdown = () => {
-  const { currentIcon: ThemeIcon, setColorMode } = useColorMode();
+  const { ThemeIcon, setColorMode } = useColorMode();
 
   const [isOpen, setIsOpen] = useState(false);
 

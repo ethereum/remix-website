@@ -1,65 +1,42 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { COLOR_CHOICES, COLOR_MODES, LS_COLOR_SCHEME } from "../constants";
-
-
-/**
- * Removes the "color" parameter from the URL search params and updates the browser history.
- */
-const removeColorParam = () => {
-  const { location, title } = document;
-  const { pathname, origin, search, hash } = location;
-  const newSearchParams = new URLSearchParams(search);
-  newSearchParams.delete("color");
-  const sanitizedSearch =
-    newSearchParams.size < 1 ? "" : "?" + newSearchParams.toString();
-  window.history.replaceState(
-    origin,
-    title,
-    pathname + sanitizedSearch + hash
-  );
-}
-
-/**
- * Retrieves the color mode preference.
- * @returns {string} The color mode preference: 'light' | 'classic' | 'dark'
- */
-const getColorMode = () => {
-  // Check localStorage for existing color scheme preference
-  const urlParams = new URLSearchParams(window.location.search);
-
-  if (urlParams.size > 0) {
-    // This is used for color mode continuity between the main Remix site and the docs
-    const colorSchemeParam = urlParams.get("color");
-    // Remove "color" search param from URL
-    removeColorParam();
-    if (COLOR_CHOICES.includes(colorSchemeParam)) return colorSchemeParam;
-  }
-
-  const lsMode = localStorage.getItem(LS_COLOR_SCHEME);
-  return COLOR_CHOICES.includes(lsMode) ? lsMode : COLOR_CHOICES[0];
-}
 
 /**
  * Custom hook for managing color mode in the application.
- * @returns {Object} An object containing the current color mode, a function to set the color mode, and the current icon for the color mode.
+ * @returns {Object} An object containing the current color mode getter/setter, mode cycler, and current mode icon
  */
 export const useColorMode = () => {
-  const [colorMode, setColorMode] = useState(getColorMode());
+  const [colorMode, _setColorMode] = useState(COLOR_CHOICES[0]); // getColorMode()
 
+  // Customize setter to update localStorage as well
+  const setColorMode = useCallback((mode) => {
+    document.documentElement.setAttribute("style", `--color-scheme: ${mode}`);
+    localStorage.setItem(LS_COLOR_SCHEME, mode);
+    _setColorMode(mode);
+  }, [])
+
+  const cycleColorMode = useCallback(() => {
+    const currentIndex = COLOR_CHOICES.indexOf(colorMode);
+    setColorMode(COLOR_CHOICES[(currentIndex + 1) % COLOR_CHOICES.length])
+  }, [colorMode, setColorMode])
+
+  // Keyboard shortcut for cycling color mode (Ctrl/Cmd + \)
   useEffect(() => {
-    // Set the color scheme based on the new mode
-    localStorage.setItem(LS_COLOR_SCHEME, colorMode);
-    
-    // Select document and set the style attribute to denote color-scheme attribute
-    document.documentElement.setAttribute("style", `--color-scheme: ${colorMode}`);
-  }, [colorMode]);
+    const handleKeyDown = (e) => {
+      if (e.metaKey && e.code === 'Backslash') cycleColorMode()
+    }
 
-  console.log({ colorMode })
-  const currentIcon = COLOR_MODES.find(({ value }) => value === colorMode).icon;
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [cycleColorMode]);
+
+  const ThemeIcon = COLOR_MODES.find(({ value }) => value === colorMode).icon;
 
   return {
     colorMode,
     setColorMode,
-    currentIcon,
+    cycleColorMode,
+    ThemeIcon,
   }
 }
