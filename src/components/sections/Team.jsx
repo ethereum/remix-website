@@ -108,6 +108,7 @@ const Team = () => {
                             {
                                 teamMembers.map((member) => (
                                     <TeamMemberCard
+                                        key={member.name}
                                         name={member.name}
                                         image={member.image}
                                         position={member.position}
