@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { COLOR_CHOICES } from '../constants'
+import { COLOR_CHOICES, LS_COLOR_SCHEME } from '../constants'
 import { useColorMode } from './useColorMode'
 import { removeColorParam } from '../utils/url'
 
@@ -17,6 +17,11 @@ export const useColorContinuity = () => {
       setColorMode(color)
       // Update URL with color search query removed
       removeColorParam()
+    } else {
+      const lsColorMode = localStorage.getItem(LS_COLOR_SCHEME)
+      if (lsColorMode && COLOR_CHOICES.includes(lsColorMode)) {
+        setColorMode(lsColorMode)
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
