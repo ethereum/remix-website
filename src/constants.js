@@ -13,7 +13,7 @@ export const sectionId = {
 }
 
 // export const REMIX_HOME_URL = "https://remix-project.org"; // TODO: Revert for production
-export const REMIX_HOME_URL = "https://remix-dev.netlify.app";
+export const REMIX_HOME_URL = "/#";
 // export const REMIX_DOCS_URL = "https://remix-ide.readthedocs.io" // TODO: Revert for production
 export const REMIX_DOCS_URL = "https://remix-ide-dev.readthedocs.io"
 export const REMIX_IDE_URL = "https://remix.ethereum.org";
