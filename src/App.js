@@ -8,9 +8,11 @@ import Events from "./components/sections/Events";
 import Team from "./components/sections/Team";
 import Navbar from "./components/layout/Navbar";
 import SubNavbar from "./components/layout/SubNavbar";
-import {ScrollingProvider} from "./scroll-section";
+import { ScrollingProvider } from "./scroll-section";
+import { useColorContinuity } from "./hooks/useColorContinuity";
 
 function App() {
+    useColorContinuity()
     return (
         <div className="mx-auto">
             <ScrollingProvider>

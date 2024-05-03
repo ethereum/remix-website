@@ -5,9 +5,10 @@ import { ReactComponent as Close } from '../../assets/images/close.svg';
 import { ReactComponent as DownArrow } from "../../assets/images/down-arrow.svg";
 import { ReactComponent as UpArrow } from "../../assets/images/up-arrow.svg";
 import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
-import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_DOCS_URL, REMIX_IDE_URL } from "../../constants";
+import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_IDE_URL } from "../../constants";
 import ThemeDropdown from "../ui/ThemeDropdown"
 import { useColorMode } from '../../hooks/useColorMode';
+import { getDocsHref } from '../../utils/url';
 
 const Navbar = () => {
     const ref = useRef();
@@ -43,7 +44,6 @@ const Navbar = () => {
     }, [])
 
     const { colorMode } = useColorMode()
-    const colorParam = new URLSearchParams({ color: colorMode }).toString()
 
     const toggleLearnSection = () => {
         return setLearnOpen(current => !current)
@@ -85,7 +85,7 @@ const Navbar = () => {
 
                                 <a
                                     className="group relative inline-flex items-center hover:text-primary hover:shadow-thick-underline"
-                                    href={`${REMIX_DOCS_URL}?${colorParam}`}
+                                    href={getDocsHref("", colorMode)}
                                 >
                                     <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal"
                                     >
@@ -164,7 +164,7 @@ const Navbar = () => {
 
                             <a
                                 className=" relative inline-flex items-center hover:text-primary"
-                                href={`${REMIX_DOCS_URL}?${colorParam}`}
+                                href={getDocsHref("", colorMode)}
                             >
                                 <div className={`
                                     text-body

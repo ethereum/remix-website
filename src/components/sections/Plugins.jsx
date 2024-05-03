@@ -11,16 +11,17 @@ import { ReactComponent as BugIcon } from "../../assets/images/bugs-icon.svg";
 import { ReactComponent as ChartIcon } from "../../assets/images/chart-icon.svg";
 import { ReactComponent as TickIcon } from "../../assets/images/ticks-icon.svg";
 import { ReactComponent as VerifiedIcon } from "../../assets/images/verified-icon.svg";
+import { ReactComponent as BracketIcon } from "../../assets/images/sourcify.svg"
+import { ReactComponent as SkyIcon } from "../../assets/images/starknet.svg"
 
 // TODO: Convert this to be color-mode responsive:
 import { ReactComponent as ContractIcon } from "../../assets/images/contract-deployer.svg";
-import { ReactComponent as SkyIcon } from "../../assets/images/starknet.svg"
 import { ReactComponent as FaceIcon } from "../../assets/images/zokrates.svg"
-import { ReactComponent as BracketIcon } from "../../assets/images/sourcify.svg"
 
 import { Section } from "../../scroll-section";
-import { REMIX_DOCS_URL, REMIX_IDE_URL, sectionId } from "../../constants";
+import { REMIX_IDE_URL, sectionId } from "../../constants";
 import { useColorMode } from "../../hooks/useColorMode";
+import { getDocsHref } from "../../utils/url";
 
 const Plugins = () => {
     const { colorMode } = useColorMode();
@@ -96,7 +97,7 @@ const Plugins = () => {
                     {showCorePlugins &&
                         <div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href={REMIX_DOCS_URL + "/en/latest/compile.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/compile.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -120,7 +121,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/run.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/run.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -145,7 +146,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/file_explorer.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/file_explorer.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -168,7 +169,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/debugger.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/debugger.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -192,7 +193,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/static_analysis.html"}
+                                <a href={getDocsHref("/en/latest/static_analysis.html", colorMode)}
                                    target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -215,7 +216,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/unittesting.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/unittesting.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -237,7 +238,7 @@ const Plugins = () => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href={REMIX_DOCS_URL + "/en/latest/remixd.html"} target="_blank"
+                                <a href={getDocsHref("/en/latest/remixd.html", colorMode)} target="_blank"
                                    rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
@@ -262,7 +263,7 @@ const Plugins = () => {
                                 </a>
 
                                 <div className="p-4">
-                                    <a href={REMIX_DOCS_URL + "/en/latest/plugin_list.html#core-plugins"}
+                                    <a href={getDocsHref("/en/latest/plugin_list.html#core-plugins", colorMode)}
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline"
@@ -411,7 +412,7 @@ const Plugins = () => {
                                 </a>
 
                                 <div className="p-4">
-                                    <a href={REMIX_DOCS_URL + "/en/latest/plugin_list.html#additional-plugins"}
+                                    <a href={getDocsHref("/en/latest/plugin_list.html#additional-plugins", colorMode)}
                                        rel="noreferrer"
                                        target="_blank"
                                        className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline"
