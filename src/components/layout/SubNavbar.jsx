@@ -15,7 +15,6 @@ const SubNavbar = () => {
 
     useEffect(() => {
         const checkIfClickedOutside = e => {
-
             if (isLearnOpen && ref.current && !ref.current.contains(e.target)) {
                 toggleLearnSection()
             }

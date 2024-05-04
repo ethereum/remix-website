@@ -59,11 +59,17 @@
   body {
     background: var(--color-background);
   }
-  
+
   h1 {
     @apply font-thin;
     @apply text-body;
     @apply text-7.5xl;
+  }
+
+  @media (max-width: 767px) {
+    h1 {
+      @apply text-6xl;
+    }
   }
 
   h2 {
