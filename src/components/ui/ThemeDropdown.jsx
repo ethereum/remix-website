@@ -1,10 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-import { useColorMode } from "../../hooks/useColorMode";
 import { COLOR_MODES } from "../../constants";
 
-const ThemeDropdown = () => {
-  const { ThemeIcon, setColorMode } = useColorMode();
+const ThemeDropdown = ({ colorState }) => {
+  const { ThemeIcon, setColorMode } = colorState
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,7 +35,7 @@ const ThemeDropdown = () => {
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <div>
         <button type="button" className={`rounded-full p-2 ${isOpen ? 'text-primary' : 'text-body'} hover:text-primary`} onClick={toggleDropdown}>
-          <ThemeIcon className='h-6 w-6' />
+          {ThemeIcon && <ThemeIcon className='h-6 w-6' />}
         </button>
       </div>
 

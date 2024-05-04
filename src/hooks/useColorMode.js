@@ -1,16 +1,16 @@
 import { useCallback, useEffect, useState } from "react";
-import { COLOR_CHOICES, COLOR_MODES, LS_COLOR_SCHEME } from "../constants";
+import { COLOR_CHOICES, COLOR_MODES, HTML_COLOR_SCHEME, LS_COLOR_SCHEME } from "../constants";
 
 /**
  * Custom hook for managing color mode in the application.
  * @returns {Object} An object containing the current color mode getter/setter, mode cycler, and current mode icon
  */
 export const useColorMode = () => {
-  const [colorMode, _setColorMode] = useState(COLOR_CHOICES[0]); // getColorMode()
+  const [colorMode, _setColorMode] = useState(COLOR_CHOICES[0]);
 
   // Customize setter to update localStorage as well
   const setColorMode = useCallback((mode) => {
-    document.documentElement.setAttribute("style", `--color-scheme: ${mode}`);
+    document.documentElement.setAttribute("style", `${HTML_COLOR_SCHEME}: ${mode}`);
     localStorage.setItem(LS_COLOR_SCHEME, mode);
     _setColorMode(mode);
   }, [])

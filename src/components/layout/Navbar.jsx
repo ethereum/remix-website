@@ -7,10 +7,9 @@ import { ReactComponent as UpArrow } from "../../assets/images/up-arrow.svg";
 import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
 import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_HOME_URL, REMIX_IDE_URL } from "../../constants";
 import ThemeDropdown from "../ui/ThemeDropdown"
-import { useColorMode } from '../../hooks/useColorMode';
 import { getDocsHref } from '../../utils/url';
 
-const Navbar = () => {
+const Navbar = ({ colorState }) => {
     const ref = useRef();
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isLearnOpen, setLearnOpen] = useState(false);
@@ -43,8 +42,6 @@ const Navbar = () => {
         }
     }, [])
 
-    const { colorMode } = useColorMode()
-
     const toggleLearnSection = () => {
         return setLearnOpen(current => !current)
     }
@@ -74,7 +71,7 @@ const Navbar = () => {
 
                                 <a
                                     className="group relative inline-flex items-center hover:text-primary hover:shadow-thick-underline"
-                                    href={getDocsHref("", colorMode)}
+                                    href={getDocsHref("", colorState.colorMode)}
                                 >
                                     <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal"
                                     >
@@ -125,7 +122,7 @@ const Navbar = () => {
                         </div>
 
                         {/* THEME DROPDOWN (desktop + mobile) */}
-                        <ThemeDropdown />
+                        <ThemeDropdown colorState={colorState} />
 
                         {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
@@ -153,7 +150,7 @@ const Navbar = () => {
 
                             <a
                                 className=" relative inline-flex items-center hover:text-primary"
-                                href={getDocsHref("", colorMode)}
+                                href={getDocsHref("", colorState.colorMode)}
                             >
                                 <div className={`
                                     text-body

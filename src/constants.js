@@ -20,6 +20,7 @@ export const REMIX_IDE_URL = "https://remix.ethereum.org";
 export const LEARNETH_PLUGIN_TUTORIALS_URL = `${REMIX_IDE_URL}/?#activate=LearnEth`;
 
 export const LS_COLOR_SCHEME = "color-scheme";
+export const HTML_COLOR_SCHEME = "--" + LS_COLOR_SCHEME
 
 // Color mode constants
 export const COLOR_MODES = [

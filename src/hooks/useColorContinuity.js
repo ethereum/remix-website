@@ -1,14 +1,12 @@
 import { useEffect } from 'react'
 import { COLOR_CHOICES, LS_COLOR_SCHEME } from '../constants'
-import { useColorMode } from './useColorMode'
 import { removeColorParam } from '../utils/url'
 
 /**
  * Get preferred color scheme from query param on initial load, then remove param
  * This will be passed from Remix RTD site to maintain color mode across sites
  */
-export const useColorContinuity = () => {
-  const { setColorMode } = useColorMode()
+export const useColorContinuity = (setColorMode) => {
   useEffect(() => {
     const searchParams = new URLSearchParams(document.location.search)
     // Look for `color`  param (ie. ?color=light|classic|dark)

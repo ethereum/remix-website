@@ -20,12 +20,9 @@ import { ReactComponent as FaceIcon } from "../../assets/images/zokrates.svg"
 
 import { Section } from "../../scroll-section";
 import { REMIX_IDE_URL, sectionId } from "../../constants";
-import { useColorMode } from "../../hooks/useColorMode";
 import { getDocsHref } from "../../utils/url";
 
-const Plugins = () => {
-    const { colorMode } = useColorMode();
-
+const Plugins = ({ colorMode }) => {
     const [showCorePlugins, setShowCorePlugins] = useState(true);
     const [showAdditionalPlugins, setShowAdditionalPlugins] = useState(false);
 

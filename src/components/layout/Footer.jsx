@@ -7,8 +7,9 @@ import { ReactComponent as TwitterIcon } from "../../assets/images/twitter-icon.
 import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin-icon.svg";
 import { ReactComponent as DiscordIcon } from "../../assets/images/discord-icon.svg";
 import { REMIX_IDE_URL } from "../../constants";
+import { getDocsHref } from "../../utils/url";
 
-const Footer = () => {
+const Footer = ({ colorMode }) => {
     return (
         <section>
             <div className="sm:container sm:m-auto pb-10 pt-20 mx-6">
@@ -31,7 +32,7 @@ const Footer = () => {
                         <h6 className="text-bodyLight font-sfProRegular text-xs pb-4">DOCUMENTATION</h6>
                         <div className="inline-flex flex-col gap-3">
                         <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://docs.soliditylang.org/en/v0.6.1/" target="_blank" rel="noreferrer">Solidity</a>
-                        <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://remix-ide.readthedocs.io/en/latest/" target="_blank" rel="noreferrer">Remix</a>
+                        <a className="font-sfProRegular text-body text-sm  block hover:underline" href={getDocsHref("en/latest", colorMode)} target="_blank" rel="noreferrer">Remix</a>
                         <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://remix-plugin-docs.readthedocs.io/en/latest/plugin/README.html#plugin" target="_blank" rel="noreferrer">Plugins</a>
                         </div>
 

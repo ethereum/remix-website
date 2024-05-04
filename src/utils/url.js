@@ -28,5 +28,6 @@ export const getDocsHref = (relativePath, colorMode) => {
   const params = new URLSearchParams(dest.search)
   params.set('color', colorMode)
   dest.search = params.toString()
-  return dest.toString()
+  const href = dest.toString()
+  return href
 }
