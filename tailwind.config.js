@@ -39,6 +39,7 @@ module.exports = {
         "menu": "0 2px 2px rgba(84, 84, 84, 0.25)",
         "underline": "inset 0 -1px 0 0 var(--color-primary)",
         "thick-underline": "inset 0 -2px 0 0 var(--color-primary)",
+        "box": "0px 0px 0px 4px var(--color-primary)",
       },
       fontSize: {
         '8xl': ["6.25rem", { lineHeight: '6.875rem' }],

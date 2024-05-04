@@ -50,13 +50,13 @@ const Navbar = ({ colorState }) => {
         <div
             className={` fixed font-helvetica inset-x-0 top-0 z-50 flex items-center ${isMenuOpen ? "h-full" : "shadow-md"} backdrop-blur[3px] blur-backdrop`}>
             <div className={`${isMenuOpen ? "h-full" : ""} sticky w-full top-0 z-10 mx-auto max-w-7xl`}>
-                <div className={`flex ${isMenuOpen ? "flex-col" : ""} w-full mx-auto max-w-7xl items-center justify-between px-8 h-[var(--space-nav-height)]`}>
+                <div className={`flex ${isMenuOpen ? "flex-col" : "flex-row"} w-full mx-auto max-w-7xl ${isMenuOpen ? "items-start" : "items-center"} justify-between px-8 h-[var(--space-nav-height)]`}>
                     {/* NAVIGATION BAR DESKTOP/MOBILE */}
                     <div className="flex w-full h-[4.25rem] items-center gap-4">
                         {/* DESKTOP MENU ITEMS */}
                         <div className="flex w-full justify-between h-[4.25rem]">
                             <a href={REMIX_HOME_URL} className="flex flex-shrink-0 items-center">
-                                <RemixLogo className={`${isMenuOpen ? "hidden" : ""} text-primary h:[30px] w-auto block`} alt="Remix logo" />
+                                <RemixLogo className={`text-primary h:[30px] w-auto block`} alt="Remix logo" />
                             </a>
                             <div className="hidden sm:flex flex-row gap-7">
                                 <a
@@ -122,7 +122,7 @@ const Navbar = ({ colorState }) => {
                         </div>
 
                         {/* THEME DROPDOWN (desktop + mobile) */}
-                        <ThemeDropdown colorState={colorState} />
+                        {!isMenuOpen && <ThemeDropdown colorState={colorState} />}
 
                         {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
@@ -136,63 +136,56 @@ const Navbar = ({ colorState }) => {
                     </div>
                     {/* MOBILE MENU */}
                     {isMenuOpen &&
-                        <div className="pl-14 flex flex-col h-full gap-10 sm:hidden">
+                        <div className="pt-8 flex flex-col h-full gap-10 sm:hidden">
                             <a
-                                className="relative inline-flex hover:cursor-pointer items-center"
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box shadow-underline"
                                 href={REMIX_HOME_URL}
                             >
-                                <div
-                                    className={`"text-primary" px-1 pt-1 text-base leading-6 font-normal`}>
+                                <div className={`text-body px-1 pt-1 leading-6 font-normal`}>
                                     Remix Project
                                 </div>
-                                <div className={`block bottom-0 absolute w-full h-[1px] bg-primary`} />
                             </a>
 
                             <a
-                                className=" relative inline-flex items-center hover:text-primary"
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                 href={getDocsHref("", colorState.colorMode)}
                             >
-                                <div className={`
-                                    text-body
-                                    px-1 pt-1 text-base leading-6 font-normal `}
-                                >
+                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
                                     Documentation
                                 </div>
                             </a>
 
                             <a
-                                className="relative inline-flex hover:cursor-pointer items-center"
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                 href={REMIX_IDE_URL}
                             >
-                                <div className={`text-body px-1 pt-1 text-base leading-6 font-normal`}>
+                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
                                     IDE
                                 </div>
                             </a>
 
                             <div className="inline-flex items-center h-full" ref={ref}>
-                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-body hover:cursor-pointer h-full">
-                                    <button className="inline-flex w-full gap-1.5 h-full" onClick={toggleLearnSection}>
-                                    Learn {isLearnOpen ? <UpArrow /> : <DownArrow />}
-                                    </button>
-                                    {isLearnOpen &&
-                                        <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 end-8 start-unset pl-4 py-6 flex flex-col gap-4 bg-background`}>
-                                            <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
-                                                target="_blank" rel="noreferrer"
-                                                className="text-body text-base hover:text-primary hover:cursor-pointer">
-                                                Guided IDE Tutorial
-                                            </a>
-                                            <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
-                                                target="_blank" rel="noreferrer"
-                                                className="text-body text-base  hover:text-primary hover:cursor-pointer">
-                                                Videos
-                                            </a>
-                                            <a href="https://medium.com/remix-ide"
-                                                target="_blank" rel="noreferrer"
-                                                className="text-body text-base hover:text-primary hover:cursor-pointer">
-                                                Articles
-                                            </a>
-                                        </div>
-                                    }
+                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-body h-full">
+                                    <span className="inline-flex items-center w-full gap-1.5 h-full text-primary font-bold uppercase">
+                                        Learn
+                                    </span>
+                                    <div className={`relative top-0 rounded my-8 pl-4 flex flex-col gap-8 bg-background`}>
+                                        <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            Guided IDE Tutorial <NEArrow className="inline" />
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA" target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            Videos <NEArrow className="inline" />
+                                        </a>
+                                        <a href="https://medium.com/remix-ide" target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            Articles <NEArrow className="inline" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
