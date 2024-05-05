@@ -122,7 +122,7 @@ const Navbar = ({ colorState }) => {
                         </div>
 
                         {/* THEME DROPDOWN (desktop + mobile) */}
-                        {!isMenuOpen && <ThemeDropdown colorState={colorState} />}
+                        <ThemeDropdown colorState={colorState} />
 
                         {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
