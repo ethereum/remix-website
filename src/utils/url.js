@@ -31,3 +31,11 @@ export const getDocsHref = (relativePath, colorMode) => {
   const href = dest.toString()
   return href
 }
+
+/**
+ * Joins multiple path segments into a single path.
+ *
+ * @param {...string} args - The path segments to join.
+ * @returns {string} The joined path.
+ */
+export const join = (...args) => args.join("/").replace(/\/+/g, "/")
