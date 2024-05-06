@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { FormattedMessage } from 'react-intl';
+
 import { useScrollSection } from "../../scroll-section";
 import { sectionId } from "../../constants";
 
@@ -39,7 +41,7 @@ const SubNavbar = () => {
                         <div className={`${startSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${startSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Start
+                            <FormattedMessage id="subnavbar.start" />
                         </div>
                     </button>
                     <button onClick={pluginsSection.onClick}
@@ -48,7 +50,7 @@ const SubNavbar = () => {
                         <div className={`${pluginsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${pluginsSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Plugins
+                            <FormattedMessage id="subnavbar.plugins" />
                         </div>
                     </button>
                     <button onClick={librariesSection.onClick}
@@ -57,28 +59,28 @@ const SubNavbar = () => {
                         <div className={`${librariesSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${librariesSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Libraries
+                            <FormattedMessage id="subnavbar.libraries" />
                         </div>
                     </button>
                     <button onClick={eventsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
                         <div className={`${eventsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${eventsSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Events
+                            <FormattedMessage id="subnavbar.events" />
                         </div>
                     </button>
                     <button onClick={rewardsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
                         <div className={`${rewardsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${rewardsSection.selected ? "text-primary" : "text-body"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Rewards
+                            <FormattedMessage id="subnavbar.rewards" />
                         </div>
                     </button>
                     <button onClick={teamSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
                         <div className={`${teamSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
                             className={`${teamSection.selected ? "text-primary" : "text-body"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
-                            Team
+                            <FormattedMessage id="subnavbar.team" />
                         </div>
                     </button>
                 </div>

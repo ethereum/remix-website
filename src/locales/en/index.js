@@ -4,6 +4,7 @@ import footerJson from './footer.json';
 import ideJson from './ide.json';
 import librariesJson from './libraries.json';
 import navbarJson from './navbar.json';
+import subnavbarJson from './subnavbar.json';
 import pluginsJson from './plugins.json';
 import rewardsJson from './rewards.json';
 import teamJson from './team.json';
@@ -15,6 +16,7 @@ const localeMessages = {
   ...ideJson,
   ...librariesJson,
   ...navbarJson,
+  ...subnavbarJson,
   ...pluginsJson,
   ...rewardsJson,
   ...teamJson,
