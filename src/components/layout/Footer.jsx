@@ -8,7 +8,7 @@ import { ReactComponent as TwitterIcon } from "../../assets/images/twitter-icon.
 import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin-icon.svg";
 import { ReactComponent as DiscordIcon } from "../../assets/images/discord-icon.svg";
 import { REMIX_IDE_URL } from "../../constants";
-import { getDocsHref } from "../../utils/url";
+import DocsLink from "../ui/DocsLink";
 
 const Footer = ({ colorMode }) => {
     return (
@@ -33,7 +33,7 @@ const Footer = ({ colorMode }) => {
                         <h6 className="text-bodyLight font-sfProRegular text-xs pb-4"><FormattedMessage id='footer.documentation' /></h6>
                         <div className="inline-flex flex-col gap-3">
                         <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://docs.soliditylang.org/en/v0.6.1/" target="_blank" rel="noreferrer">Solidity</a>
-                        <a className="font-sfProRegular text-body text-sm  block hover:underline" href={getDocsHref("en/latest", colorMode)} target="_blank" rel="noreferrer">Remix</a>
+                        <DocsLink className="font-sfProRegular text-body text-sm  block hover:underline">Remix</DocsLink>
                         <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://remix-plugin-docs.readthedocs.io/en/latest/plugin/README.html#plugin" target="_blank" rel="noreferrer"><FormattedMessage id='footer.plugins' /></a>
                         </div>
 

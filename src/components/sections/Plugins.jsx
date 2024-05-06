@@ -21,7 +21,7 @@ import { ReactComponent as FaceIcon } from "../../assets/images/zokrates.svg"
 
 import { Section } from "../../scroll-section";
 import { sectionId } from "../../constants";
-import { getDocsHref } from "../../utils/url";
+import DocsLink from "../ui/DocsLink";
 
 const Plugins = ({ colorMode }) => {
     const [showCorePlugins, setShowCorePlugins] = useState(true);
@@ -89,8 +89,7 @@ const Plugins = ({ colorMode }) => {
                     {showCorePlugins &&
                         <div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <a href={getDocsHref("/en/latest/compile.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                <DocsLink relativePath="compile.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -111,9 +110,8 @@ const Plugins = ({ colorMode }) => {
                                             <FormattedMessage id="plugins.text3" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/run.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="run.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -133,9 +131,8 @@ const Plugins = ({ colorMode }) => {
                                             <FormattedMessage id="plugins.text4" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/file_explorer.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="file_explorer.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -155,9 +152,8 @@ const Plugins = ({ colorMode }) => {
                                             <FormattedMessage id="plugins.text5" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/debugger.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="debugger.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -177,9 +173,8 @@ const Plugins = ({ colorMode }) => {
                                             <FormattedMessage id="plugins.text6" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/static_analysis.html", colorMode)}
-                                   target="_blank" rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="static_analysis.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -199,9 +194,8 @@ const Plugins = ({ colorMode }) => {
                                         <FormattedMessage id="plugins.text7" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/unittesting.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="unittesting.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -221,9 +215,8 @@ const Plugins = ({ colorMode }) => {
                                             <FormattedMessage id="plugins.text8" />
                                         </p>
                                     </div>
-                                </a>
-                                <a href={getDocsHref("/en/latest/remixd.html", colorMode)} target="_blank"
-                                   rel="noreferrer">
+                                </DocsLink>
+                                <DocsLink relativePath="remixd.html">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -243,14 +236,12 @@ const Plugins = ({ colorMode }) => {
                                         <FormattedMessage id="plugins.text9" />
                                         </p>
                                     </div>
-                                </a>
+                                </DocsLink>
 
                                 <div className="p-4">
-                                    <a href={getDocsHref("/en/latest/plugin_list.html#core-plugins", colorMode)}
-                                       rel="noreferrer"
-                                       target="_blank"
-                                       className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline"
-                                    ><FormattedMessage id="plugins.viewAll" /></a>
+                                    <DocsLink relativePath={"plugin_list.html#core-plugins"} className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline">
+                                        <FormattedMessage id="plugins.viewAll" />
+                                    </DocsLink>
                                     <p className="font-sfProRegular text-bodyLight text-sm"><FormattedMessage id="plugins.text10" /></p>
                                 </div>
                             </div>
@@ -280,8 +271,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-etherscan-plugin.readthedocs.io/en/latest/" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://remix-etherscan-plugin.readthedocs.io/en/latest/" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -302,8 +292,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://docs.tenderly.co/monitoring/integrations#remix" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://docs.tenderly.co/monitoring/integrations#remix" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
@@ -324,8 +313,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://github.com/bunsenstraat/flattener/issues" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://github.com/bunsenstraat/flattener/issues" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
                                         <BugIcon alt="bug" className="mb-3 text-body"/>
@@ -335,8 +323,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://github.com/EdsonAlcala/remix-gas-profiler" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://github.com/EdsonAlcala/remix-gas-profiler" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
                                         <ChartIcon alt="chart" className="mb-3 text-body"/>
@@ -346,8 +333,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://remix-learneth-plugin.readthedocs.io/en/latest/index.html"
-                                   target="_blank" rel="noreferrer">
+                                <a href="https://remix-learneth-plugin.readthedocs.io/en/latest/index.html" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
                                         <TickIcon alt="arrows" className="mb-3 text-body"/>
@@ -369,8 +355,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://github.com/groksmith/starkware-remix-plugin" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://github.com/groksmith/starkware-remix-plugin" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
                                         <SkyIcon alt="arrows" className="mb-3 text-body"/>
@@ -380,8 +365,7 @@ const Plugins = ({ colorMode }) => {
                                         </p>
                                     </div>
                                 </a>
-                                <a href="https://github.com/hexdivision/remix-contract-deployer-plugin" target="_blank"
-                                   rel="noreferrer">
+                                <a href="https://github.com/hexdivision/remix-contract-deployer-plugin" target="_blank" rel="noreferrer">
                                     <div
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative group">
                                         <ContractIcon alt="arrows" className="mb-3 text-body"/>
@@ -393,11 +377,9 @@ const Plugins = ({ colorMode }) => {
                                 </a>
 
                                 <div className="p-4">
-                                    <a href={getDocsHref("/en/latest/plugin_list.html#additional-plugins", colorMode)}
-                                       rel="noreferrer"
-                                       target="_blank"
-                                       className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline"
-                                    >View All</a>
+                                    <DocsLink relativePath="plugin_list.html#additional-plugins" className="text-xl text-body font-latoBold mt-4 md:mt-24 block hover:underline">
+                                        View All
+                                    </DocsLink>
                                     <p className="font-sfProRegular text-bodyLight text-sm">
                                         <FormattedMessage id="plugins.text20" />
                                     </p>

@@ -8,7 +8,7 @@ import { ReactComponent as UpArrow } from "../../assets/images/up-arrow.svg";
 import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
 import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_HOME_URL, REMIX_IDE_URL } from "../../constants";
 import ThemeDropdown from "../ui/ThemeDropdown"
-import { getDocsHref } from '../../utils/url';
+import DocsLink from '../ui/DocsLink';
 
 const Navbar = ({ colorState, intlState }) => {
     const learnRef = useRef();
@@ -80,15 +80,12 @@ const Navbar = ({ colorState, intlState }) => {
                                     </div>
                                 </a>
 
-                                <a
-                                    className="group relative inline-flex items-center hover:text-primary hover:shadow-thick-underline"
-                                    href={getDocsHref("", colorState.colorMode)}
-                                >
+                                <DocsLink className="group relative inline-flex items-center hover:text-primary hover:shadow-thick-underline">
                                     <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal"
                                     >
                                         <FormattedMessage id='navbar.documentation' />
                                     </div>
-                                </a>
+                                </DocsLink>
 
                                 <a
                                     className="group relative inline-flex hover:cursor-pointer items-center hover:shadow-thick-underline"
@@ -190,14 +187,11 @@ const Navbar = ({ colorState, intlState }) => {
                                 </div>
                             </a>
 
-                            <a
-                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
-                                href={getDocsHref("", colorState.colorMode)}
-                            >
+                            <DocsLink className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box">
                                 <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
                                     Documentation
                                 </div>
-                            </a>
+                            </DocsLink>
 
                             <a
                                 className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
