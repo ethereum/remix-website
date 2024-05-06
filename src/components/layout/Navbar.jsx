@@ -109,7 +109,7 @@ const Navbar = ({ colorState, intlState }) => {
                                                 <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                     target="_blank" rel="noreferrer"
                                                     className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
-                                                    <FormattedMessage id='navbar.learnEth' /> <NEArrow />
+                                                    <FormattedMessage id='navbar.tutorials' /> <NEArrow />
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
                                                     target="_blank" rel="noreferrer"
@@ -183,13 +183,13 @@ const Navbar = ({ colorState, intlState }) => {
                                 href={REMIX_HOME_URL}
                             >
                                 <div className={`text-body px-1 pt-1 leading-6 font-normal`}>
-                                    Remix Project
+                                    <FormattedMessage id="navbar.remixProject" />
                                 </div>
                             </a>
 
                             <DocsLink className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box">
                                 <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
-                                    Documentation
+                                    <FormattedMessage id="navbar.documentation" />
                                 </div>
                             </DocsLink>
 
@@ -198,7 +198,7 @@ const Navbar = ({ colorState, intlState }) => {
                                 href={REMIX_IDE_URL}
                             >
                                 <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
-                                    IDE
+                                    <FormattedMessage id="navbar.ide" />
                                 </div>
                             </a>
 
@@ -212,7 +212,7 @@ const Navbar = ({ colorState, intlState }) => {
                                         <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
-                                            <FormattedMessage id='navbar.learnEth' /> <NEArrow className="inline" />
+                                            <FormattedMessage id='navbar.tutorials' /> <NEArrow className="inline" />
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA" target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
