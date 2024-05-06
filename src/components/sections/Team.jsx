@@ -95,7 +95,7 @@ const Team = () => {
                             <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="team.remixTeam" /></h1>
                             <p className="
                                 font-sfProRegular
-                                text-gray
+                                text-bodyLight
                                 text-lg pb-6">
                                 <FormattedMessage id="team.text" />
                             </p>
@@ -106,6 +106,7 @@ const Team = () => {
                             {
                                 teamMembers.map((member) => (
                                     <TeamMemberCard
+                                        key={member.name}
                                         name={member.name}
                                         image={member.image}
                                         position={member.position}

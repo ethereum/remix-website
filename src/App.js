@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import { IntlProvider } from 'react-intl'
+import { ScrollingProvider } from "./scroll-section";
+
+import Navbar from "./components/layout/Navbar";
+import SubNavbar from "./components/layout/SubNavbar";
 import About from "./components/sections/About";
 import RemixIde from "./components/sections/RemixIde";
 import Plugins from "./components/sections/Plugins";
@@ -8,43 +12,44 @@ import Rewards from "./components/sections/Rewards";
 import Footer from "./components/layout/Footer";
 import Events from "./components/sections/Events";
 import Team from "./components/sections/Team";
-import Navbar from "./components/layout/Navbar";
-import {ScrollingProvider} from "./scroll-section";
-import enJson from './locales/en'
-import zhJson from './locales/zh'
-import { QueryParams } from './utils/query-params'
 
-const locales = [
-    { code: 'en', name: 'English', localeName: 'English', messages: enJson },
-    { code: 'zh', name: 'Chinese Simplified', localeName: '简体中文', messages: zhJson },
-]
+import { useColorContinuity } from "./hooks/useColorContinuity";
+import { useColorMode } from "./hooks/useColorMode";
+import { QueryParams } from './utils/query-params'
+import { DEFAULT_LOCALE, LOCALES } from './constants'
 
 function App() {
     const queryParams = new QueryParams()
-    const lang = queryParams.get().lang || 'en'
-    const defaultLocale = locales.find(locale => locale.code === lang)
-    const [locale, setLocale] = useState(defaultLocale)
+    const lang = queryParams.get().lang || DEFAULT_LOCALE
+    const initialLocale = LOCALES.find(locale => locale.code === lang)
+    const [locale, setLocale] = useState(initialLocale)
+    
+    const colorState = useColorMode()
+    useColorContinuity(colorState.setColorMode)
+
     return (
         <IntlProvider locale={locale.code} messages={locale.messages}>
-            <ScrollingProvider>
-                <Navbar
-                    locales={locales}
-                    onSelectLocale={(selectedLocale) =>{
-                        queryParams.update({lang: selectedLocale.code})
-                        setLocale(selectedLocale)
-                    }}
-                />
-                <About/>
-                <RemixIde/>
-                <Plugins/>
-                <Libraries/>
-                <Events/>
-                <Rewards/>
-                <Team/>
-                <Footer/>
-            </ScrollingProvider>
+            <div class="mx-auto">
+                <ScrollingProvider>
+                    <Navbar
+                        locales={LOCALES}
+                        onSelectLocale={(selectedLocale) =>{
+                            queryParams.update({lang: selectedLocale.code})
+                            setLocale(selectedLocale)
+                        }}
+                        colorState={colorState}
+                    />
+                    <SubNavbar />
+                    <About />
+                    <RemixIde />
+                    <Plugins colorMode={colorState.colorMode} />
+                    <Libraries />
+                    <Events />
+                    <Rewards />
+                    <Team />
+                    <Footer colorMode={colorState.colorMode} />
+                </ScrollingProvider>
+            </div>
         </IntlProvider>
-    );
+    )
 }
-
-export default App;

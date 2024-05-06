@@ -193,7 +193,7 @@ const Events = () => {
                     <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="events.mixingItUp" /></h2>
                     <p className="text-center
                 font-sfProRegular
-                text-gray
+                text-bodyLight
                 text-lg xl:px-72 lg:px-6 px-6">
                         <FormattedMessage id="events.text" />
                     </p>

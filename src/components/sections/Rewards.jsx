@@ -16,26 +16,10 @@ const Rewards = () => {
                         <div>
                             <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="rewards.rewardsUpperCase" /></h1>
                             <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="rewards.nftsForUsers" /></h2>
-                            <p className="font-sfProRegular text-gray text-lg pb-6">
-                                <FormattedMessage id="rewards.text1" />
-                            </p>
-                            <p className="font-sfProRegular text-gray text-lg">
-                                <FormattedMessage id="rewards.text2" />
-                            </p>
+                            <p className="font-sfProRegular text-bodyLight text-lg pb-6"><FormattedMessage id="rewards.text1" /></p>
+                            <p className="font-sfProRegular text-bodyLight text-lg"><FormattedMessage id="rewards.text2" /></p>
                             <a href="https://rewards.remix.ethereum.eth.limo/" target="_blank" rel="noreferrer">
-                                <button className="text-white
-                            h-10 w-138
-                            rounded-lg
-                            border border-blue
-                            border-solid
-                            bg-blue
-                            flex
-                            items-center
-                            justify-center
-                            text-sm
-                            font-sfProRegular
-                            mt-6
-                            ">
+                                <button className="text-background h-10 w-138 rounded-lg border border-primary border-solid bg-primary flex items-center justify-center text-sm font-sfProRegular mt-6">
                                     <FormattedMessage id="rewards.rewards" />
                                 </button>
                             </a>

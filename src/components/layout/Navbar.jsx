@@ -1,33 +1,30 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
-import logo from "../../assets/images/remix-logo.svg";
-import downArrow from "../../assets/images/down-arrow.svg";
-import upArrow from "../../assets/images/up-arrow.svg";
-import {useScrollSection} from "../../scroll-section";
-import {sectionId} from "../../constants";
+import { ReactComponent as RemixLogo } from '../../assets/images/remix-logo.svg';
+import { ReactComponent as Hamburger } from '../../assets/images/hamburger.svg';
+import { ReactComponent as Close } from '../../assets/images/close.svg';
+import { ReactComponent as DownArrow } from "../../assets/images/down-arrow.svg";
+import { ReactComponent as UpArrow } from "../../assets/images/up-arrow.svg";
+import { ReactComponent as NEArrow } from "../../assets/images/northeast-arrow.svg";
+import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_HOME_URL, REMIX_IDE_URL } from "../../constants";
+import ThemeDropdown from "../ui/ThemeDropdown"
+import { getDocsHref } from '../../utils/url';
 
-const Navbar = ({ locales, onSelectLocale }) => {
-    const ref = useRef();
-    const aboutSection = useScrollSection(sectionId.about)
-    const ideSection = useScrollSection(sectionId.ide)
-    const pluginsSection = useScrollSection(sectionId.plugins)
-    const librariesSection = useScrollSection(sectionId.libraries)
-    const eventsSection = useScrollSection(sectionId.events)
-    const rewardsSection = useScrollSection(sectionId.rewards)
-    const teamSection = useScrollSection(sectionId.team)
-
+const Navbar = ({ colorState, locales, onSelectLocale }) => {
+    const learnRef = useRef();
+    const langRef = useRef();
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isLearnOpen, setLearnOpen] = useState(false);
     const [isLangOpen, setLangOpen] = useState(false);
 
-    const openMenu = () => {
-        return setMenuOpen(current => !current)
-    }
+    const toggleMenu = () => setMenuOpen(current => !current)
 
     useEffect(() => {
         const checkIfClickedOutside = e => {
-
-            if (isLearnOpen && ref.current && !ref.current.contains(e.target)) {
+            if (isLangOpen && langRef.current && !langRef.current.contains(e.target)) {
+                setLangOpen(false)
+            }
+            if (isLearnOpen && learnRef.current && !learnRef.current.contains(e.target)) {
                 toggleLearnSection()
             }
         }
@@ -35,7 +32,20 @@ const Navbar = ({ locales, onSelectLocale }) => {
         return () => {
             document.removeEventListener("mousedown", checkIfClickedOutside)
         }
-    }, [isLearnOpen])
+    }, [isLearnOpen, isLangOpen])
+
+    // "Escape" key to close the menu
+    useEffect(() => {
+        const handleKeyDown = e => {
+            if (e.key === "Escape") {
+                setMenuOpen(false)
+            }
+        }
+        document.addEventListener("keydown", handleKeyDown)
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown)
+        }
+    }, [])
 
     const toggleLearnSection = () => {
         return setLearnOpen(current => !current)
@@ -45,151 +55,194 @@ const Navbar = ({ locales, onSelectLocale }) => {
         return setLangOpen(current => !current)
     }
 
-    const navigateToSection = (section) => {
-        openMenu()
-        return section
-    }
-
     return (
-        <>
-            <div
-                className={`${isMenuOpen ? "h-full" : "shadow-menu"} px-6 fixed w-full top-0 z-10 bg-white  md:px-[6.2rem]`}>
-                <div className="flex h-24 md:h-[4.5rem]">
-                    <div className="flex justify-between w-full">
-                        <div className="flex flex-shrink-0 items-center">
-                            <img
-                                className={`${isMenuOpen ? "hidden" : ""} h-8 w-auto block`}
-                                src={logo}
-                                alt="Your Company"
-                            />
-                        </div>
-                        <div className="hidden sm:flex sm:flex-row sm:gap-8	">
-                            <div onClick={aboutSection.onClick}
-                                 className=" relative inline-flex items-center">
-                                <div className={`${aboutSection.selected ? "text-blue" : "text-gray"}  hover:cursor-pointer
-                                                  px-1 pt-1 text-base leading-6 font-normal `}>
-                                    <FormattedMessage id='navbar.about' />
-                                </div>
-                                <div
-                                    className={`${aboutSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-                            </div>
-                            <div className="inline-flex items-center" ref={ref}>
-                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-gray hover:cursor-pointer">
-                                    <div className="inline-flex w-full gap-1.5 " onClick={toggleLearnSection}>
-                                        <FormattedMessage id='navbar.learn' />
-                                        {isLearnOpen &&
-                                            <img src={upArrow} alt=""/>
-                                        }
-                                        {!isLearnOpen &&
-                                            <img src={downArrow} alt=""/>
-                                        }
+        <div
+            className={` fixed font-helvetica inset-x-0 top-0 z-50 flex items-center ${isMenuOpen ? "h-full" : "shadow-md"} backdrop-blur[3px] blur-backdrop`}>
+            <div className={`${isMenuOpen ? "h-full" : ""} sticky w-full top-0 z-10 mx-auto max-w-7xl`}>
+                <div className={`flex ${isMenuOpen ? "flex-col" : "flex-row"} w-full mx-auto max-w-7xl ${isMenuOpen ? "items-start" : "items-center"} justify-between px-8 h-[var(--space-nav-height)]`}>
+                    {/* NAVIGATION BAR DESKTOP/MOBILE */}
+                    <div className="flex w-full h-[4.25rem] items-center gap-4">
+                        {/* DESKTOP MENU ITEMS */}
+                        <div className="flex w-full justify-between h-[4.25rem]">
+                            <a href={REMIX_HOME_URL} className="flex flex-shrink-0 items-center">
+                                <RemixLogo className={`text-primary h:[30px] w-auto block`} alt="Remix logo" />
+                            </a>
+                            <div className="hidden sm:flex flex-row gap-7">
+                                <a
+                                    className="relative inline-flex hover:cursor-pointer items-center shadow-underline"
+                                    href={REMIX_HOME_URL}
+                                >
+                                    <div
+                                        className="text-primary px-2 text-base leading-6 font-normal">
+                                        <FormattedMessage id='navbar.remixProject' />
                                     </div>
-                                    { isLearnOpen &&
-                                            <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-52 pl-4 py-6 flex flex-col gap-4 bg-white`}>
-                                                <a href="https://remix-ide.readthedocs.io/en/latest/index.html"
-                                                   target="_blank" rel="noreferrer"
-                                                   className="text-gray text-base hover:text-blue hover:cursor-pointer">
-                                                    <FormattedMessage id='navbar.documentation' />
-                                                </a>
-                                                <a href="https://remix.ethereum.org/?#activate=LearnEth"
-                                                   target="_blank" rel="noreferrer"
-                                                   className="text-gray text-base hover:text-blue hover:cursor-pointer">
-                                                    <FormattedMessage id='navbar.learnEth' />
+                                </a>
+
+                                <a
+                                    className="group relative inline-flex items-center hover:text-primary hover:shadow-thick-underline"
+                                    href={getDocsHref("", colorState.colorMode)}
+                                >
+                                    <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal"
+                                    >
+                                        <FormattedMessage id='navbar.documentation' />
+                                    </div>
+                                </a>
+
+                                <a
+                                    className="group relative inline-flex hover:cursor-pointer items-center hover:shadow-thick-underline"
+                                    href={REMIX_IDE_URL}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal">
+                                        <FormattedMessage id='navbar.ide' />
+                                    </div>
+                                </a>
+
+                                <div className="relative inline-flex items-center" ref={learnRef}>
+                                    <div className="group relative text-base leading-6 font-normal text-body h-full">
+                                        <button className="inline-flex px-2 items-center w-full gap-1.5 h-full group-hover:text-primary hover:shadow-thick-underline" onClick={toggleLearnSection}>
+                                            <FormattedMessage id='navbar.learn' /> {isLearnOpen ? <UpArrow /> : <DownArrow />}
+                                        </button>
+
+                                        {isLearnOpen &&
+                                            <div className={`absolute top-16 right-0 border border-primary rounded-md z-10 w-max p-6 flex flex-col gap-1.5 bg-background tracking-tight leading-6`}>
+                                                <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
+                                                    target="_blank" rel="noreferrer"
+                                                    className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
+                                                    <FormattedMessage id='navbar.learnEth' /> <NEArrow />
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
-                                                   target="_blank" rel="noreferrer"
-                                                   className="text-gray text-base  hover:text-blue hover:cursor-pointer">
-                                                    <FormattedMessage id='navbar.videos' />
+                                                    target="_blank" rel="noreferrer"
+                                                    className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
+                                                    <FormattedMessage id='navbar.videos' /> <NEArrow />
                                                 </a>
                                                 <a href="https://medium.com/remix-ide"
-                                                   target="_blank" rel="noreferrer"
-                                                   className="text-gray text-base hover:text-blue hover:cursor-pointer">
-                                                    <FormattedMessage id='navbar.articles' />
+                                                    target="_blank" rel="noreferrer"
+                                                    className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
+                                                    <FormattedMessage id='navbar.articles' /> <NEArrow />
                                                 </a>
                                             </div>
-                                    }
+                                        }
+                                    </div>
+
                                 </div>
                             </div>
-                            <div
-                                onClick={ideSection.onClick}
-                                className="relative inline-flex hover:cursor-pointer items-center"
+                        </div>
+
+                        {/* LANGUAGE DROPDOWN MENU */}
+                        <div className="relative inline-flex items-center" ref={langRef}>
+                            <div className="group relative text-base leading-6 font-normal text-body h-full">
+                                <button className="inline-flex px-2 items-center w-full gap-1.5 h-full group-hover:text-primary hover:shadow-thick-underline" onClick={toggleLangSection}>
+                                    <FormattedMessage id='navbar.language' />
+                                    <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
+                                </button>
+                                {isLangOpen && (
+                                    <div className="origin-top-right absolute right-0 top-12 w-max rounded-lg bg-background border-[1px] border-primary z-10">
+                                        <div className="grid gap-1 px-2 py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                            {locales.map(locale => {
+                                                // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                                                const isActive = document.documentElement.lang === locale.code
+                                                return (
+                                                    <button
+                                                        className={`leading-5 ${isActive ? "text-base" : "text-primary"} hover:text-hover px-4 py-2`}
+                                                        key={locale.code}
+                                                        onClick={() => {
+                                                            onSelectLocale(locale)
+                                                            toggleLangSection()
+                                                        }}
+                                                    >
+                                                        {locale.localeName}
+                                                    </button>
+                                                )
+                                            })}
+                                        </div>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+
+
+                        {/* THEME DROPDOWN (desktop + mobile) */}
+                        <ThemeDropdown colorState={colorState} />
+
+                        {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
+                        <div className="flex items-center sm:hidden">
+                            <div className="md:hidden flex items-center">
+                                <button onClick={toggleMenu} className="outline-none text-body">
+                                    {isMenuOpen ? <Close /> : <Hamburger />}
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    {/* MOBILE MENU */}
+                    {isMenuOpen &&
+                        <div className="pt-8 flex flex-col h-full gap-10 sm:hidden">
+                            <a
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box shadow-underline"
+                                href={REMIX_HOME_URL}
                             >
-                                <div
-                                    className={`${ideSection.selected ? "text-blue" : "text-gray"} px-1 pt-1 text-base leading-6 font-normal`}>
+                                <div className={`text-body px-1 pt-1 leading-6 font-normal`}>
+                                    Remix Project
+                                </div>
+                            </a>
+
+                            <a
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                href={getDocsHref("", colorState.colorMode)}
+                            >
+                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
+                                    Documentation
+                                </div>
+                            </a>
+
+                            <a
+                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                href={REMIX_IDE_URL}
+                            >
+                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
                                     IDE
+                                </div>
+                            </a>
 
+                            {/* LEARN DROPDOWN MENU */}
+                            <div className="inline-flex items-center h-full" ref={learnRef}>
+                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-body h-full">
+                                    <span className="inline-flex items-center w-full gap-1.5 h-full text-primary font-bold uppercase">
+                                        <FormattedMessage id='navbar.learn' />
+                                    </span>
+                                    <div className={`relative top-0 rounded my-8 pl-4 flex flex-col gap-8 bg-background`}>
+                                        <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            <FormattedMessage id='navbar.learnEth' /> <NEArrow className="inline" />
+                                        </a>
+                                        <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA" target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            <FormattedMessage id='navbar.videos' /> <NEArrow className="inline" />
+                                        </a>
+                                        <a href="https://medium.com/remix-ide" target="_blank" rel="noreferrer"
+                                            className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                        >
+                                            <FormattedMessage id='navbar.articles' /> <NEArrow className="inline" />
+                                        </a>
+                                    </div>
                                 </div>
-                                <div
-                                    className={`${ideSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
+                            </div>
 
-                            </div>
-                            <div onClick={pluginsSection.onClick}
-                                 className="relative inline-flex hover:cursor-pointer items-center"
-                            >
-                                <div
-                                    className={`${pluginsSection.selected ? "text-blue " : "text-gray"} px-1 pt-1 text-base leading-6 font-normal`}>
-                                    <FormattedMessage id='navbar.plugins' />
-                                </div>
-                                <div
-                                    className={`${pluginsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-                            </div>
-                            <div
-                                onClick={librariesSection.onClick}
-                                className="relative inline-flex hover:cursor-pointer items-center"
-                            >
-                                <div
-                                    className={`${librariesSection.selected ? "text-blue " : "text-gray"} px-1 pt-1 text-base leading-6 font-normal`}>
-                                    <FormattedMessage id='navbar.libraries' />
-                                </div>
-                                <div
-                                    className={`${librariesSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-
-                            </div>
-                            <div onClick={eventsSection.onClick}
-                                 className="relative inline-flex hover:cursor-pointer items-center">
-
-                                <div
-                                    className={`${eventsSection.selected ? "text-blue " : "text-gray"} px-1 pt-1 text-base leading-6 font-normal`}>
-                                    <FormattedMessage id='navbar.events' />
-                                </div>
-                                <div
-                                    className={`${eventsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-                            </div>
-                            <div onClick={rewardsSection.onClick}
-                                 className="relative inline-flex hover:cursor-pointer items-center">
-                                <div
-                                    className={`${rewardsSection.selected ? "text-blue " : "text-gray"} inline-flex hover:cursor-pointer items-center px-1 pt-1 text-base leading-6 font-normal`}>
-                                    <FormattedMessage id='navbar.rewards' />
-                                </div>
-                                <div
-                                    className={`${rewardsSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-                            </div>
-                            <div
-                                onClick={teamSection.onClick}
-                                className="relative inline-flex hover:cursor-pointer items-center">
-                                <div
-                                    className={`${teamSection.selected ? "text-blue " : "text-gray"} inline-flex hover:cursor-pointer items-center px-1 pt-1 text-base leading-6 font-normal`}>
-                                    <FormattedMessage id='navbar.team' />
-                                </div>
-                                <div
-                                    className={`${teamSection.selected ? "block" : "hidden"} bottom-0 absolute w-full h-1 rounded bg-blue`}></div>
-                            </div>
+                            {/* LANGUAGE DROPDOWN MENU */}
                             <div className="inline-flex items-center">
                                 <div className="relative px-1 pt-1 text-base leading-6 font-normal text-gray hover:cursor-pointer">
                                     <div className="inline-flex w-full gap-1.5 " onClick={toggleLangSection}>
-                                        <FormattedMessage id='navbar.language' />
-                                        {isLangOpen &&
-                                            <img src={upArrow} alt=""/>
-                                        }
-                                        {!isLangOpen &&
-                                            <img src={downArrow} alt=""/>
-                                        }
+                                        <FormattedMessage id='navbar.language' /> <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
                                     </div>
                                     {isLangOpen && <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-32 pl-4 py-6 flex flex-col gap-4 bg-white`}>
                                         {locales.map(locale => {
+                                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
                                             return (
-                                                // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                                                <a
+                                                <button
                                                     className="text-gray text-base hover:text-blue hover:cursor-pointer"
                                                     key={locale.code}
                                                     onClick={() => {
@@ -198,141 +251,17 @@ const Navbar = ({ locales, onSelectLocale }) => {
                                                     }}
                                                 >
                                                     {locale.localeName}
-                                                </a>
+                                                </button>
                                             )
                                         })}
                                     </div>}
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex items-center sm:hidden">
-                        <div className="md:hidden flex items-center">
-                            <button onClick={openMenu} className="outline-none ">
-                                {isMenuOpen &&
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 21L21 1M21 21L1 1" stroke="black" strokeLinecap="round"
-                                              strokeLinejoin="round"/>
-                                    </svg>
-
-                                }
-                                {!isMenuOpen &&
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.2998 16.9668H22.6331M1.2998 0.966797H22.6331H1.2998ZM1.2998 8.9668H22.6331H1.2998Z"
-                                            stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
-                                    </svg>
-                                }
-                            </button>
-
-                        </div>
-                    </div>
+                    }
                 </div>
-                {isMenuOpen &&
-                    <div className="pl-14 flex flex-col h-full gap-10 sm:hidden">
-                        <div onClick={() => navigateToSection(aboutSection.onClick())}
-                             className={`${aboutSection.selected ? "text-blue" : "text-gray"} text-2xl font-normal  hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.about' />
-                        </div>
-                        <div >
-                            <div className={`${isLearnOpen ? "mb-6" : ""} text-2xl inline-flex gap-4  text-gray hover:cursor-pointer`}
-                                 onClick={toggleLearnSection}>
-                                <FormattedMessage id='navbar.learn' />
-                                {isLearnOpen &&
-                                    <img src={upArrow} alt=""/>
-                                }
-                                {!isLearnOpen &&
-                                    <img src={downArrow} alt=""/>
-                                }
-
-                            </div>
-                            {isLearnOpen &&
-                            <div className="pl-4 flex flex-col gap-5 ">
-                                    <a href="https://remix-ide.readthedocs.io/en/latest/index.html"
-                                        target="_blank" rel="noreferrer"
-                                        className="text-gray text-2xl hover:text-blue hover:cursor-pointer">
-                                        <FormattedMessage id='navbar.documents' />
-                                    </a>
-                                <a href="https://remix.ethereum.org/?#activate=LearnEth"
-                                    target="_blank" rel="noreferrer"
-                                    className="text-gray text-2xl hover:text-blue hover:cursor-pointer">
-                                    <FormattedMessage id='navbar.learnEth' />
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
-                                    target="_blank" rel="noreferrer"
-                                    className="text-gray text-2xl  hover:text-blue hover:cursor-pointer">
-                                    <FormattedMessage id='navbar.videos' />
-                                </a>
-                                <a href="https://medium.com/remix-ide"
-                                    target="_blank" rel="noreferrer"
-                                    className="text-gray text-2xl hover:text-blue hover:cursor-pointer">
-                                    <FormattedMessage id='navbar.articles' />
-                                </a>
-
-                            </div>
-                            }
-
-                        </div>
-                        <div onClick={() => navigateToSection(ideSection.onClick())}
-                             className={`${ideSection.selected ? "text-blue" : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            IDE
-                        </div>
-                        <div onClick={() => navigateToSection(pluginsSection.onClick())}
-                             className={`${pluginsSection.selected ? "text-blue " : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.plugins' />
-                        </div>
-                        <div onClick={() => navigateToSection(librariesSection.onClick())}
-                             className={`${librariesSection.selected ? "text-blue " : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.libraries' />
-                        </div>
-                        <div onClick={() => navigateToSection(eventsSection.onClick())}
-                             className={`${eventsSection.selected ? "text-blue " : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.events' />
-                        </div>
-                        <div onClick={() => navigateToSection(rewardsSection.onClick())}
-                             className={`${rewardsSection.selected ? "text-blue " : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.rewards' />
-                        </div>
-                        <div onClick={() => navigateToSection(teamSection.onClick())}
-                             className={`${teamSection.selected ? "text-blue " : "text-gray"} text-2xl hover:cursor-pointer`}>
-                            <FormattedMessage id='navbar.team' />
-                        </div>
-                        <div >
-                            <div className={`${isLangOpen ? "mb-6" : ""} text-2xl inline-flex gap-4  text-gray hover:cursor-pointer`}
-                                 onClick={toggleLangSection}>
-                                <FormattedMessage id='navbar.language' />
-                                {isLangOpen &&
-                                    <img src={upArrow} alt=""/>
-                                }
-                                {!isLangOpen &&
-                                    <img src={downArrow} alt=""/>
-                                }
-                            </div>
-                            {isLangOpen &&
-                            <div className="pl-4 flex flex-col gap-5 ">
-                                {locales.map(locale => {
-                                    return (
-                                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                                        <a
-                                            className="text-gray text-2xl hover:text-blue hover:cursor-pointer"
-                                            key={locale.code}
-                                            onClick={() => {
-                                                onSelectLocale(locale)
-                                            }}
-                                        >
-                                            {locale.localeName}
-                                        </a>
-                                    )
-                                })}
-                            </div>
-                            }
-                        </div>
-                    </div>
-                }
             </div>
-        </>
+        </div>
 
     );
 };
