@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { IntlProvider } from 'react-intl'
 import { ScrollingProvider } from "./scroll-section";
 
@@ -15,28 +14,23 @@ import Team from "./components/sections/Team";
 
 import { useColorContinuity } from "./hooks/useColorContinuity";
 import { useColorMode } from "./hooks/useColorMode";
-import { QueryParams } from './utils/query-params'
-import { DEFAULT_LOCALE, LOCALES } from './constants'
+import { LOCALES } from './constants'
+import { useIntl } from './hooks/useIntl';
 
 function App() {
-    const queryParams = new QueryParams()
-    const lang = queryParams.get().lang || DEFAULT_LOCALE
-    const initialLocale = LOCALES.find(locale => locale.code === lang)
-    const [locale, setLocale] = useState(initialLocale)
-    
+    const intlState = useIntl()
+    const { code, messages } = intlState.locale
+
     const colorState = useColorMode()
     useColorContinuity(colorState.setColorMode)
 
     return (
-        <IntlProvider locale={locale.code} messages={locale.messages}>
-            <div class="mx-auto">
+        <IntlProvider locale={code} messages={messages}>
+            <div className="mx-auto">
                 <ScrollingProvider>
                     <Navbar
+                        intlState={intlState}
                         locales={LOCALES}
-                        onSelectLocale={(selectedLocale) =>{
-                            queryParams.update({lang: selectedLocale.code})
-                            setLocale(selectedLocale)
-                        }}
                         colorState={colorState}
                     />
                     <SubNavbar />
@@ -53,3 +47,5 @@ function App() {
         </IntlProvider>
     )
 }
+
+export default App;

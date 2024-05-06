@@ -10,14 +10,12 @@ import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_HOME_URL, REMIX_IDE_URL } from "..
 import ThemeDropdown from "../ui/ThemeDropdown"
 import { getDocsHref } from '../../utils/url';
 
-const Navbar = ({ colorState, locales, onSelectLocale }) => {
+const Navbar = ({ colorState, intlState }) => {
     const learnRef = useRef();
     const langRef = useRef();
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isLearnOpen, setLearnOpen] = useState(false);
     const [isLangOpen, setLangOpen] = useState(false);
-
-    const toggleMenu = () => setMenuOpen(current => !current)
 
     useEffect(() => {
         const checkIfClickedOutside = e => {
@@ -46,6 +44,10 @@ const Navbar = ({ colorState, locales, onSelectLocale }) => {
             document.removeEventListener("keydown", handleKeyDown)
         }
     }, [])
+
+    const { locales, setLocale } = intlState
+
+    const toggleMenu = () => setMenuOpen(current => !current)
 
     const toggleLearnSection = () => {
         return setLearnOpen(current => !current)
@@ -148,7 +150,7 @@ const Navbar = ({ colorState, locales, onSelectLocale }) => {
                                                         className={`leading-5 ${isActive ? "text-base" : "text-primary"} hover:text-hover px-4 py-2`}
                                                         key={locale.code}
                                                         onClick={() => {
-                                                            onSelectLocale(locale)
+                                                            setLocale(locale)
                                                             toggleLangSection()
                                                         }}
                                                     >
@@ -246,7 +248,7 @@ const Navbar = ({ colorState, locales, onSelectLocale }) => {
                                                     className="text-gray text-base hover:text-blue hover:cursor-pointer"
                                                     key={locale.code}
                                                     onClick={() => {
-                                                        onSelectLocale(locale)
+                                                        setLocale(locale)
                                                         toggleLangSection()
                                                     }}
                                                 >
