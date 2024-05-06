@@ -2,6 +2,9 @@ import { ReactComponent as SunIcon } from './assets/images/sun.svg';
 import { ReactComponent as MoonIcon } from './assets/images/moon.svg';
 import { ReactComponent as ClassicIcon } from './assets/images/classic.svg';
 
+import enJson from './locales/en'
+import zhJson from './locales/zh'
+
 export const sectionId = {
     about: "about",
     start: "start",
@@ -30,3 +33,14 @@ export const COLOR_MODES = [
 ]
 
 export const COLOR_CHOICES = COLOR_MODES.map(({ value }) => value);
+
+/**
+ * INTERNATIONALIZATION
+ */
+
+export const LOCALES = [
+  { code: 'en', name: 'English', localeName: 'English', messages: enJson },
+  { code: 'zh', name: 'Chinese Simplified', localeName: '简体中文', messages: zhJson },
+]
+
+export const DEFAULT_LOCALE = locales[0]

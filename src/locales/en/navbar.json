@@ -1,14 +1,10 @@
 {
-  "navbar.about": "About",
-  "navbar.learn": "Learn",
+  "navbar.remixProject": "Remix Project",
   "navbar.documentation": "Documentation",
-  "navbar.learnEth": "LearnEth Plugin Tutorials",
+  "navbar.ide": "IDE",
+  "navbar.learn": "Learn",  
+  "navbar.learnEth": "Guided IDE Tutorials",
   "navbar.videos": "Videos",
   "navbar.articles": "Articles",
-  "navbar.plugins": "Plugins",
-  "navbar.libraries": "Libraries",
-  "navbar.events": "Events",
-  "navbar.rewards": "Rewards",
-  "navbar.team": "Team",
   "navbar.language": "Language"
 }
