@@ -130,9 +130,9 @@ const Navbar = ({ colorState, intlState }) => {
                         </div>
 
                         {/* LANGUAGE DROPDOWN MENU */}
-                        <div className="relative inline-flex items-center" ref={langRef}>
+                        <div className="relative inline-flex items-center h-full" ref={langRef}>
                             <div className="group relative text-base leading-6 font-normal text-body h-full">
-                                <button className="inline-flex px-2 items-center w-full gap-1.5 h-full group-hover:text-primary hover:shadow-thick-underline" onClick={toggleLangSection}>
+                                <button className="inline-flex px-2 items-center w-full gap-1.5 h-full whitespace-nowrap group-hover:text-primary hover:shadow-thick-underline" onClick={toggleLangSection}>
                                     <FormattedMessage id='navbar.language' />
                                     <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
                                 </button>
@@ -144,7 +144,7 @@ const Navbar = ({ colorState, intlState }) => {
                                                 const isActive = document.documentElement.lang === locale.code
                                                 return (
                                                     <button
-                                                        className={`leading-5 ${isActive ? "text-base" : "text-primary"} hover:text-hover px-4 py-2`}
+                                                        className={`leading-5 ${isActive ? "text-primary" : "text-base"} hover:text-hover px-4 py-2`}
                                                         key={locale.code}
                                                         onClick={() => {
                                                             setLocale(locale)
