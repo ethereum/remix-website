@@ -25,6 +25,7 @@ export const LEARNETH_PLUGIN_TUTORIALS_URL = `${REMIX_IDE_URL}/?#activate=LearnE
 // Color mode constants
 export const LS_COLOR_SCHEME = "color-scheme";
 export const HTML_COLOR_SCHEME = "--" + LS_COLOR_SCHEME
+export const COLOR_PARAM = "color"
 export const COLOR_MODES = [
   { name: "Light", icon: SunIcon, value: "light" },
   { name: "Classic", icon: ClassicIcon, value: "classic" },

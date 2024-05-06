@@ -1,13 +1,13 @@
-import { REMIX_DOCS_URL } from '../constants'
+import { COLOR_PARAM, REMIX_DOCS_URL } from '../constants'
 
 /**
  * Removes the "color" parameter from the URL search params and updates the browser history.
  */
-export const removeColorParam = () => {
+export const removeParam = (param) => {
   const { location, title } = document;
   const { pathname, origin, search, hash } = location;
   const newSearchParams = new URLSearchParams(search);
-  newSearchParams.delete("color");
+  newSearchParams.delete(param);
   const sanitizedSearch =
     newSearchParams.size < 1 ? "" : "?" + newSearchParams.toString();
   window.history.replaceState(
@@ -26,7 +26,7 @@ export const removeColorParam = () => {
 export const getDocsHref = (relativePath, colorMode) => {
   const dest = new URL(relativePath, REMIX_DOCS_URL)
   const params = new URLSearchParams(dest.search)
-  params.set('color', colorMode)
+  params.set(COLOR_PARAM, colorMode)
   dest.search = params.toString()
   const href = dest.toString()
   return href
