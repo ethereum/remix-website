@@ -19,15 +19,20 @@ export const useIntl = () => {
   }, [])
 
   useEffect(() => {
-    // Look for `lang`  param (ie. ?lang=en|zh|etc)
+    // Check for `lang` param (ie. ?lang=en|zh|etc)
     const searchParams = new URLSearchParams(document.location.search)
-    // lang: string
     const lang = searchParams.get('lang')
-    // If available and valid, set locale and return
     if (lang && LOCALE_CHOICES.includes(lang)) {
       setLocale(LOCALES.find(({ code }) => code === lang))
       return
     }
+    // Check if lang matches an RTD lang code (user routed from docs)
+    const rtdCodeChoices = LOCALES.map(({ rtdCode }) => rtdCode)
+    if (lang && rtdCodeChoices.includes(lang.toLowerCase())) {
+      setLocale(LOCALES[rtdCodeChoices.indexOf(lang.toLowerCase())])
+      return
+    }
+
     // Look for localStorage lang pref
     const lsLangPref = localStorage.getItem(LS_LANG_PREF)
     if (lsLangPref && LOCALE_CHOICES.includes(lsLangPref)) {
@@ -35,7 +40,16 @@ export const useIntl = () => {
       setLocale(LOCALES.find(({ code }) => code === lsLangPref))
       return
     }
-    // If no param, and no LS, set to default and return
+
+    // Check if users browser lang is supported
+    const browserLang = navigator.language.split('-')[0]
+    if (LOCALE_CHOICES.includes(browserLang)) {
+      // If available and valid, set locale and return
+      setLocale(LOCALES.find(({ code }) => code === browserLang))
+      return
+    }
+
+    // If no param, LS, or browser preference, set to default
     setLocale(LOCALES[0])
   }, [setLocale])
 
