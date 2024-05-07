@@ -208,7 +208,7 @@ const Navbar = ({ colorState, intlState }) => {
                                     <span className="inline-flex items-center w-full gap-1.5 h-full text-primary font-bold uppercase">
                                         <FormattedMessage id='navbar.learn' />
                                     </span>
-                                    <div className={`relative top-0 rounded my-8 pl-4 flex flex-col gap-8 bg-background`}>
+                                    <div className={`relative top-0 rounded my-8 pl-4 flex flex-col gap-8`}>
                                         <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
