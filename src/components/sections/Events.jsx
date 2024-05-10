@@ -23,6 +23,8 @@ import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
 import {SwiperSlide} from "swiper/react";
 
+
+
 const Events = () => {
     const eventsData = [
         {
@@ -186,7 +188,11 @@ const Events = () => {
             description: 'Remix for Hackathons',
             UML: 'https://www.ethdenver.com'
         }
-    ];
+    ]
+    const data = JSON.stringify(eventsData)
+    localStorage.setItem('eventsData', data)
+    const siteData = JSON.parse(localStorage.getItem('eventsData'))
+    
 
     return (
         <Section id={sectionId.events}>
@@ -210,7 +216,7 @@ const Events = () => {
                     <div className="container mx-auto pb-20 pt-2">
                         <Carousel>
                             {
-                                eventsData.map((event) => (
+                                siteData.map((event) => (
                                     <SwiperSlide key={event.id}>
                                         <EventCard
                                             date={event.date}
