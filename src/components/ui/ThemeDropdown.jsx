@@ -34,7 +34,7 @@ const ThemeDropdown = ({ colorState }) => {
   return (
     <div className="relative inline-block text-left" ref={dropdownRef}>
       <div>
-        <button type="button" className={`rounded-sm p-2 ${isOpen ? 'text-primary' : 'text-body'} hover:text-primary`} onClick={toggleDropdown}>
+        <button type="button" className={`rounded-sm p-1.5 ${isOpen ? 'text-primary' : 'text-body'} hover:text-primary`} onClick={toggleDropdown}>
           {ThemeIcon && <ThemeIcon className='h-6 w-6' />}
         </button>
       </div>

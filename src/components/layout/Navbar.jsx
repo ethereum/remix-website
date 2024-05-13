@@ -69,7 +69,7 @@ const Navbar = ({ colorState, intlState }) => {
                             <a href={REMIX_HOME_URL} className="flex flex-shrink-0 items-center">
                                 <RemixLogo className={`text-primary h:[30px] w-auto block`} alt="Remix logo" />
                             </a>
-                            <div className="hidden sm:flex flex-row gap-7">
+                            <div className="hidden sm:flex flex-row gap-4">
                                 <a
                                     className="relative inline-flex hover:cursor-pointer items-center shadow-underline"
                                     href={REMIX_HOME_URL}
@@ -168,7 +168,7 @@ const Navbar = ({ colorState, intlState }) => {
                         {/* HAMBURGER/CLOSE BUTTON (desktop + mobile) */}
                         <div className="flex items-center sm:hidden">
                             <div className="md:hidden flex items-center">
-                                <button onClick={toggleMenu} className="outline-none text-body">
+                                <button onClick={toggleMenu} className="outline-none text-body p-1.5">
                                     {isMenuOpen ? <Close /> : <Hamburger />}
                                 </button>
 
