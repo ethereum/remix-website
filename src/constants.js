@@ -1,6 +1,6 @@
-import { ReactComponent as SunIcon } from './assets/images/sun.svg';
-import { ReactComponent as MoonIcon } from './assets/images/moon.svg';
-import { ReactComponent as ClassicIcon } from './assets/images/classic.svg';
+import { ReactComponent as LightIcon } from './assets/images/sun.svg';
+import { ReactComponent as DarkIcon } from './assets/images/sunset.svg';
+import { ReactComponent as BlackIcon } from './assets/images/moon.svg';
 
 import enJson from './locales/en'
 import zhJson from './locales/zh'
@@ -28,9 +28,9 @@ export const LS_COLOR_SCHEME = "color-scheme";
 export const HTML_COLOR_SCHEME = "--" + LS_COLOR_SCHEME
 export const COLOR_PARAM = "color"
 export const COLOR_MODES = [
-  { name: "Light", icon: SunIcon, value: "light" },
-  { name: "Classic", icon: ClassicIcon, value: "classic" },
-  { name: "Dark", icon: MoonIcon, value: "dark" },
+  { name: "Light", icon: LightIcon, value: "light" },
+  { name: "Dark", icon: DarkIcon, value: "dark" },
+  { name: "Black", icon: BlackIcon, value: "black" },
 ]
 export const COLOR_CHOICES = COLOR_MODES.map(({ value }) => value);
 

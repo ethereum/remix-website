@@ -53,7 +53,7 @@ const ThemeDropdown = ({ colorState }) => {
                 role="menuitem"
               >
                 <span>{name}</span>
-                <Icon className='w-3 h-3' />
+                <Icon className='w-4 h-4' />
               </button>
             ))}
           </div>

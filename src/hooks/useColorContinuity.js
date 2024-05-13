@@ -9,7 +9,7 @@ import { removeParam } from '../utils/url'
 export const useColorContinuity = (setColorMode) => {
   useEffect(() => {
     const searchParams = new URLSearchParams(document.location.search)
-    // Look for `color`  param (ie. ?color=light|classic|dark)
+    // Look for `color`  param (ie. ?color=light|dark|black)
     const color = searchParams.get(COLOR_PARAM) // Could be '' or invalid value
     if (color && COLOR_CHOICES.includes(color)) {
       setColorMode(color)
