@@ -1,10 +1,11 @@
 {
-  "navbar.remixProject": "REMIX 项目",
+  "navbar.about": "关于",
   "navbar.ide": "IDE",
   "navbar.learn": "学习",
   "navbar.documentation": "文档",
   "navbar.tutorials": "IDE 指导教程",
   "navbar.videos": "视频",
   "navbar.articles": "文章",
-  "navbar.language": "语言"
+  "navbar.language": "语言",
+  "navbar.desktop": "桌面推荐"
 }

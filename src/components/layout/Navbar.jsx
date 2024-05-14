@@ -76,7 +76,7 @@ const Navbar = ({ colorState, intlState }) => {
                                 >
                                     <div
                                         className="text-primary px-2 text-base leading-6 font-normal">
-                                        <FormattedMessage id='navbar.remixProject' />
+                                        <FormattedMessage id='navbar.about' />
                                     </div>
                                 </a>
 
@@ -93,8 +93,8 @@ const Navbar = ({ colorState, intlState }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <div className="text-body group-hover:text-primary px-2 text-base leading-6 font-normal">
-                                        <FormattedMessage id='navbar.ide' />
+                                    <div className="flex items-center gap-2 text-body group-hover:text-primary px-2 text-base leading-6 font-normal">
+                                        <FormattedMessage id="navbar.ide" /> <NEArrow />
                                     </div>
                                 </a>
 
@@ -132,8 +132,8 @@ const Navbar = ({ colorState, intlState }) => {
                         {/* LANGUAGE DROPDOWN MENU */}
                         <div className="relative inline-flex items-center h-full" ref={langRef}>
                             <div className="group relative text-base leading-6 font-normal text-body h-full">
-                                <button className="inline-flex px-2 items-center w-full gap-1.5 h-full whitespace-nowrap group-hover:text-primary hover:shadow-thick-underline" onClick={toggleLangSection}>
-                                    <FormattedMessage id='navbar.language' />
+                                <button className="inline-flex px-2 items-center w-full gap-1.5 h-full whitespace-nowrap group-hover:text-primary hover:shadow-thick-underline uppercase" onClick={toggleLangSection}>
+                                    {intlState.locale.code}
                                     <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
                                 </button>
                                 {isLangOpen && (
@@ -171,7 +171,6 @@ const Navbar = ({ colorState, intlState }) => {
                                 <button onClick={toggleMenu} className="outline-none text-body p-1.5">
                                     {isMenuOpen ? <Close /> : <Hamburger />}
                                 </button>
-
                             </div>
                         </div>
                     </div>
@@ -179,40 +178,40 @@ const Navbar = ({ colorState, intlState }) => {
                     {isMenuOpen &&
                         <div className="pt-8 flex flex-col h-full gap-10 sm:hidden">
                             <a
-                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box shadow-underline"
+                                className="relative inline-flex items-center text-body hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box shadow-underline"
                                 href={REMIX_HOME_URL}
                             >
-                                <div className={`text-body px-1 pt-1 leading-6 font-normal`}>
-                                    <FormattedMessage id="navbar.remixProject" />
+                                <div className="px-1 pt-1 leading-6 font-normal text-lg">
+                                    <FormattedMessage id="navbar.about" />
                                 </div>
                             </a>
 
-                            <DocsLink className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box">
-                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
+                            <DocsLink className="relative inline-flex items-center text-body hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box">
+                                <div className="group-hover:text-primary px-1 pt-1 text-lg leading-6 font-normal">
                                     <FormattedMessage id="navbar.documentation" />
                                 </div>
                             </DocsLink>
 
                             <a
-                                className="relative inline-flex items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
+                                className="relative inline-flex items-center text-body hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                 href={REMIX_IDE_URL}
                             >
-                                <div className="text-body group-hover:text-primary px-1 pt-1 text-base leading-6 font-normal">
-                                    <FormattedMessage id="navbar.ide" />
+                                <div className="px-1 pt-1 text-lg leading-6 font-normal">
+                                    <FormattedMessage id="navbar.ide" /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /> <NEArrow className="inline" /></span>
                                 </div>
                             </a>
 
                             {/* LEARN DROPDOWN MENU */}
                             <div className="inline-flex items-center h-full" ref={learnRef}>
-                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-body h-full">
-                                    <span className="inline-flex items-center w-full gap-1.5 h-full text-primary font-bold uppercase">
+                                <div className="relative px-1 pt-1 text-lg leading-6 font-normal text-body h-full">
+                                    <span className="inline-flex items-center w-full gap-1.5 h-full font-bold uppercase">
                                         <FormattedMessage id='navbar.learn' />
                                     </span>
-                                    <div className={`relative top-0 rounded my-8 pl-4 flex flex-col gap-8`}>
+                                    <div className="relative top-0 rounded my-4 pl-4 flex flex-col gap-4">
                                         <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
-                                            <FormattedMessage id='navbar.tutorials' /> <NEArrow className="inline" />
+                                            <FormattedMessage id='navbar.tutorials' /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /> <NEArrow className="inline" /></span>
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA" target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
@@ -228,31 +227,6 @@ const Navbar = ({ colorState, intlState }) => {
                                 </div>
                             </div>
 
-                            {/* LANGUAGE DROPDOWN MENU */}
-                            <div className="inline-flex items-center">
-                                <div className="relative px-1 pt-1 text-base leading-6 font-normal text-gray hover:cursor-pointer">
-                                    <div className="inline-flex w-full gap-1.5 " onClick={toggleLangSection}>
-                                        <FormattedMessage id='navbar.language' /> <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
-                                    </div>
-                                    {isLangOpen && <div className={`absolute top-8 border border-[#D9D9D9] rounded z-10 w-32 pl-4 py-6 flex flex-col gap-4 bg-white`}>
-                                        {locales.map(locale => {
-                                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
-                                            return (
-                                                <button
-                                                    className="text-gray text-base hover:text-blue hover:cursor-pointer"
-                                                    key={locale.code}
-                                                    onClick={() => {
-                                                        setLocale(locale)
-                                                        toggleLangSection()
-                                                    }}
-                                                >
-                                                    {locale.localeName}
-                                                </button>
-                                            )
-                                        })}
-                                    </div>}
-                                </div>
-                            </div>
                         </div>
                     }
                 </div>
