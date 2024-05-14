@@ -1,6 +1,6 @@
 {
-  "libraries.libraries": "LIBRARIES",
-  "libraries.tools": "TOOLS FOR DEVELOPERS",
+  "libraries.libraries": "Libraries",
+  "libraries.tools": "Tools for developers",
   "libraries.text1": "Remix Libraries are low-level libraries that tool developers can use to enhance their features.",
   "libraries.text2": "Performs static analysis on Solidity smart contracts to check security vulnerabilities and bad development practices.",
   "libraries.text3": "Provides several controls that allow stepping over a trace and viewing the current state of a selected step.",

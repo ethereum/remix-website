@@ -19,7 +19,7 @@ const Footer = ({ colorMode }) => {
                         <Logo className="mb-11 md:mb-0 text-primary" alt="logo"/>
                     </div>
                     <div className="mb-11 md:mb-0">
-                       <h6 className="text-bodyLight font-sfProRegular text-xs pb-4"><FormattedMessage id='footer.product' /></h6>
+                       <h6 className="text-bodyLight font-sfProRegular text-xs pb-4 uppercase"><FormattedMessage id='footer.product' /></h6>
                         <div className="inline-flex flex-col gap-3">
 
                         <a className="font-sfProRegular text-body text-sm block hover:underline" href={REMIX_IDE_URL} target="_blank" rel="noreferrer"><FormattedMessage id='footer.onlineIDE' /></a>
@@ -30,7 +30,7 @@ const Footer = ({ colorMode }) => {
 
                     </div>
                     <div className="col-start-3 col-end-6 md:col-start-auto md:col-end-auto">
-                        <h6 className="text-bodyLight font-sfProRegular text-xs pb-4"><FormattedMessage id='footer.documentation' /></h6>
+                        <h6 className="text-bodyLight font-sfProRegular text-xs pb-4 uppercase"><FormattedMessage id='footer.documentation' /></h6>
                         <div className="inline-flex flex-col gap-3">
                         <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://docs.soliditylang.org/en/v0.6.1/" target="_blank" rel="noreferrer">Solidity</a>
                         <DocsLink className="font-sfProRegular text-body text-sm  block hover:underline">Remix</DocsLink>

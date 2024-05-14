@@ -12,8 +12,8 @@ const About = () => {
     return (
         <Section id={sectionId.about}>
             <div className="container mx-auto pb-20 pt-36 md:py-50">
-                <h1 className="text-center font-extralight pb-2 md:text-8xl"><FormattedMessage id='about.remixProject' /></h1>
-                <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id='about.jumpIntoWeb3' /></h2>
+                <h1 className="text-center font-extralight pb-2 md:text-8xl uppercase"><FormattedMessage id='about.remixProject' /></h1>
+                <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6 uppercase"><FormattedMessage id='about.jumpIntoWeb3' /></h2>
                 <p className="text-center font-sfProRegular text-bodyLight text-lg xl:px-72 lg:px-6 px-6 mb-16">
                     <FormattedMessage id='about.text' />
                 </p>

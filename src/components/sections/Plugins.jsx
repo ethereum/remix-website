@@ -44,8 +44,8 @@ const Plugins = ({ colorMode }) => {
                 <div className="sm:container sm:m-auto pb-20 pt-10 md:py-50 mx-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24">
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="plugins.plugins" /></h1>
-                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="plugins.everything" /></h2>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl uppercase"><FormattedMessage id="plugins.plugins" /></h1>
+                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6 uppercase"><FormattedMessage id="plugins.everything" /></h2>
                             <p className="
                                 font-sfProRegular
                                 text-bodyLight

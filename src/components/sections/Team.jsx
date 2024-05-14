@@ -92,7 +92,7 @@ const Team = () => {
                 <div className="sm:container sm:m-auto pb-20 pt-10 md:py-50 mx-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24">
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="team.remixTeam" /></h1>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl uppercase"><FormattedMessage id="team.remixTeam" /></h1>
                             <p className="
                                 font-sfProRegular
                                 text-bodyLight

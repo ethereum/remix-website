@@ -1,6 +1,6 @@
 {
-  "plugins.plugins": "PLUGINS",
-  "plugins.everything": "EVERYTHING IS A PLUGIN",
+  "plugins.plugins": "Plugins",
+  "plugins.everything": "Everything is a plugin",
   "plugins.text1": "In Remix, everything is a plugin. Core plugins are preloaded for essential operations. Additional plugins offer an expanded palette of tools.",
   "plugins.text2": "The Remix team builds all core plugins and some additional plugins, all of which are designated by the green checkmark. We also support teams who build plugins to allow their projects to be used inside of Remix.",
   "plugins.core": "Core Plugins",

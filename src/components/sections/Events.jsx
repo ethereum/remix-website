@@ -189,8 +189,8 @@ const Events = () => {
         bg-no-repeat
         bg-remix-desktop-background-position">
                 <div className="container mx-auto pb-20 pt-36 md:pt-50">
-                    <h1 className="text-center font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="events.events" /></h1>
-                    <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="events.mixingItUp" /></h2>
+                    <h1 className="text-center font-sfProThin pb-2 md:text-8xl uppercase"><FormattedMessage id="events.events" /></h1>
+                    <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6 uppercase"><FormattedMessage id="events.mixingItUp" /></h2>
                     <p className="text-center
                 font-sfProRegular
                 text-bodyLight

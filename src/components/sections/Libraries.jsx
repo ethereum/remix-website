@@ -18,8 +18,8 @@ const Libraries = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div />
                         <div>
-                            <h1 className="font-sfProThin pb-2 md:text-8xl"><FormattedMessage id="libraries.libraries" /></h1>
-                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6"><FormattedMessage id="libraries.tools" /></h2>
+                            <h1 className="font-sfProThin pb-2 md:text-8xl uppercase"><FormattedMessage id="libraries.libraries" /></h1>
+                            <h2 className="text-4xl md:text-5xl font-latoBold pb-6 uppercase"><FormattedMessage id="libraries.tools" /></h2>
                             <p className="font-sfProRegular text-bodyLight text-lg mb-6">
                                 <FormattedMessage id="libraries.text1" />
                             </p>
