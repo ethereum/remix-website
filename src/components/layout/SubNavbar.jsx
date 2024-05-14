@@ -36,50 +36,50 @@ const SubNavbar = () => {
             <div className="mx-auto p-0.25 w-fit justify-center rounded-lg border-2 border-primary bg-background bg-sub-nav overflow-hidden">
                 <div className="hidden sm:flex flex-row gap-1 p-0.5">
                     <button onClick={startSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
+                        className="relative inline-flex group items-center h-[2.25rem]"
                     >
                         <div className={`${startSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${startSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${startSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.start" />
                         </div>
                     </button>
                     <button onClick={pluginsSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
+                        className="relative inline-flex group items-center h-[2.25rem]"
                     >
                         <div className={`${pluginsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${pluginsSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${pluginsSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.plugins" />
                         </div>
                     </button>
                     <button onClick={librariesSection.onClick}
-                        className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]"
+                        className="relative inline-flex group items-center h-[2.25rem]"
                     >
                         <div className={`${librariesSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${librariesSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${librariesSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.libraries" />
                         </div>
                     </button>
-                    <button onClick={eventsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                    <button onClick={eventsSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${eventsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${eventsSection.selected ? "text-primary" : "text-body"} px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${eventsSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.events" />
                         </div>
                     </button>
-                    <button onClick={rewardsSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                    <button onClick={rewardsSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${rewardsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${rewardsSection.selected ? "text-primary" : "text-body"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${rewardsSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.rewards" />
                         </div>
                     </button>
-                    <button onClick={teamSection.onClick} className="relative inline-flex hover:cursor-pointer items-center h-[2.25rem]">
+                    <button onClick={teamSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${teamSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${teamSection.selected ? "text-primary" : "text-body"} inline-flex hover:cursor-pointer items-center px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${teamSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.team" />
                         </div>
                     </button>
