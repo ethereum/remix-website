@@ -11,6 +11,7 @@ import blockSplit4Image from "../../assets/images/blocksplit23.png";
 import edcon23Image from "../../assets/images/edcon23.png";
 import ethDenver2Image from "../../assets/images/ethdenver23.png";
 import ethIndiaImage from "../../assets/images/ethindia22.png";
+import ethIndiaImage2 from "../../assets/images/ethindia23.png";
 import devconImage from "../../assets/images/devcon.png";
 import ethSafariImage from "../../assets/images/ethSafari.png";
 import klImage from "../../assets/images/KL-meetup.png";
@@ -22,10 +23,20 @@ import {Section} from "../../scroll-section";
 import {sectionId} from "../../constants";
 import {SwiperSlide} from "swiper/react";
 
+
+
 const Events = () => {
     const eventsData = [
         {
-            id: 0,
+            id: 17,
+            name: 'ETHIndia',
+            date: 'December 2023',
+            image: ethIndiaImage2,
+            location: 'Bengaluru, India',
+            description: 'Scripting with Remix',
+            URL: 'https://ethindia.co'
+        },{
+            id: 16,
             name: 'Devconnect',
             date: 'November 2023',
             image: devconnect2Image,
@@ -34,7 +45,7 @@ const Events = () => {
             URL: 'https://devconnect.org'
         },
         {
-            id: 1,
+            id: 15,
             name: 'SmartCon by Chainlink',
             date: 'October 2023',
             image: smartconImage,
@@ -43,58 +54,58 @@ const Events = () => {
             URL: 'https://smartcon.chain.link'
         },
         {
-            id: 2,
+            id: 14,
             name: 'ETHAccra',
             date: 'September 2023',
             image: ethAccraImage,
             location: 'Accra, Ghana',
             description: 'Zero To DApp Day',
-            UML: 'https://www.ethaccra.xyz'
+            URL: 'https://www.ethaccra.xyz'
         },
         {
-            id: 3,
+            id: 13,
             name: 'Web3 Lagos Conference',
             date: 'September 2023',
             image: web3LagosImage,
             location: 'Lagos, Nigeria',
             description: 'Remix for Hackathons',
-            UML: 'https://event.web3bridge.com'
+            URL: 'https://event.web3bridge.com'
         },
         {
-            id: 4,
+            id: 12,
             name: 'DSRV Builder House',
             date: 'September 2023',
             image: dsrvImage,
             location: 'Seoul, South Korea',
             description: 'WELLDONE with Remix and Remix Challenge',
-            UML: 'https://buildershouse.dsrvlabs.com/e782515b-8c04-42d9-b5ec-a174f0abb7b5'
+            URL: 'https://buildershouse.dsrvlabs.com/e782515b-8c04-42d9-b5ec-a174f0abb7b5'
         },
         {
-            id: 5,
+            id: 11,
             name: 'Ethcon Korea',
             date: 'September 2023',
             image: ethconKoreaImage,
             location: 'Seoul, South Korea',
             description: 'Remix Features Every Dev Should Know',
-            UML: 'https://2023.ethcon.kr'
+            URL: 'https://2023.ethcon.kr'
         },
         {
-            id: 6,
+            id: 10,
             name: 'EthCC 6',
             date: 'July 2023',
             image: ethcc6Image,
             location: 'Paris, France',
             description: 'Remix Features Every Dev Should Know',
-            UML: 'https://www.ethcc.io'
+            URL: 'https://www.ethcc.io'
         },
         {
-            id: 7,
+            id: 9,
             name: 'BlockSplit 4',
             date: 'May 2023',
             image: blockSplit4Image,
             location: 'Split, Croatia',
             description: 'Remix Features Every Dev Should Know',
-            UML: 'https://blocksplit.net/'
+            URL: 'https://blocksplit.net/'
         },
         {
             id: 8,
@@ -103,81 +114,85 @@ const Events = () => {
             image: edcon23Image,
             location: 'Podgorica, Montenegro',
             description: 'Unlocking NFTs with Remix: A Hands-on Workshop',
-            UML: 'https://www.edcon.io/'
+            URL: 'https://www.edcon.io/'
         },
         {
-            id: 9,
+            id: 7,
             name: 'ETHDenver',
             date: 'March 2023',
             image: ethDenver2Image,
             location: 'Denver, USA',
             description: 'Remix for Hackathons',
-            UML: 'https://www.ethdenver.com'
+            URL: 'https://www.ethdenver.com'
         },
         {
-            id: 10,
+            id: 6,
             name: 'ETHIndia',
             date: 'December 2022',
             image: ethIndiaImage,
             location: 'Bengaluru, India',
             description: 'Remix for Hackathons and Remix Challenge',
-            UML: 'https://ethindia.co'
+            URL: 'https://ethindia.co'
         },
         {            
-            id: 11,
+            id: 5,
             name: 'Devcon 6',
             date: 'October 2022',
             image: devconImage,
             location: 'Bogota, Colombia',
             description: 'What\'s New in Remix and Remix Rewards Launch',
-            UML: 'https://devcon.org/en'
+            URL: 'https://devcon.org/en'
         },
         {
-            id: 12,
+            id: 4,
             name: 'ETHSafari',
             date: 'September 2022',
             image: ethSafariImage,
             location: 'Nairobi, Kenya',
             description: 'Remix Essentials',
-            UML: 'https://ethsafari.xyz'
+            URL: 'https://ethsafari.xyz'
         },
         {
-            id: 13,
+            id: 3,
             name: 'Kuala Lumpur Ethereum Meetup',
             date: 'May 2022',
             image: klImage,
             location: 'Kuala Lumpur and Online',
             description: 'A Stroll through Remix',
-            UML: 'https://www.meetup.com/ethmalaysia'
+            URL: 'https://www.meetup.com/ethmalaysia'
         },
         {
-            id: 14,
+            id: 2,
             name: 'Devconnnect / Solidity Summit',
             date: 'April 2022',
             image: solidityImage,
             location: 'Amsterdam, Netherlands',
             description: 'Remix Hybrid Tools',
-            UML: 'https://devconnect.org/amsterdam'
+            URL: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 15,
+            id: 1,
             name: 'Devconnnect',
             date: 'April 2022',
             image: remixImage,
             location: 'Amsterdam, Netherlands',
             description: 'GameDay Remix, a Remix-based Scavenger Hunt',
-            UML: 'https://devconnect.org/amsterdam'
+            URL: 'https://devconnect.org/amsterdam'
         },
         {
-            id: 16,
+            id: 0,
             name: 'ETHDenver',
             date: 'February 2022',
             image: denverImage,
             location: 'Denver, USA',
             description: 'Remix for Hackathons',
-            UML: 'https://www.ethdenver.com'
+            URL: 'https://www.ethdenver.com'
         }
-    ];
+    ]
+    const data = JSON.stringify(eventsData)
+    localStorage.setItem('eventsData', data)
+    const siteData = JSON.parse(localStorage.getItem('eventsData'))
+    
 
     return (
         <Section id={sectionId.events}>
@@ -201,7 +216,7 @@ const Events = () => {
                     <div className="container mx-auto pb-20 pt-2">
                         <Carousel>
                             {
-                                eventsData.map((event) => (
+                                siteData.map((event) => (
                                     <SwiperSlide key={event.id}>
                                         <EventCard
                                             date={event.date}
