@@ -113,6 +113,7 @@ const Team = () => {
                                         twitterLink={member.twitterLink}
                                         githubLink={member.githubLink}
                                         linkedInLink={member.linkedInLink}
+                                        key={`${member.name}-${member.position}-${member.githubLink}-${member.twitterLink}-${member.linkedInLink}`}
                                     />
                                 ))
                             }
