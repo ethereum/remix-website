@@ -40,7 +40,7 @@ const SubNavbar = () => {
                     >
                         <div className={`${startSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${startSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${startSection.selected ? "text-primary" : "text-body"} group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.start" />
                         </div>
                     </button>
@@ -49,7 +49,7 @@ const SubNavbar = () => {
                     >
                         <div className={`${pluginsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${pluginsSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${pluginsSection.selected ? "text-primary" : "text-body"} group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.plugins" />
                         </div>
                     </button>
@@ -58,28 +58,28 @@ const SubNavbar = () => {
                     >
                         <div className={`${librariesSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${librariesSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${librariesSection.selected ? "text-primary" : "text-body"} group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.libraries" />
                         </div>
                     </button>
                     <button onClick={eventsSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${eventsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${eventsSection.selected ? "text-primary" : "text-body"} group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${eventsSection.selected ? "text-primary" : "text-body"} group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.events" />
                         </div>
                     </button>
                     <button onClick={rewardsSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${rewardsSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${rewardsSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${rewardsSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.rewards" />
                         </div>
                     </button>
                     <button onClick={teamSection.onClick} className="relative inline-flex group items-center h-[2.25rem]">
                         <div className={`${teamSection.selected ? "block" : "hidden"} inset-0 absolute bg-background rounded-md`} />
                         <div
-                            className={`${teamSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-primary px-4 py-1 text-base leading-6 font-normal z-10`}>
+                            className={`${teamSection.selected ? "text-primary" : "text-body"} inline-flex  items-center group-hover:text-hover px-4 py-1 text-base leading-6 font-normal z-10`}>
                             <FormattedMessage id="subnavbar.team" />
                         </div>
                     </button>
