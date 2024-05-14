@@ -106,14 +106,13 @@ const Team = () => {
                             {
                                 teamMembers.map((member) => (
                                     <TeamMemberCard
-                                        key={member.name}
+                                        key={`${member.name}-${member.position}-${member.githubLink}-${member.twitterLink}-${member.linkedInLink}`}
                                         name={member.name}
                                         image={member.image}
                                         position={member.position}
                                         twitterLink={member.twitterLink}
                                         githubLink={member.githubLink}
                                         linkedInLink={member.linkedInLink}
-                                        key={`${member.name}-${member.position}-${member.githubLink}-${member.twitterLink}-${member.linkedInLink}`}
                                     />
                                 ))
                             }
