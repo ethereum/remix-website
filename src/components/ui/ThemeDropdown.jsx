@@ -32,7 +32,7 @@ const ThemeDropdown = ({ colorState }) => {
   }, []);
 
   return (
-    <div className="relative inline-block text-left" ref={dropdownRef}>
+    <div className="relative inline-flex text-left h-full items-center" ref={dropdownRef}>
       <div>
         <button type="button" className={`rounded-sm p-1.5 ${isOpen ? 'text-primary' : 'text-body'} hover:text-primary`} onClick={toggleDropdown}>
           {ThemeIcon && <ThemeIcon className='h-6 w-6' />}
@@ -40,7 +40,7 @@ const ThemeDropdown = ({ colorState }) => {
       </div>
 
       {isOpen && (
-        <div className="origin-top-right absolute right-0 top-12 w-max rounded-lg bg-background border-[1px] border-primary z-10">
+        <div className="absolute right-0 top-full w-max rounded-lg bg-background border-[1px] border-primary z-10">
           <div className="grid gap-1 px-2 py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             {COLOR_MODES.map(({ name, value, icon: Icon }) => (
               <button

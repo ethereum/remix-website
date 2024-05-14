@@ -137,7 +137,7 @@ const Navbar = ({ colorState, intlState }) => {
                                     <DownArrow className={isLangOpen ? "scale-y-[-1]" : ""} />
                                 </button>
                                 {isLangOpen && (
-                                    <div className="origin-top-right absolute right-0 top-12 w-max rounded-lg bg-background border-[1px] border-primary z-10">
+                                    <div className="absolute right-0 w-max rounded-lg bg-background border-[1px] border-primary z-10">
                                         <div className="grid gap-1 px-2 py-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                             {locales.map(locale => {
                                                 // eslint-disable-next-line jsx-a11y/anchor-is-valid
