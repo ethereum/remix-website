@@ -27,9 +27,7 @@ const SubNavbar = () => {
         }
     }, [isLearnOpen])
 
-    const toggleLearnSection = () => {
-        return setLearnOpen(current => !current)
-    }
+    const toggleLearnSection = () => setLearnOpen(current => !current)
 
     return (
         <div className={`hidden sm:block font-helvetica px-8 sticky w-full top-[5.5rem] z-10`}>

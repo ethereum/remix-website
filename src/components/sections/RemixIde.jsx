@@ -31,7 +31,7 @@ const RemixIde = () => {
                                 <h4 className="text-xl pb-1 text-primary font-latoBold"><FormattedMessage id="ide.onlineIDE" /></h4>
                                 <p className="text-sm text-bodyLight font-sfProSemiBold pb-4"><FormattedMessage id="ide.webBased" /></p>
                                 <p className="text-sm text-bodyLight font-sfProRegular pb-4"><FormattedMessage id="ide.text2" /></p>
-                                <div className="flex absolute bottom-6 content-center">
+                                <div className="flex items-center absolute bottom-6 content-center">
                                     <p className="text-sm text-primary font-sfProRegular mr-3.5"><FormattedMessage id="ide.startCoding" /></p>
                                     <RightArrow className="invisible group-hover:visible text-primary" alt="arrow"/>
                                 </div>
@@ -43,7 +43,7 @@ const RemixIde = () => {
                                 <h4 className="text-xl pb-1 text-primary font-latoBold"><FormattedMessage id="ide.desktopIDE" /></h4>
                                 <p className="text-sm text-bodyLight font-sfProSemiBold pb-4"><FormattedMessage id="ide.electronApp" /></p>
                                 <p className="text-sm text-bodyLight font-sfProRegular pb-4"><FormattedMessage id="ide.text3" /></p>
-                                <div className="flex absolute bottom-6 content-center">
+                                <div className="flex items-center absolute bottom-6 content-center">
                                     <p className="text-sm text-primary font-sfProRegular mr-3.5"><FormattedMessage id="ide.getDesktopApp" /></p>
                                     <RightArrow className="invisible group-hover:visible text-primary" alt="arrow"/>
                                 </div>
@@ -55,7 +55,7 @@ const RemixIde = () => {
                                 <h4 className="text-xl pb-1 text-primary font-latoBold">Ethereum Remix</h4>
                                 <p className="text-sm text-bodyLight font-sfProSemiBold pb-4"><FormattedMessage id="ide.vscodeExtensions" /></p>
                                 <p className="text-sm text-bodyLight font-sfProRegular pb-4"><FormattedMessage id="ide.text4" /></p>
-                                <div className="flex absolute bottom-6 content-center">
+                                <div className="flex items-center absolute bottom-6 content-center">
                                     <p className="text-sm text-primary font-sfProRegular mr-3.5"><FormattedMessage id="ide.installVSCodeExtension" /></p>
                                     <RightArrow className="invisible group-hover:visible text-primary" alt="arrow"/>
                                 </div>
@@ -68,7 +68,7 @@ const RemixIde = () => {
                                 <h4 className="text-xl pb-1 text-primary font-latoBold">Remixd</h4>
                                 <p className="text-sm text-bodyLight font-sfProSemiBold pb-4"><FormattedMessage id="ide.ourCliTool" /></p>
                                 <p className="text-sm text-bodyLight font-sfProRegular pb-4"><FormattedMessage id="ide.text5" /></p>
-                                <div className="flex absolute bottom-6 content-center">
+                                <div className="flex items-center absolute bottom-6 content-center">
                                     <p className="text-sm text-primary font-sfProRegular mr-3.5"><FormattedMessage id="ide.openCliTool" /></p>
                                     <RightArrow className="invisible group-hover:visible text-primary" alt="arrow"/>
                                 </div>
