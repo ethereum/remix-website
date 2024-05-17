@@ -166,7 +166,7 @@ const Events = () => {
         },
         {
             id: 2,
-            name: 'Devconnnect / Solidity Summit',
+            name: 'Devconnect / Solidity Summit',
             date: 'April 2022',
             image: solidityImage,
             location: 'Amsterdam, Netherlands',
@@ -175,7 +175,7 @@ const Events = () => {
         },
         {
             id: 1,
-            name: 'Devconnnect',
+            name: 'Devconnect',
             date: 'April 2022',
             image: remixImage,
             location: 'Amsterdam, Netherlands',
