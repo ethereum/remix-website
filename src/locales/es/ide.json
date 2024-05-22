@@ -1,0 +1,18 @@
+{
+  "ide.startHere": "¡Empiece aquí!",
+  "ide.text1": "IDE Remix es una herramienta sin configuración y con interfaz gráfica de usuario para desarrollar contratos inteligentes. La utilizan tanto expertos, como principiantes, y Remix le agilizará en el doble de tiempo. Remix funciona a la perfección con otras herramientas y simplifica el proceso de implementación en la cadena que usted elija. Remix es conocida por su depuración visual. Remix es el sito al que todo el mundo acude para dominar Ethereum.\n",
+  "ide.onlineIDE": "IDE Remix en línea",
+  "ide.webBased": "Entorno Dev basado en la web",
+  "ide.text2": "IDE Remix en línea es un completo conjunto de herramientas para desarrollar, desplegar, depurar y probar Ethereum y contratos inteligentes compatibles con EVM. No necesita configuración y posee una interfaz de usuario intuitiva y flexible.",
+  "ide.startCoding": "Empezar a codificar en línea",
+  "ide.desktopIDE": "IDE Remix de escritorio",
+  "ide.electronApp": "Aplicación Electron",
+  "ide.text3": "Para usuarios que prefieren el rendimiento o la seguridad de su propia unidad de disco duro, Remix posee una aplicación de escritorio, que le permite guardar directamente sus archivos en el directorio de carpetas de su ordenador.",
+  "ide.getDesktopApp": "Descárguese nuestra aplicación de escritorio",
+  "ide.vscodeExtensions": "Extensión VSCode",
+  "ide.text4": "Hemos pasado Remix a VSCode, que ofrece acceso a las herramientas Remix en un entorno con el que muchos usuarios ya están familiarizados.",
+  "ide.installVSCodeExtension": "Instalar la extensión VSCode",
+  "ide.ourCliTool": "Nuestra herramienta CLI",
+  "ide.text5": "Remix conecta IDE Remix en línea a una carpeta en su disco duro, ofreciéndole todas las ventajas del archivado de carpetas en el directorio de carpetas de su ordenador.",
+  "ide.openCliTool": "Abrir la herramienta CLI"
+}

@@ -3,6 +3,11 @@ import { ReactComponent as DarkIcon } from './assets/images/sunset.svg';
 import { ReactComponent as BlackIcon } from './assets/images/moon.svg';
 
 import enJson from './locales/en'
+import esJson from './locales/es'
+import frJson from './locales/fr'
+// import itJson from './locales/it'
+// import koJson from './locales/ko'
+import ruJson from './locales/ru'
 import zhJson from './locales/zh'
 
 export const sectionId = {
@@ -47,6 +52,41 @@ export const LOCALES = [
     name: 'English',
     localeName: 'English',
     messages: enJson,
+  },
+  {
+    code: 'es',
+    rtdCode: 'es',
+    name: 'Spanish',
+    localeName: 'Español',
+    messages: esJson,
+  },
+  {
+    code: 'fr',
+    rtdCode: 'fr',
+    name: 'French',
+    localeName: 'Français',
+    messages: frJson,
+  },
+  // {
+  //   code: 'it',
+  //   rtdCode: 'it',
+  //   name: 'Italian',
+  //   localeName: 'Italiano',
+  //   messages: itJson,
+  // },
+  // {
+  //   code: 'ko',
+  //   rtdCode: 'ko',
+  //   name: 'Korean',
+  //   localeName: '한국어',
+  //   messages: koJson,
+  // },
+  {
+    code: 'ru',
+    rtdCode: 'ru',
+    name: 'Russian',
+    localeName: 'Русский',
+    messages: ruJson,
   },
   {
     code: 'zh',
