@@ -10,6 +10,8 @@ import { LEARNETH_PLUGIN_TUTORIALS_URL, REMIX_HOME_URL, REMIX_IDE_URL } from "..
 import ThemeDropdown from "../ui/ThemeDropdown"
 import DocsLink from '../ui/DocsLink';
 
+const ExternalArrow = () => <>&nbsp;<div className="inline min-w-4"><NEArrow className="inline" /></div></>
+
 const Navbar = ({ colorState, intlState }) => {
     const learnRef = useRef();
     const langRef = useRef();
@@ -93,8 +95,8 @@ const Navbar = ({ colorState, intlState }) => {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <div className="flex items-center gap-2 text-body group-hover:text-primary px-2 text-base leading-6 font-normal">
-                                        <FormattedMessage id="navbar.ide" /> <NEArrow />
+                                    <div className="inline items-center gap-2 text-body group-hover:text-primary px-2 text-base leading-6 font-normal">
+                                        <FormattedMessage id="navbar.ide" /><ExternalArrow />
                                     </div>
                                 </a>
 
@@ -109,17 +111,17 @@ const Navbar = ({ colorState, intlState }) => {
                                                 <a href={LEARNETH_PLUGIN_TUTORIALS_URL}
                                                     target="_blank" rel="noreferrer"
                                                     className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
-                                                    <FormattedMessage id='navbar.tutorials' /> <NEArrow />
+                                                    <FormattedMessage id='navbar.tutorials' /><ExternalArrow />
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA"
                                                     target="_blank" rel="noreferrer"
                                                     className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
-                                                    <FormattedMessage id='navbar.videos' /> <NEArrow />
+                                                    <FormattedMessage id='navbar.videos' /><ExternalArrow />
                                                 </a>
                                                 <a href="https://medium.com/remix-ide"
                                                     target="_blank" rel="noreferrer"
                                                     className="flex items-center gap-1 text-body leading-5 text-base hover:text-primary hover:cursor-pointer py-1.5">
-                                                    <FormattedMessage id='navbar.articles' /> <NEArrow />
+                                                    <FormattedMessage id='navbar.articles' /><ExternalArrow />
                                                 </a>
                                             </div>
                                         }
@@ -197,7 +199,7 @@ const Navbar = ({ colorState, intlState }) => {
                                 href={REMIX_IDE_URL}
                             >
                                 <div className="px-1 pt-1 text-lg leading-6 font-normal">
-                                    <FormattedMessage id="navbar.ide" /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /> <NEArrow className="inline" /></span>
+                                    <FormattedMessage id="navbar.ide" /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /><ExternalArrow /></span>
                                 </div>
                             </a>
 
@@ -211,17 +213,17 @@ const Navbar = ({ colorState, intlState }) => {
                                         <a href={LEARNETH_PLUGIN_TUTORIALS_URL} target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
-                                            <FormattedMessage id='navbar.tutorials' /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /> <NEArrow className="inline" /></span>
+                                            <FormattedMessage id='navbar.tutorials' /> <span className="block text-sm opacity-70"><FormattedMessage id="navbar.desktop" /><ExternalArrow /></span>
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCjTUPyFEr2xDGN6Cg8nKDaA" target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
-                                            <FormattedMessage id='navbar.videos' /> <NEArrow className="inline" />
+                                            <FormattedMessage id='navbar.videos' /><ExternalArrow />
                                         </a>
                                         <a href="https://medium.com/remix-ide" target="_blank" rel="noreferrer"
                                             className="relative items-center hover:text-primary w-fit hover:shadow-thick-underline focus:shadow-box"
                                         >
-                                            <FormattedMessage id='navbar.articles' /> <NEArrow className="inline" />
+                                            <FormattedMessage id='navbar.articles' /><ExternalArrow />
                                         </a>
                                     </div>
                                 </div>
