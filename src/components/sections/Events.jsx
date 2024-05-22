@@ -20,10 +20,9 @@ import solidityImage from "../../assets/images/devconnect_solidity_summit.jpg";
 import remixImage from "../../assets/images/devconnect-Remix.png";
 import denverImage from "../../assets/images/ethdenver_03.jpg";
 import EventCard from "../ui/EventCard";
-import {Section} from "../../scroll-section";
-import {sectionId} from "../../constants";
-import {SwiperSlide} from "swiper/react";
-
+import { Section } from "../../scroll-section";
+import { sectionId } from "../../constants";
+import { SwiperSlide } from "swiper/react";
 
 
 const Events = () => {
@@ -38,7 +37,7 @@ const Events = () => {
             location: 'Bengaluru, India',
             description: 'Scripting with Remix',
             URL: 'https://ethindia.co'
-        },{
+        }, {
             id: 16,
             name: 'Devconnect',
             date: 'November 2023',
@@ -137,7 +136,7 @@ const Events = () => {
             description: 'Remix for Hackathons and Remix Challenge',
             URL: 'https://ethindia.co'
         },
-        {            
+        {
             id: 5,
             name: 'Devcon 6',
             date: 'October 2022',
@@ -195,40 +194,31 @@ const Events = () => {
     const data = JSON.stringify(eventsData)
     localStorage.setItem('eventsData', data)
     const siteData = JSON.parse(localStorage.getItem('eventsData'))
-    
+
 
     return (
         <Section id={sectionId.events}>
-            <div className="md:bg-events-desktop
-        bg-events-mobile
-        bg-no-repeat
-        bg-remix-desktop-background-position">
+            <div className="md:bg-events-desktop bg-events-mobile bg-no-repeat bg-remix-desktop-background-position">
                 <div className="container mx-auto pb-20 pt-36 md:pt-50">
                     <h1 className="text-center font-sfProThin pb-2 md:text-8xl uppercase"><FormattedMessage id="events.events" /></h1>
                     <h2 className="text-center text-4xl md:text-5xl font-latoBold pb-6 uppercase"><FormattedMessage id="events.mixingItUp" /></h2>
-                    <p className="text-center
-                font-sfProRegular
-                text-bodyLight
-                text-lg xl:px-72 lg:px-6 px-6">
+                    <p className="text-center font-sfProRegular text-bodyLight text-lg xl:px-72 lg:px-6 px-6">
                         <FormattedMessage id="events.text" />
                     </p>
                     <div className="container mx-auto pb-20 pt-2">
                         <Carousel>
-                            {
-                                siteData.map((event) => (
-                                    <SwiperSlide key={event.id}>
-                                        <EventCard
-                                            date={intl.formatMessage({ id: `events.${event.id}.date`, defaultMessage: event.date })}
-                                            image={event.image}
-                                            description={intl.formatMessage({ id: `events.${event.id}.description`, defaultMessage: event.description })}
-                                            name={intl.formatMessage({ id: `events.${event.id}.name`, defaultMessage: event.name })}
-                                            location={intl.formatMessage({ id: `events.${event.id}.location`, defaultMessage: event.location })}
-                                            URL={event.URL}
-                                        />
-                                    </SwiperSlide>
-
-                                ))
-                            }
+                            {siteData.map((event) => (
+                                <SwiperSlide key={event.id}>
+                                    <EventCard
+                                        date={intl.formatMessage({ id: `events.${event.id}.date`, defaultMessage: event.date })}
+                                        image={event.image}
+                                        description={intl.formatMessage({ id: `events.${event.id}.description`, defaultMessage: event.description })}
+                                        name={intl.formatMessage({ id: `events.${event.id}.name`, defaultMessage: event.name })}
+                                        location={intl.formatMessage({ id: `events.${event.id}.location`, defaultMessage: event.location })}
+                                        URL={event.URL}
+                                    />
+                                </SwiperSlide>
+                            ))}
                         </Carousel>
                     </div>
                 </div>
