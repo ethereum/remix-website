@@ -1,0 +1,15 @@
+{
+  "libraries.libraries": "라이브러리",
+  "libraries.tools": "개발자를 위한 도구",
+  "libraries.text1": "리믹스 라이브러리는 도구 개발자가 기능을 향상하기 위해 사용할 수 있는 낮은 수준의 라이브러리입니다.",
+  "libraries.text2": "솔리디티 스마트 계약에 대한 정적 분석을 수행하여 보안 취약점과 잘못된 개발 관행을 점검합니다.",
+  "libraries.text3": "다양한 제어를 제공하여 트레이스를 단계별로 수행하고 선택된 단계의 현재 상태를 확인할 수 있습니다.",
+  "libraries.text4": "솔리디티에 작성된 스마트 계약의 AST를 읽는 쉬운 방법입니다.",
+  "libraries.text5": "다양한 리믹스 모듈에서 사용되는 일반 라이브러리",
+  "libraries.text6": "제공된 URL에서 솔리디티 컴파일러를 로드하고 계약을 컴파일하며 컴파일 세부 사항을 반환합니다.",
+  "libraries.text7": "GitHub, Swarm, IPFS 등의 외부 URL에서 콘텐츠를 확인하기 위한 도움 안내서",
+  "libraries.text8": "솔리디티 단위 테스트: 플러그인과 CLI로 모두 사용.",
+  "libraries.text9": "다양한 제공자를 위한 웹3 래퍼.",
+  "libraries.text10": "리믹스 IDE에서 다양한 템플릿을 사용하여 작업 공간을 생성할 수 있습니다.",
+  "libraries.text11": "리믹스 IDE에서 로컬 파일 시스템에 액세스할 수 있게 허용하는 데몬."
+}
