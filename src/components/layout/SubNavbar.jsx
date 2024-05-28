@@ -31,7 +31,7 @@ const SubNavbar = () => {
 
     return (
         <div className={`hidden sm:block font-helvetica px-8 sticky w-full top-[5.5rem] z-10`}>
-            <div className="mx-auto p-0.25 w-fit justify-center rounded-lg border-2 border-primary bg-background bg-sub-nav overflow-hidden">
+            <div className="mx-auto p-0.25 w-fit justify-center rounded-lg border border-primaryTransparent bg-background bg-sub-nav overflow-hidden">
                 <div className="hidden sm:flex flex-row gap-1 p-0.5">
                     <button onClick={startSection.onClick}
                         className="relative inline-flex group items-center h-[2.25rem]"
