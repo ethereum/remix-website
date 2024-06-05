@@ -1,0 +1,18 @@
+{
+  "ide.startHere": "从这里开始！",
+  "ide.text1": "Remix IDE 是一款用于开发智能合约的免设置图形用户界面工具。无论是专家还是初学者，Remix 都能让您快速上手。Remix 可与其他工具很好地配合使用，并允许在您选择的链上进行简单的部署。Remix 因其可视化调试器而闻名。Remix 是每个人学习以太坊的地方。",
+  "ide.onlineIDE": "Remix 在线 IDE",
+  "ide.webBased": "基于 Web 的开发环境",
+  "ide.text2": "Remix 在线 IDE 是一个功能强大的工具集，用于开发、部署、调试和测试以太坊以及 EVM 兼容的智能合约。它无需设置，用户界面灵活直观。",
+  "ide.startCoding": "开始在线编码",
+  "ide.desktopIDE": "Remix 桌面 IDE",
+  "ide.electronApp": "Electron 应用",
+  "ide.text3": "如果用户更喜欢自己硬盘的性能或安全性，Remix 还提供桌面应用程序。文件会直接保存到电脑的文件系统中。",
+  "ide.getDesktopApp": "获取我们的桌面应用",
+  "ide.vscodeExtensions": "VSCode 扩展",
+  "ide.text4": "我们将 Remix 带入了 VSCode，在许多用户已经熟悉的环境中提供 Remix 工具。",
+  "ide.installVSCodeExtension": "安装 VSCode 扩展",
+  "ide.ourCliTool": "我们的命令行工具",
+  "ide.text5": "Remixd 将 Remix Online IDE 连接到硬盘驱动器上的文件夹，具有在计算机文件系统上存储文件的所有优点。",
+  "ide.openCliTool": "打开命令行工具"
+}

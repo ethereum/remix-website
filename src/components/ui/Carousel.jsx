@@ -1,6 +1,6 @@
 import {  useRef } from 'react';
-import leftArrow from '../../assets/images/left-arrow.svg';
-import rightArrow from '../../assets/images/right-arrow.svg';
+import { ReactComponent as LeftArrow } from '../../assets/images/left-arrow.svg';
+import { ReactComponent as RightArrow } from '../../assets/images/right-arrow.svg';
 import {Swiper} from 'swiper/react'
 
 import "swiper/css";
@@ -24,13 +24,13 @@ const Carousel = ({children}) => {
           onClick={movePrev}
           className="hover:bg-grey-900/75 w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed  p-0 m-0 transition-all ease-in-out duration-300"
         >
-          <img src={leftArrow} alt="left-arrow"/>
+          <LeftArrow className="text-primary" alt="left-arrow"/>
         </button>
         <button
           onClick={moveNext}
           className="hover:bg-grey-900/75 w-10 h-full text-center opacity-75 hover:opacity-100 disabled:opacity-25 disabled:cursor-not-allowed  p-0 m-0 transition-all ease-in-out duration-300"
         >
-          <img src={rightArrow} alt="right-arrow" />
+          <RightArrow className="text-primary" alt="right-arrow" />
         </button>
       </div>
         <div className="min-h-0 min-w-0">

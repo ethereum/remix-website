@@ -7,11 +7,11 @@ const EventCard = ({name, date, location, description, image, URL }) => {
       <a className="flex rounded-lg mb-2 h-[17.64rem]" href={URL} target="__blank">
         <img src={image} alt="event" className="w-full rounded-lg mb-2"/>
       </a>
-      <a href={URL} className="h5 font-latoBold text-black text-xl mb-1" target="__blank">
+      <a href={URL} className="h5 font-latoBold text-body text-xl mb-1" target="__blank">
         {name}
       </a>
-      <h6 className="font-latoBold text-black text-sm mb-1">{`${date} - ${location}`}</h6>
-      <p className="font-sfProRegular text-gray text-sm">{description}</p>
+      <h6 className="font-latoBold text-body text-sm mb-1">{`${date} - ${location}`}</h6>
+      <p className="font-sfProRegular text-bodyLight text-sm">{description}</p>
     </div>
   )
 }

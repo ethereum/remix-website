@@ -1,0 +1,18 @@
+{
+  "ide.startHere": "Commencez ici !",
+  "ide.text1": "Remix IDE est un outil sans configuration avec une interface graphique pour développer des contrats intelligents. Utilisé par les experts et les débutants, Remix vous fera démarrer en un rien de temps. Remix fonctionne bien avec d'autres outils, et permet un processus de déploiement simple vers la chaîne de votre choix. Remix est célèbre pour son débogueur visuel. Remix est l'endroit où tout le monde vient pour en apprendre davantage sur Ethereum.",
+  "ide.onlineIDE": "Remix Online IDE",
+  "ide.webBased": "Environnement de développement basé sur le Web",
+  "ide.text2": "Remix Online IDE est un ensemble d'outils puissant pour développer, déployer, déboguer et tester des contrats intelligents compatibles avec Ethereum et EVM. Il ne nécessite aucune configuration et dispose d'une interface utilisateur flexible et intuitive.",
+  "ide.startCoding": "Commencez à coder en ligne",
+  "ide.desktopIDE": "IDE Desktop de Remix",
+  "ide.electronApp": "Application Electron",
+  "ide.text3": "Pour les utilisateurs qui préfèrent la performance ou la sécurité de leur propre disque dur, Remix possède une application de bureau. Vos fichiers sont enregistrés directement dans le système de fichiers de votre ordinateur.",
+  "ide.getDesktopApp": "Obtenez notre application de bureau",
+  "ide.vscodeExtensions": "Extension VSCode",
+  "ide.text4": "Nous avons apporté Remix à VSCode, offrant un accès aux outils Remix dans un environnement que de nombreux utilisateurs connaissent déjà.",
+  "ide.installVSCodeExtension": "Installer l'extension VSCode",
+  "ide.ourCliTool": "Notre outil CLI",
+  "ide.text5": "Remixd connecte Remix Online IDE à un dossier sur votre disque dur, offrant tous les avantages du stockage de fichiers sur le système de fichiers de votre ordinateur.",
+  "ide.openCliTool": "Ouvrir l'outil CLI"
+}
