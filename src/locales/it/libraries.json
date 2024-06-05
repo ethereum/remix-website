@@ -1,0 +1,15 @@
+{
+  "libraries.libraries": "Librerie",
+  "libraries.tools": "Strumenti per gli sviluppatori",
+  "libraries.text1": "Le Librerie Remix sono librerie di basso livello che gli sviluppatori di strumenti possono utilizzare per migliorare le loro funzionalità.",
+  "libraries.text2": "Esegue l'analisi statica dei contratti intelligenti di Solidity per verificare le vulnerabilità della sicurezza e le cattive pratiche di sviluppo.",
+  "libraries.text3": "Fornisce diversi controlli che consentono di passare sopra una traccia e di visualizzare lo stato attuale di una fase selezionata.",
+  "libraries.text4": "Un modo semplice per leggere l'AST di un contratto intelligente scritto in Solidity.",
+  "libraries.text5": "Una libreria comune utilizzata in più moduli di Remix",
+  "libraries.text6": "Carica un compilatore Solidity da un URL fornito, compila il contratto e restituisce i dettagli della compilazione.",
+  "libraries.text7": "Funzioni d'aiuto per la risoluzione del contenuto da un URL esterno, compresi GitHub, Swarm, IPFS, ecc.",
+  "libraries.text8": "Unit test di Solidity: sia come plugin che come CLI.",
+  "libraries.text9": "Un wrapper Web3 per diversi tipi di provider.",
+  "libraries.text10": "Consente di creare spazi di lavoro utilizzando vari modelli in Remix IDE.",
+  "libraries.text11": "Un daemon che consente l'accesso a un filesystem locale da Remix IDE."
+}

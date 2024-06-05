@@ -1,0 +1,11 @@
+{
+  "navbar.about": "About",
+  "navbar.documentation": "Documentation",
+  "navbar.ide": "IDE",
+  "navbar.learn": "Learn",  
+  "navbar.tutorials": "Guided IDE Tutorials",
+  "navbar.videos": "Videos",
+  "navbar.articles": "Articles",
+  "navbar.language": "Language",
+  "navbar.desktop": "(Desktop recommended)"
+}

@@ -3,20 +3,30 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      white: "#FFFFFF",
-      black: "#333333",
-      gray: "#666666",
-      blue: "#2F6DF2",
-      green: "#019607",
-      lightGray: "#8D95A8",
-      borderColor: "#EAEAEA",
-      magenta: "#D2D2F9"
+      // white: "#FFFFFF", // -> background
+      // black: "#333333", // -> body
+      // gray: "#666666", // -> bodyLight
+      // blue: "#2F6DF2", // -> primary
+      // green: "#019607", // TODO: Add color theme variants
+      // lightGray: "#8D95A8", // -> codeBackground
+      // borderColor: "#EAEAEA", // -> bodyLight
+      // magenta: "#D2D2F9", // -> primaryTransparent
+
+      background: 'var(--color-background)',
+      body: 'var(--color-body)',
+      bodyLight: 'var(--color-body-light)',
+      codeBackground: 'var(--color-code-background)',
+      primary: 'var(--color-primary)',
+      primaryTransparent: 'var(--color-primary-transparent)',
+      hover: 'var(--color-hover)',
+      success: 'var(--color-success)',
     },
     fontFamily: {
       'sfProRegular': ['SFProDisplay-Regular', 'sans-serif'],
       'sfProSemiBold': ['SFProDisplay-Semibold', 'sans-serif'],
       'sfProThin': ['SFProDisplay-Thin', 'sans-serif'],
       'latoBold': ['Lato-Bold', 'sans-serif'],
+      'helvetica': ['Helvetica', 'sans-serif'],
     },
 
     extend: {
@@ -26,7 +36,10 @@ module.exports = {
         '138' : '8.625rem',
       },
       boxShadow: {
-        "menu": "0 2px 2px rgba(84, 84, 84, 0.25)"
+        "menu": "0 2px 2px rgba(84, 84, 84, 0.25)",
+        "underline": "inset 0 -1px 0 0 var(--color-primary)",
+        "thick-underline": "inset 0 -2px 0 0 var(--color-primary)",
+        "box": "0px 0px 0px 4px var(--color-primary)",
       },
       fontSize: {
         '8xl': ["6.25rem", { lineHeight: '6.875rem' }],
@@ -44,7 +57,8 @@ module.exports = {
         'rewards-desktop-bck' : "url('../src/assets/images/rewards-desktop-bck.svg')",
         'team-desktop' : "url(\"../src/assets/images/team-desktop-bck.svg\"), linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
         'team-mobile' : "linear-gradient(76.65deg, rgba(45, 97, 210, 0.15) -0.16%, rgba(43, 85, 183, 0.15) 51.45%, rgba(177, 152, 255, 0.15) 71.71%, rgba(255, 134, 227, 0.15) 99.04%)",
-
+        'sub-nav': "linear-gradient(0deg, rgba(45, 97, 210, 0.15) 6.58%, rgba(133, 162, 226, 0.15) 111.84%)",
+        'color-gradient': 'var(--color-gradient)',
       },
       backgroundPosition: {
         'remix-desktop-background-position': '80% 8%',
@@ -56,7 +70,11 @@ module.exports = {
         'team-background-position': '70% 5%',
       },
       gridTemplateColumns: {
-        'footer': '1.3fr repeat(3, 0.6fr) 1fr'
+        'footer': '1.3fr repeat(3, 0.6fr) 1fr',
+        '1fr-auto': '1fr auto',
+      },
+      letterSpacing: {
+        tight: '-0.017em',
       }
     },
   },

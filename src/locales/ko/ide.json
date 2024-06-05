@@ -1,0 +1,18 @@
+{
+  "ide.startHere": "여기서 시작하세요!",
+  "ide.text1": "리믹스 IDE는 스마트 계약을 개발하기 위해 GUI를 갖춘 도구로, 설치가 필요하지 않습니다. 전문가와 초보자 모두가 사용할 수 있으며, 리믹스가 빠른 시간 안에 작업을 시작할 수 있게 지원합니다. 리믹스는 다른 도구와 원활하게 작동하며 원하는 체인에 간단히 배포할 수 있는 과정을 제공합니다. 리믹스는 시각적 디버거로 유명하며, 모든 사람이 이더리움을 배우기 위해 모이는 곳입니다.",
+  "ide.onlineIDE": "리믹스 온라인 IDE",
+  "ide.webBased": "웹 기반 DevEnvironment",
+  "ide.text2": "리믹스 온라인 IDE는 이더리움 및 EVM 호환 스마트 계약을 개발, 배포, 디버그하고 테스트하기 위한 강력한 도구 세트입니다. 특별한 설치가 필요하지 않으며 유연하고 직관적인 사용자 인터페이스를 제공합니다.",
+  "ide.startCoding": "온라인 코딩 시작",
+  "ide.desktopIDE": "리믹스 데스크탑 IDE",
+  "ide.electronApp": "Electron 앱",
+  "ide.text3": "자신의 하드 드라이브의 성능이나 보안을 사용하고자 하는 사용자를 위해 리믹스는 데스크탑 앱을 제공합니다. 파일은 컴퓨터의 파일 시스템에 직접 저장됩니다.",
+  "ide.getDesktopApp": "데스크탑 앱 다운로드",
+  "ide.vscodeExtensions": "VSCode 확장 프로그램",
+  "ide.text4": "리믹스를 VSCode에 적용했으며, 많은 사용자가 이미 익숙한 환경에서 리믹스 도구에 접근할 수 있습니다.",
+  "ide.installVSCodeExtension": "VSCode 확장 프로그램 설치",
+  "ide.ourCliTool": "CLI 도구",
+  "ide.text5": "리믹스는 리믹스 온라인 IDE를 하드 드라이브의 폴더에 연결하여 컴퓨터의 파일 시스템에 있는 파일 저장 공간의 모든 이점을 제공합니다.",
+  "ide.openCliTool": "CLI 도구 열기"
+}
