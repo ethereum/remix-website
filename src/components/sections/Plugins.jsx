@@ -117,7 +117,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <EtherScanIcon alt="arrows" className="mb-3 text-body" />
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -138,7 +138,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <TwoDocumentsIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -159,7 +159,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <BugIcon alt="bug" className="mb-3 text-body"/>
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -180,7 +180,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <ChartIcon alt="chart" className="mb-3 text-body"/>
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -200,8 +200,7 @@ const Plugins = ({ colorMode }) => {
                                         className="bg-background border border-bodyLight border-solid rounded-lg p-4 min-h-[13.75rem] hover:border-body relative">
                                         <div className="flex justify-between items-start">
                                             <TickIcon alt="arrows" className="mb-3 text-body"/>
-                                            <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                            <div className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -222,7 +221,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <TickIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -256,7 +255,7 @@ const Plugins = ({ colorMode }) => {
                                         <div className="flex justify-between items-start">
                                             <BracketIcon alt="arrows" className="mb-3 text-body"/>
                                             <div
-                                                className="group relative inline-block text-primary-500 underline hover:text-red-500 duration-300">
+                                                className="group relative inline-block text-primary-500 underline duration-300">
                                                 <VerifiedIcon alt="✓"/>
                                                 <span
                                                     className="absolute hidden
@@ -399,7 +398,7 @@ const Plugins = ({ colorMode }) => {
                                         a: (innerText) => (<a
                                             href="https://github.com/ethereum/remix-plugin/"
                                             target="_blank" rel="noreferrer"
-                                            className="text-blue hover:underline">
+                                            className="text-primary hover:underline">
                                         {innerText}</a>)
                                     }}
                                 />
@@ -410,14 +409,14 @@ const Plugins = ({ colorMode }) => {
                                     values={{
                                         a1: (innerText) => (<a href="https://github.com/ethereum/remix-plugin/tree/master/examples/example"
                                             target="_blank" rel="noreferrer"
-                                            className="text-blue hover:underline"
+                                            className="text-primary hover:underline"
                                         >{innerText}</a>),
                                         a2: (innerText) => (<a href="https://remix.ethereum.org" target="_blank" rel="noreferrer"
-                                            className="text-blue hover:underline"
+                                            className="text-primary hover:underline"
                                         >{innerText}</a>),
                                         a3: (innerText) => (<a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix"
                                             target="_blank" rel="noreferrer"
-                                            className="text-blue hover:underline"
+                                            className="text-primary hover:underline"
                                         >{innerText}</a>)
                                     }}
                                 />

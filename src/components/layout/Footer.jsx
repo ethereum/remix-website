@@ -71,7 +71,7 @@ const Footer = ({ colorMode }) => {
                 </div>
             </div>
             <div className="border-t border-borderColor py-6 flex justify-center">
-                <p className="font-sfProRegular text-black text-xs pr-5">© {new Date().getFullYear()} Remix. All rights reserved.</p>
+                <p className="font-sfProRegular text-body text-xs pr-5">© {new Date().getFullYear()} Remix. All rights reserved.</p>
             </div>
         </section>
     )
