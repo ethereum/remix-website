@@ -49,18 +49,6 @@ const RemixIde = () => {
                                 </div>
                             </div>
                         </a>
-                        <a href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">
-                            <div
-                                className="bg-background rounded-lg border-bodyLight border py-6 px-4 h-80 hover:border-primary relative group">
-                                <h4 className="text-xl pb-1 text-primary font-latoBold">Ethereum Remix</h4>
-                                <p className="text-sm text-bodyLight font-sfProSemiBold pb-4"><FormattedMessage id="ide.vscodeExtensions" /></p>
-                                <p className="text-sm text-bodyLight font-sfProRegular pb-4"><FormattedMessage id="ide.text4" /></p>
-                                <div className="flex items-center absolute bottom-6 content-center">
-                                    <p className="text-sm text-primary font-sfProRegular mr-3.5"><FormattedMessage id="ide.installVSCodeExtension" /></p>
-                                    <RightArrow className="invisible group-hover:visible text-primary" alt="arrow"/>
-                                </div>
-                            </div>
-                        </a>
                         <a href="https://github.com/ethereum/remix-project/tree/master/libs/remixd" target="_blank"
                            rel="noreferrer">
                             <div
