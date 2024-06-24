@@ -37,7 +37,7 @@ const RemixIde = () => {
                                 </div>
                             </div>
                         </a>
-                        <a href="https://github.com/ethereum/remix-desktop/releases" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/remix-project-org/remix-desktop-insiders" target="_blank" rel="noreferrer">
                             <div
                                 className="bg-background rounded-lg border-bodyLight border py-6 px-4 h-80 hover:border-primary relative group">
                                 <h4 className="text-xl pb-1 text-primary font-latoBold"><FormattedMessage id="ide.desktopIDE" /></h4>
