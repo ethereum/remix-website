@@ -22,10 +22,10 @@ const Footer = ({ colorMode }) => {
                        <h6 className="text-bodyLight font-sfProRegular text-xs pb-4 uppercase"><FormattedMessage id='footer.product' /></h6>
                         <div className="inline-flex flex-col gap-3">
 
-                        <a className="font-sfProRegular text-body text-sm block hover:underline" href={REMIX_IDE_URL} target="_blank" rel="noreferrer"><FormattedMessage id='footer.onlineIDE' /></a>
-                        <a className="font-sfProRegular text-body text-sm block hover:underline" href="https://github.com/ethereum/remix-desktop/releases" target="_blank" rel="noreferrer"><FormattedMessage id='footer.desktopIDE' /></a>
-                        <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">Ethereum Remix</a>
-                        <a className="font-sfProRegular text-body text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs/remixd" target="_blank" rel="noreferrer">RemixD</a>
+                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://remix.ethereum.org" target="_blank" rel="noreferrer">Remix Online IDE</a>
+                        <a className="font-sfProRegular text-black text-sm block hover:underline" href="https://github.com/remix-project-org/remix-desktop-insiders" target="_blank" rel="noreferrer">Remix Desktop IDE</a>
+                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix" target="_blank" rel="noreferrer">Ethereum Remix</a>
+                        <a className="font-sfProRegular text-black text-sm  block hover:underline" href="https://github.com/ethereum/remix-project/tree/master/libs/remixd" target="_blank" rel="noreferrer">RemixD</a>
                         </div>
 
                     </div>
