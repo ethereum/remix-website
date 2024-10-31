@@ -64,7 +64,7 @@ const Footer = ({ colorMode }) => {
                         <a className="mr-9 inline-block" href="https://www.linkedin.com/company/ethereum-remix/" target="_blank" rel="noreferrer">
                             <LinkedinIcon className="w-6 h-6 text-bodyLight" alt="linkedin"/>
                         </a>
-                        <a className="inline-block" href="https://discord.com/invite/mh9hFCKkEq" target="_blank" rel="noreferrer">
+                        <a className="inline-block" href="https://discord.com/invite/nfv6ZYjAeP" target="_blank" rel="noreferrer">
                             <DiscordIcon className="w-6 h-6 text-bodyLight" alt="discord"/>
                         </a>
                     </div>
