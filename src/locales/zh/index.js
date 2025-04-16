@@ -1,3 +1,4 @@
+import dashboardJson from './dashboard.json';
 import aboutJson from './about.json';
 import eventsJson from './events.json';
 import footerJson from './footer.json';
@@ -10,6 +11,7 @@ import rewardsJson from './rewards.json';
 import teamJson from './team.json';
 
 const localeMessages = {
+  ...dashboardJson,
   ...aboutJson,
   ...eventsJson,
   ...footerJson,

@@ -1,0 +1,6 @@
+{
+    "dashboard.metrics.title": "Remix Dashboard",
+    "dashboard.metrics.transactions_interact": "Contract calls (transactions)",
+    "dashboard.metrics.deploy_contract_to": "Contract Deployment to {network}"
+}
+  
