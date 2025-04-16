@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.63374d84.css",
-    "main.js": "/static/js/main.4ddae7d9.js",
+    "main.js": "/static/js/main.93e9bfdb.js",
     "static/media/remix.mp4": "/static/media/remix.b51568099f2153b20bf2.mp4",
     "static/media/blocksplit23.png": "/static/media/blocksplit23.482c05c53cf75ad8b2c3.png",
     "static/media/smartcon23.png": "/static/media/smartcon23.eb36310752f58198ce0c.png",
@@ -41,7 +41,13 @@
     "static/media/team-desktop-bck.svg": "/static/media/team-desktop-bck.75fbee72485471254ee5.svg",
     "static/media/team-mobile-bck.svg": "/static/media/team-mobile-bck.75fbee72485471254ee5816fa5ffe5ab.svg",
     "static/media/remi-icon.svg": "/static/media/remi-icon.7b98f159e0a60d36c98bee595cfaba46.svg",
+    "static/media/deploy_contract_to_34443.png": "/static/media/deploy_contract_to_34443.85fbc4c767b01c991476.png",
+    "static/media/deploy_contract_to_7777777.png": "/static/media/deploy_contract_to_7777777.bb5cdbb7559a33368757.png",
+    "static/media/deploy_contract_to_42220.png": "/static/media/deploy_contract_to_42220.92395216d1207116416d.png",
+    "static/media/deploy_contract_to_10.png": "/static/media/deploy_contract_to_10.f92e2a4de245a13746b6.png",
+    "static/media/deploy_contract_to_8453.png": "/static/media/deploy_contract_to_8453.26930d6a75ba19b597e7.png",
     "static/media/zokrates.svg": "/static/media/zokrates.3a5d61e451d096da5bc8aeea56d7e480.svg",
+    "static/media/weekly_mainnet_transact.png": "/static/media/weekly_mainnet_transact.818fb36176901335007a.png",
     "static/media/remix-logo.svg": "/static/media/remix-logo.508d5c140c1fc01623f7385ca278c8f9.svg",
     "static/media/contract-deployer.svg": "/static/media/contract-deployer.f1b69f9a5fa4417d6b404d76bd62b72b.svg",
     "static/media/sun.svg": "/static/media/sun.46b64c20a2381f075a04fb9a4f5f954d.svg",
@@ -74,10 +80,10 @@
     "static/media/down-arrow.svg": "/static/media/down-arrow.0fb4250ce6879661ec713e4e269b5fdc.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.801ac6d2ea0489e4ae95eebfe3fb4e1b.svg",
     "main.63374d84.css.map": "/static/css/main.63374d84.css.map",
-    "main.4ddae7d9.js.map": "/static/js/main.4ddae7d9.js.map"
+    "main.93e9bfdb.js.map": "/static/js/main.93e9bfdb.js.map"
   },
   "entrypoints": [
     "static/css/main.63374d84.css",
-    "static/js/main.4ddae7d9.js"
+    "static/js/main.93e9bfdb.js"
   ]
 }
